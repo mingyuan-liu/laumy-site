@@ -2,6 +2,8 @@
 
 这是 `laumy.tech` 的 Hugo 静态站点代码仓库。它只保存网站程序、模板、样式、构建脚本和部署模板；文章 Markdown 和文章图片应放在独立的内容仓库中。
 
+日常运维手册见 [docs/operations.md](docs/operations.md)。
+
 公开仓库注意事项：
 
 - 不提交服务器 IP、SSH 用户、真实绝对路径、数据库密码、JWT、webhook secret、SSH 私钥。
