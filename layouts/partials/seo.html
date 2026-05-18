@@ -1,0 +1,27 @@
+{{- $title := cond .IsHome .Site.Title (printf "%s - %s" .Title .Site.Title) -}}
+{{- $desc := .Params.description | default .Summary | default .Site.Params.description | plainify | htmlUnescape | truncate 160 -}}
+{{- $canonical := .Params.canonical | default .Permalink -}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="{{ $canonical }}">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ $canonical }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ with .Params.cover }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title }},
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
+  "dateModified": {{ (.Lastmod | default .Date).Format "2006-01-02T15:04:05Z07:00" }},
+  "author": {"@type": "Person", "name": {{ .Params.author | default .Site.Params.author }}},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": {{ $canonical }}}
+}
+</script>
+{{ end }}

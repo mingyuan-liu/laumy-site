@@ -1,0 +1,16 @@
+[Unit]
+Description=laumy GitHub deploy webhook
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/laumy-webhook.env
+ExecStart=/usr/bin/python3 /srv/laumy-site/scripts/deploy_webhook.py
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

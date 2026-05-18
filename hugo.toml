@@ -1,0 +1,38 @@
+baseURL = "https://www.laumy.tech/"
+languageCode = "zh-Hans"
+title = "laumy的学习笔记"
+enableRobotsTXT = true
+hasCJKLanguage = true
+summaryLength = 90
+
+[permalinks]
+  posts = "/notes/:sections/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "github"
+
+[params]
+  author = "laumy"
+  description = "Linux、嵌入式、AI、大模型、网络协议、系统分析"
+  avatar = "/images/avatar.jpg"
+  qrcode = "/images/wechat-qrcode.jpg"
+  github = ""
+
+  [params.waline]
+    enabled = true
+    serverURL = "/waline"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

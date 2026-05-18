@@ -1,0 +1,23 @@
+{{ define "left" }}{{ partial "sidebar-toc.html" . }}{{ end }}
+{{ define "main" }}
+{{ $walinePath := .Params.url | default .RelPermalink }}
+<article class="article">
+  <header class="article-header">
+    <h1>{{ .Title }}</h1>
+    <div class="article-meta">
+      <span>◷ {{ .Date.Format "2006-01-02" }}</span>
+      {{ with .Params.category }}<a href="{{ $.Params.category_url }}">📁 {{ . }}</a>{{ end }}
+      <span>👤 {{ .Params.author | default site.Params.author }}</span>
+      <span>🔥 <span class="waline-pageview-count" data-path="{{ $walinePath }}">{{ .Params.views | default 0 }}</span> 热度</span>
+      <span>💬 <span class="waline-comment-count" data-path="{{ $walinePath }}">0</span> 评论</span>
+    </div>
+  </header>
+  <div class="article-content">{{ .Content }}</div>
+  {{ if site.Params.waline.enabled }}
+  <section class="comments-panel" id="comments">
+    <h2>评论</h2>
+    <div id="waline" data-path="{{ $walinePath }}"></div>
+  </section>
+  {{ end }}
+</article>
+{{ end }}

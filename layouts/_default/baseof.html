@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ partial "seo.html" . }}
+  <link rel="stylesheet" href="/css/main.css">
+  {{ if site.Params.waline.enabled }}
+  <meta name="waline-server" content="{{ site.Params.waline.serverURL }}">
+  {{ end }}
+  <link rel="stylesheet" href="/vendor/katex/katex.min.css">
+  <script defer src="/js/main.js"></script>
+  <script defer src="/vendor/katex/katex.min.js"></script>
+  <script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+  <script defer src="/js/math.js"></script>
+  {{ if site.Params.waline.enabled }}
+  <script type="module" src="/js/waline.js"></script>
+  {{ end }}
+</head>
+<body data-waline-current="{{ if .IsPage }}true{{ else }}false{{ end }}" data-page-path="{{ .RelPermalink }}">
+  {{ partial "header.html" . }}
+  <div class="site-shell">
+    {{ block "left" . }}{{ partial "sidebar-categories.html" . }}{{ end }}
+    <main class="main-panel">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "sidebar-right.html" . }}
+  </div>
+</body>
+</html>

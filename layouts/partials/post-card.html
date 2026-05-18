@@ -1,0 +1,15 @@
+<article class="post-card">
+  {{ $walinePath := .Params.url | default .RelPermalink }}
+  <a class="thumb" href="{{ .RelPermalink }}"><img src="{{ .Params.cover | default "/images/default-thumb.jpg" }}" alt=""></a>
+  <div class="post-card-body">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Summary | plainify | htmlUnescape | truncate 180 }}</p>
+    <div class="meta">
+      <span>◷ {{ .Date.Format "2006-01-02" }}</span>
+      {{ with .Params.category }}<a href="{{ $.Params.category_url }}">📁 {{ . }}</a>{{ end }}
+      <span>👤 {{ .Params.author | default site.Params.author }}</span>
+      <span>🔥 <span class="waline-pageview-count" data-path="{{ $walinePath }}">{{ .Params.views | default 0 }}</span> 热度</span>
+      <span>💬 <span class="waline-comment-count" data-path="{{ $walinePath }}">0</span> 评论</span>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,17 @@
+{{ if gt .Paginator.TotalPages 1 }}
+<nav class="pagination">
+  {{ if .Paginator.HasPrev }}<a href="{{ .Paginator.Prev.URL }}">上一页</a>{{ end }}
+  {{ $current := .Paginator.PageNumber }}
+  {{ $total := .Paginator.TotalPages }}
+  {{ $lastShown := 0 }}
+  {{ range .Paginator.Pagers }}
+    {{ $page := .PageNumber }}
+    {{ if or (le $page 3) (eq $page $total) (and (ge $page (sub $current 1)) (le $page (add $current 1))) }}
+      {{ if gt (sub $page $lastShown) 1 }}<span>...</span>{{ end }}
+      <a class="{{ if eq . $.Paginator }}active{{ end }}" href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{ $lastShown = $page }}
+    {{ end }}
+  {{ end }}
+  {{ if .Paginator.HasNext }}<a href="{{ .Paginator.Next.URL }}">下一页 »</a>{{ end }}
+</nav>
+{{ end }}

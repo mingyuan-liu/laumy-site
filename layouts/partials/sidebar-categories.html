@@ -1,0 +1,9 @@
+<aside class="left-panel">
+  <div class="panel-card">
+    <div class="panel-title"><span>📁</span><strong>分类专栏</strong><button class="panel-menu" type="button">☰</button></div>
+    <nav class="category-tree">
+      {{ $tree := site.Data.category_tree }}
+      {{ partial "category-node.html" (dict "nodes" $tree "page" .) }}
+    </nav>
+  </div>
+</aside>

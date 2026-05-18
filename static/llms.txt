@@ -1,0 +1,7 @@
+# laumy的学习笔记
+
+这是一个中文技术博客，主要内容包括 Linux、嵌入式、AI 大模型、网络协议、机器人系统等。
+
+Sitemap: https://www.laumy.tech/sitemap.xml
+RSS: https://www.laumy.tech/index.xml
+Archive: https://www.laumy.tech/

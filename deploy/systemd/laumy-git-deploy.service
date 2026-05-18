@@ -1,0 +1,11 @@
+[Unit]
+Description=Pull laumy content from GitHub and deploy Hugo site
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/laumy-deploy.env
+ExecStart=/srv/laumy-site/scripts/update_from_git.sh
+Nice=5
+IOSchedulingClass=best-effort

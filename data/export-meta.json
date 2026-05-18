@@ -1,0 +1,4720 @@
+{
+  "1105": {
+    "id": 1105,
+    "title": "金字塔原理",
+    "url": "/1105.html/金字塔原理读书笔记/",
+    "canonical": "https://www.laumy.tech/1105.html/金字塔原理读书笔记/",
+    "description": "思维导图 写文章使用的结构",
+    "cover": "/wp-content/uploads/2024/02/wp_editor_md_b0a77c28f08fb0a13dcae749869d3ce5.jpg",
+    "category": "阅读",
+    "category_path": [
+      "阅读"
+    ],
+    "root_category": "阅读",
+    "raw_categories": [
+      "阅读"
+    ],
+    "tags": [],
+    "date": "2020-02-18T13:12:02+00:00",
+    "modified": "2026-01-17T03:09:04+00:00",
+    "source": "11-阅读/11.1-金字塔原理.md"
+  },
+  "585": {
+    "id": 585,
+    "title": "Arm64体系结构简介",
+    "url": "/585.html/arm64体系结构简介/",
+    "canonical": "https://www.laumy.tech/585.html/arm64体系结构简介/",
+    "description": "ARM简介 ARM版本 典型处理器 主要特性 v1 26位地址空间 v2 增加乘法、乘加法、支持协处理指令等 v3 地址空间扩展到32位，增加SPSP和CPSR等 v4 ARM7TDMI/ARM920T 增加Thumb指令等 v5 ARM926EJ-S 增加Jazelle和VFPv2等 v6 ARM11 MPCore 增加SIMD、TrustZone以及Th",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_300bd876e354afece405179950027a19.jpg",
+    "category": "中断管理",
+    "category_path": [
+      "Linux",
+      "中断管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "中断管理"
+    ],
+    "tags": [],
+    "date": "2023-03-04T09:59:41+00:00",
+    "modified": "2025-08-18T04:53:40+00:00",
+    "source": "01-Linux/1.1-中断管理/1.1.1-Arm64体系结构简介.md"
+  },
+  "594": {
+    "id": 594,
+    "title": "中断基本概念",
+    "url": "/594.html/中断基本概念/",
+    "canonical": "https://www.laumy.tech/594.html/中断基本概念/",
+    "description": "在现代嵌入式系统中，处理器上会挂接很多个外设，CPU在执行任务的时候，可能会同时由多个中断发生，那么中断必要要进行响应处理并维护一个队列一一运行，这样自然会影响CPU的效率，为了让CPU专注于实际运算，中断控制器孕育而生，各中断信号源都先交给中断控制器处理，由中断控制器进行管理，同时接受多个中断请求并进行优先级判断，然后选中一个最高优先级的请求送个CPU进行",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_bd1e88299326e42a275b6466b0fa2bbb.jpg",
+    "category": "中断管理",
+    "category_path": [
+      "Linux",
+      "中断管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "中断管理"
+    ],
+    "tags": [],
+    "date": "2023-03-04T10:51:30+00:00",
+    "modified": "2025-08-18T04:53:18+00:00",
+    "source": "01-Linux/1.1-中断管理/1.1.2-中断基本概念.md"
+  },
+  "636": {
+    "id": 636,
+    "title": "wordpress使用笔记",
+    "url": "/636.html/wordpress使用笔记/",
+    "canonical": "https://www.laumy.tech/636.html/wordpress使用笔记/",
+    "description": "使用WP Editor.md 粘贴的图片模糊 修改插件的图片质量 /usr/share/nginx/html/wordpress/wp-content/plugins/wp-editormd/src/App/ImagePaste.php 首页不显示全文章，只显示标题和部分内容 /usr/share/nginx/html/wordpress/wp-conten",
+    "cover": "//wp-content/uploads/2023/11/wp_editor_md_91328a602db7328964f6777c26dd24e9.jpg",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2023-03-04T11:58:49+00:00",
+    "modified": "2023-12-06T07:00:55+00:00",
+    "source": "12-其他/12.1-wordpress使用笔记.md"
+  },
+  "634": {
+    "id": 634,
+    "title": "Linux中断实现",
+    "url": "/634.html/linux中断实现之控制器与irq-domain/",
+    "canonical": "https://www.laumy.tech/634.html/linux中断实现之控制器与irq-domain/",
+    "description": "interrupt controller初始化 设备树中对gic-v3的描述如下，其中interrupt-controller标识了该设备是一个中断控制器。 interrupt-controller@3400000 { compatible = \"arm,gic-v3\"; #interrupt-cells = <0x03>; #address-cells =",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_55593fd38b57f7196ae93cc4bf046b15.jpg",
+    "category": "中断管理",
+    "category_path": [
+      "Linux",
+      "中断管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "中断管理"
+    ],
+    "tags": [],
+    "date": "2023-03-04T13:06:33+00:00",
+    "modified": "2025-08-18T04:53:07+00:00",
+    "source": "01-Linux/1.1-中断管理/1.1.3-Linux中断实现.md"
+  },
+  "678": {
+    "id": 678,
+    "title": "软中断和tasklet",
+    "url": "/678.html/软中断和tasklet简介/",
+    "canonical": "https://www.laumy.tech/678.html/软中断和tasklet简介/",
+    "description": "Linux的中断分为上下部机制，上半部在中断上下文中关闭了本地CPU中断响应，下半部是在中断线程中处理。在Linux系统没有引入中断线程化机制之前，就已经出现了一些下半部的机制，如软中断SoftIRQ，Tasklet和workqueue。 SoftIRQ是预留给系统对时间要求比较严格进行使用的，Linux系统已经定义了软中断的类型，通常情况下用户部需要修改软",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_3b15bb3b2af9aa854ff5a2d097d230e5.jpg",
+    "category": "中断管理",
+    "category_path": [
+      "Linux",
+      "中断管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "中断管理"
+    ],
+    "tags": [],
+    "date": "2023-03-05T12:02:46+00:00",
+    "modified": "2025-08-18T04:52:57+00:00",
+    "source": "01-Linux/1.1-中断管理/1.1.4-软中断和tasklet.md"
+  },
+  "683": {
+    "id": 683,
+    "title": "workqueue",
+    "url": "/683.html/workqueue之api与数据结构/",
+    "canonical": "https://www.laumy.tech/683.html/workqueue之api与数据结构/",
+    "description": "API接口 初始化 函数 说明 DECLARE_WORK(n, f) 静态定义一个work，实际就是定义一个struct work_struct的全局变量。 DECLARE_DELAYED_WORK(_work, _func) 静态定义一个work，与上面的区别就是work可以在指定时间之后再由线程来执行。 INIT_WORK(_work, _func) 可",
+    "cover": "http://8.134.108.235/wp-content/uploads/2023/11/wp_editor_md_c819144f78a2488094de7ae1c6fcde74.jpg",
+    "category": "中断管理",
+    "category_path": [
+      "Linux",
+      "中断管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "中断管理"
+    ],
+    "tags": [],
+    "date": "2023-03-05T15:20:14+00:00",
+    "modified": "2025-08-18T04:52:50+00:00",
+    "source": "01-Linux/1.1-中断管理/1.1.5-workqueue.md"
+  },
+  "692": {
+    "id": 692,
+    "title": "中断小结",
+    "url": "/692.html/workqueue之线程池动态管理/",
+    "canonical": "https://www.laumy.tech/692.html/workqueue之线程池动态管理/",
+    "description": "上下文 是否抢占 顶半部 中断 否 Softirq/tasklet 软中断 是 workqueue 进程 是 threaded_irq 进程 是 Tasklet：底半部，优先级比较高，处理函数中不能睡眠。 workqueue：底半部，处理函数可以睡眠，也可以执行比较长的应用。 threaded_irq：底半部，处理函数可以睡眠，也可以执行比较长的应用，支持I",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_ab2e4fe23e14c02bb29a7f1f4c2374bf.jpg",
+    "category": "中断管理",
+    "category_path": [
+      "Linux",
+      "中断管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "中断管理"
+    ],
+    "tags": [],
+    "date": "2023-03-11T12:28:32+00:00",
+    "modified": "2025-08-18T04:52:42+00:00",
+    "source": "01-Linux/1.1-中断管理/1.1.6-中断小结.md"
+  },
+  "3248": {
+    "id": 3248,
+    "title": "freertos任务调度原理",
+    "url": "/3248.html/freertos任务调度原理/",
+    "canonical": "https://www.laumy.tech/3248.html/freertos任务调度原理/",
+    "description": "",
+    "cover": "",
+    "category": "RTOS",
+    "category_path": [
+      "RTOS"
+    ],
+    "root_category": "RTOS",
+    "raw_categories": [
+      "RTOS"
+    ],
+    "tags": [],
+    "date": "2023-03-11T14:03:15+00:00",
+    "modified": "2026-03-15T14:03:53+00:00",
+    "source": "03-RTOS/3.1-freertos任务调度原理.md"
+  },
+  "714": {
+    "id": 714,
+    "title": "进程基本概念",
+    "url": "/714.html/1-进程基本概念/",
+    "canonical": "https://www.laumy.tech/714.html/1-进程基本概念/",
+    "description": "进程标识 进程是程序加载到内存的执行过程。进程与程序相比用于操作系统的资源如内存空间、文件、signal等。对于进程的标识我们使用 process id来标识（PID） 。 线程是进程中活跃状态的实体，也是操作系统实际调度的基本单元。进程中的所有线程是共享一些资源的。在linux中，实际上不区分进程和线程，进程和线程都是task_struct结构体来描述。在",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_db7d532557f8e79e8a7b296e3fb1629d.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-03-12T09:24:23+00:00",
+    "modified": "2024-11-17T05:35:57+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.1-进程基本概念.md"
+  },
+  "3246": {
+    "id": 3246,
+    "title": "CCMU驱动",
+    "url": "/3246.html/ccmu驱动/",
+    "canonical": "https://www.laumy.tech/3246.html/ccmu驱动/",
+    "description": "",
+    "cover": "",
+    "category": "外设",
+    "category_path": [
+      "外设"
+    ],
+    "root_category": "外设",
+    "raw_categories": [
+      "外设"
+    ],
+    "tags": [],
+    "date": "2023-03-15T14:00:14+00:00",
+    "modified": "2026-03-15T14:02:54+00:00",
+    "source": "07-外设/7.1-CCMU驱动.md"
+  },
+  "718": {
+    "id": 718,
+    "title": "markdown使用说明",
+    "url": "/718.html/markdown使用说明/",
+    "canonical": "https://www.laumy.tech/718.html/markdown使用说明/",
+    "description": "首行缩进 `&ensp`; //半角的空格 `&emsp`; //全角的空格（中文的话，一般就直接用两个 即可） 着色 <span style=\"color:red;\">红色文字</span> <span style=\"color:blue;\">蓝色文字</span> <span style=\"color:green;\">绿色文字</span> <span ",
+    "cover": "",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2023-03-18T01:38:24+00:00",
+    "modified": "2023-12-04T12:26:34+00:00",
+    "source": "12-其他/12.2-markdown使用说明.md"
+  },
+  "716": {
+    "id": 716,
+    "title": "进程创建",
+    "url": "/716.html/2-进程创建/",
+    "canonical": "https://www.laumy.tech/716.html/2-进程创建/",
+    "description": "fork创建了一个新的进程，也就是fork执行后就会返回两次，分别是父进程返回和子进程返回。 exec可以加载新的程序运行（原程序是A，可以在A中运行后加载可执行程序B，B是A的子进程）。而如果没有exec，A程序执行fork后，仅只是将fork之后的代码复制了一份。exec最早是为了实现shell而涉及的，目的是能够A程序启动B程序后，可以改变进程的环境变",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_8eb9f02bb6ced6af4038bd27cef6a33d.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-03-19T01:48:36+00:00",
+    "modified": "2024-11-14T07:20:12+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.2-进程创建.md"
+  },
+  "3251": {
+    "id": 3251,
+    "title": "无线网络全面剖析",
+    "url": "/3251.html/无线网络全面剖析/",
+    "canonical": "https://www.laumy.tech/3251.html/无线网络全面剖析/",
+    "description": "",
+    "cover": "",
+    "category": "网络",
+    "category_path": [
+      "网络"
+    ],
+    "root_category": "网络",
+    "raw_categories": [
+      "网络"
+    ],
+    "tags": [],
+    "date": "2023-03-20T14:04:36+00:00",
+    "modified": "2026-03-15T14:05:20+00:00",
+    "source": "08-网络/8.1-无线网络全面剖析.md"
+  },
+  "732": {
+    "id": 732,
+    "title": "进程调度简介",
+    "url": "/732.html/3-进程调度简介/",
+    "canonical": "https://www.laumy.tech/732.html/3-进程调度简介/",
+    "description": "调度类别 进程调度依赖于调度策略（schedule policy），linux内核把相同的调度策略抽象成调度类（schedule class）。不同类型的进程采用不同的调度策略，目前Linux内核中默认采用5种调度类，分别是stop、deadline、realtime、CFS和idle。 Stop：最高优先级的进程，只在多核场景下启用，用于热插拔等场景下停止",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_e03f85a17bb9caf7edeb3c67b198c1a2.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-03-25T02:10:03+00:00",
+    "modified": "2024-11-14T07:20:53+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.3-进程调度简介.md"
+  },
+  "734": {
+    "id": 734,
+    "title": "CFS调度原理",
+    "url": "/734.html/4-cfs调度原理/",
+    "canonical": "https://www.laumy.tech/734.html/4-cfs调度原理/",
+    "description": "上一章节中描述了Linux系统中支持多种调度，不同的调度有不同的优先级范围。对于普通进程使用的CFS调度（Completely Fair Scheduler，CFS）。完全公平调度主要核心思想就是保证在一段时间内，每个进程能够运行的时间趋于相等。 为了尽可能的保证一段时间内，每个进程能够运行的时间相等，那么系统就需要计算出每个进程每次能够运行的时间runti",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_f1e8108aa95e9b00d7f2e69657da380a.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-03-26T02:16:44+00:00",
+    "modified": "2024-11-14T07:21:42+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.4-CFS调度原理.md"
+  },
+  "736": {
+    "id": 736,
+    "title": "CFS分组调度",
+    "url": "/736.html/5-cfs分组调度/",
+    "canonical": "https://www.laumy.tech/736.html/5-cfs分组调度/",
+    "description": "Linux系统都是支持多用户登录，如果一个Linux系统两个用户存在不同的数量的进程，假设A用户有10个进程，B用户有20个进程，如果系统对这30个进程进行平分CPU，实际上是不公平的，因此引入了组调度的概念，即A用户对CPU的占用应该跟B用对CPU的占用各自为50%，A/B用户下的进程再根据得到占用进行划分。系统中有cfs组调度和rt组调度，本小节主要以c",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_f1872becbdd34723c385b1b47f19f12e.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-04-01T02:29:46+00:00",
+    "modified": "2024-11-14T07:22:47+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.5-CFS分组调度.md"
+  },
+  "738": {
+    "id": 738,
+    "title": "CFS调度实现",
+    "url": "/738.html/6-cfs调度实现/",
+    "canonical": "https://www.laumy.tech/738.html/6-cfs调度实现/",
+    "description": "时间计算 vruntime与runtime static void update_curr(struct cfs_rq *cfs_rq) { struct sched_entity *curr = cfs_rq->curr; u64 now = rq_clock_task(rq_of(cfs_rq)); u64 delta_exec; if (unlikel",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_8394a28d228bf21f49758af95b477365.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-04-02T02:45:00+00:00",
+    "modified": "2024-11-14T07:23:47+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.6-CFS调度实现.md"
+  },
+  "742": {
+    "id": 742,
+    "title": "负载均衡之负载跟踪",
+    "url": "/742.html/7-负载均衡之负载跟踪简介/",
+    "canonical": "https://www.laumy.tech/742.html/7-负载均衡之负载跟踪简介/",
+    "description": "各任务负载、各cpu的算力（频率+架构）、任务迁移开销（调度域，调度组）。 root@Linux:/# cat /proc/loadavg 3.49 3.43 3.54 4/131 3065 cat /proc/loadavg可以获取CPU全局平均负载，前面的三个值分别表示为1分钟、5分钟、15分钟系统平均负载，第四个字段正在运行的进程数量/总进程数量，第五",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_b725ab47056127971680f54b86cc9316.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-04-08T02:52:13+00:00",
+    "modified": "2024-11-14T07:25:03+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.7-负载均衡之负载跟踪.md"
+  },
+  "750": {
+    "id": 750,
+    "title": "负载均衡之调度组和调度域",
+    "url": "/750.html/10-负载均衡之调度组和调度域/",
+    "canonical": "https://www.laumy.tech/750.html/10-负载均衡之调度组和调度域/",
+    "description": "概述 从上一章节大概应该能够理解负载和利用率的区别了，当一个进程正在运行或者即使没有在cpu上运行，而在就绪队列中等待运行，那么他依旧消耗cpu的负载。这是合理的，因为cpu的就绪队列有10个任务等待着运行与5个任务等待运行，明显是10个任务的负载重。而利用率只是关注正在运行的任务而不包含在就绪队列的任务，在某个时间段内可能某个任务的cpu利用率很高，但是占",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_7899f9010271eec5a7d023fca4dd488b.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-04-16T03:52:22+00:00",
+    "modified": "2024-11-14T07:26:10+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.8-负载均衡之调度组和调度域.md"
+  },
+  "752": {
+    "id": 752,
+    "title": "负载均衡之均衡",
+    "url": "/752.html/10-负载均衡之均衡/",
+    "canonical": "https://www.laumy.tech/752.html/10-负载均衡之均衡/",
+    "description": "何时均衡 在linux内核中，有一些场景会触发任务均衡的分布在系统的各个cpu上，可以分为以下几个场景： 任务放置：task placement，fork创建的任务、sched_exec的任务或者阻塞被唤醒的任务，这些任务加入就绪队列时，可以确定放置任务到那个cpu上。 主动均衡：active upmigration，一个低算力的cpu无法运行某个重载任务时",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_a5dc98e9783e5cd283b2fd0214c642df.jpg",
+    "category": "进程调度",
+    "category_path": [
+      "Linux",
+      "进程调度"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "进程调度"
+    ],
+    "tags": [],
+    "date": "2023-04-22T03:53:42+00:00",
+    "modified": "2024-11-14T07:26:53+00:00",
+    "source": "01-Linux/1.6-进程调度/1.6.9-负载均衡之均衡.md"
+  },
+  "761": {
+    "id": 761,
+    "title": "文件系统基本概念",
+    "url": "/761.html/文件系统基本概念/",
+    "canonical": "https://www.laumy.tech/761.html/文件系统基本概念/",
+    "description": "mount的机制是如何实现的？ inode是如何分配的。磁盘inode和内存inode有什么区别？ dentry缓存是怎么回事？如何管理？ free命令中Cache和buff有什么区别？Page cache了？如何管理文件数据缓存？ 扇区与簇 物理块和扇区，逻辑块和簇是相同概念。扇区（物理块）是磁盘最小的存储单元，磁头从磁盘读取数据的最小单元，一般是512B",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_a2aa4567ad1f5c58340fe7fbb6b16f0d.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-05-13T05:21:59+00:00",
+    "modified": "2024-11-14T06:06:11+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.1-文件系统基本概念.md"
+  },
+  "763": {
+    "id": 763,
+    "title": "文件系统磁盘管理",
+    "url": "/763.html/文件系统磁盘管理/",
+    "canonical": "https://www.laumy.tech/763.html/文件系统磁盘管理/",
+    "description": "磁盘空间布局 Extx将磁盘划分为等份的若干区域（最后一个区域可能会小一些），这些区域称为块组（block group）。磁盘以块组为单位进行管理。每个块组再划分为相同大小的block，这些block按功能分为原数据区和数据区。原数据区域也是占用block空间，但是是用于描述管理磁盘的信息，其中块0的原数据区域是相对比较复杂的，其包含了引导块、超级块、块组描",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_3094f9387032029d6524d9d20fe0a6ca.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-05-14T05:26:00+00:00",
+    "modified": "2024-11-14T06:16:14+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.2-文件系统磁盘管理.md"
+  },
+  "3244": {
+    "id": 3244,
+    "title": "CSI接口简介",
+    "url": "/3244.html/csi接口简介/",
+    "canonical": "https://www.laumy.tech/3244.html/csi接口简介/",
+    "description": "YUV采样格式 色度通道（UV）的采样率可以低于亮度通道（Y），而不会显着降低感知质量。采样的格式可以分为YUV444 YUV422 YUV420 YUV111。这里的4表示可以理解为像素，以 YUV444为例，则表示每4个像素中有4个Y分量，4个U分量，4个V分量。而YUV422，则表示每4个像素中有4个Y分量，2个U分量，2个V分量。 YUV 4:4:4",
+    "cover": "/wp-content/uploads/2026/03/wp_editor_md_9ded423d287a7528156c9b380179326c_1773582814.png",
+    "category": "外设",
+    "category_path": [
+      "外设"
+    ],
+    "root_category": "外设",
+    "raw_categories": [
+      "外设"
+    ],
+    "tags": [],
+    "date": "2023-05-15T13:51:17+00:00",
+    "modified": "2026-03-15T13:59:44+00:00",
+    "source": "07-外设/7.2-CSI接口简介.md"
+  },
+  "765": {
+    "id": 765,
+    "title": "虚拟文件系统",
+    "url": "/765.html/虚拟文件系统/",
+    "canonical": "https://www.laumy.tech/765.html/虚拟文件系统/",
+    "description": "Linux系统中支持多种不同的文件系统，为了是用户可以通过一个文件系统操作界面，对各种不同的文件系统进行操作，在具体的文件系统（ext2/ext4等）之上增加了一层抽象一个统一的虚拟文件系统界面，向上提供归一化的文件操作，这个抽象层就称为虚拟文件系统。 为了实现抽象层，Linux内核定义了4个重要的数据结构对象。 supper block: 管理文件系统的相",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_8268464056e615fff2c2c6028c3bf923.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-05-20T05:31:40+00:00",
+    "modified": "2024-11-14T06:12:08+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.3-虚拟文件系统.md"
+  },
+  "767": {
+    "id": 767,
+    "title": "实现简单文件系统",
+    "url": "/767.html/实现简单文件系统/",
+    "canonical": "https://www.laumy.tech/767.html/实现简单文件系统/",
+    "description": "文件系统注册与挂载 static struct file_system_type simplefs_fs_type = { .owner = THIS_MODULE, .name = \"simplefs\", .mount = simplefs_mount, .kill_sb = simplefs_kill_sb, }; static int __init i",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_cf158055b8de4a26b4af450e53c5adfa.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-05-21T05:38:35+00:00",
+    "modified": "2024-11-14T06:13:10+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.4-实现简单文件系统.md"
+  },
+  "770": {
+    "id": 770,
+    "title": "文件系统常见系统调用",
+    "url": "/770.html/文件系统常见系统调用/",
+    "canonical": "https://www.laumy.tech/770.html/文件系统常见系统调用/",
+    "description": "上一章节中，我们编写了没有带磁盘设备的文件系统，了解了文件系统操作的大致流程，本章节我们继续在上一章节的基础上完善文件系统，并梳理从用户空间到内核空间大致的调用流程。实验的代码我们使用开源的示例 https://github.com/sysprog21/simplefs/tree/master ，在启动本章节之前建议先搭建好试验环境，将simplefs挂载起",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_ab0e4b315b4839d6ff4e073fd3791a6a.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-05-27T05:42:32+00:00",
+    "modified": "2024-11-14T06:15:27+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.5-文件系统常见系统调用.md"
+  },
+  "772": {
+    "id": 772,
+    "title": "一切皆文件之字符设备",
+    "url": "/772.html/一切皆文件之字符设备/",
+    "canonical": "https://www.laumy.tech/772.html/一切皆文件之字符设备/",
+    "description": "#include <linux/module.h> #include <linux/fs.h> #include <linux/uaccess.h> #define DEVICE_NAME \"mychardev\" #define BUFFER_SIZE 1024 static char device_buffer[BUFFER_SIZE]; static i",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_85ad14b1958abe5e4e1bdba751564b82.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-05-28T05:46:30+00:00",
+    "modified": "2024-11-14T06:18:44+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.6-一切皆文件之字符设备.md"
+  },
+  "774": {
+    "id": 774,
+    "title": "一切皆文件之块设备驱动（一）",
+    "url": "/774.html/一切皆文件之块设备/",
+    "canonical": "https://www.laumy.tech/774.html/一切皆文件之块设备/",
+    "description": "块设备驱动简介 在linux系统中，有3大驱动类型，分别是：字符设备驱动、块设备驱动、网络设备驱动。块设备驱动与文件系统有着密不可分的关系，块设备是文件系统实际的数据传输单位，通常存储设备有eMMC，Nand/Nor flash，机械硬盘，固态硬盘等，这里所说的块设备驱动，实际就是这些存储设备驱动。块设备驱动与字符设备驱动有较大差异，块设备驱动是以块位单位进",
+    "cover": "/wp-content/uploads/2023/12/wp_editor_md_6e9f2cd13fec0f8325a29151ea196e01.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-06-03T05:55:01+00:00",
+    "modified": "2024-11-14T06:19:52+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.7-一切皆文件之块设备驱动（一）.md"
+  },
+  "1054": {
+    "id": 1054,
+    "title": "一切皆文件之块设备驱动（二）",
+    "url": "/1054.html/一切皆文件之块设备驱动（二）/",
+    "canonical": "https://www.laumy.tech/1054.html/一切皆文件之块设备驱动（二）/",
+    "description": "打开块设备 mknod 块设备同样要使用mknod创建设备节点，这与字符设备一样。会调用到init_special_inode填充inode的file_operations，只不过块设备注册的是def_blk_fops。 void init_special_inode(struct inode *inode, umode_t mode, dev_t rdev",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_8cb0c52c358ef8ad24b7aef183457582.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-06-04T05:31:35+00:00",
+    "modified": "2024-11-14T06:20:30+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.8-一切皆文件之块设备驱动（二）.md"
+  },
+  "1048": {
+    "id": 1048,
+    "title": "一切皆文件之块设备驱动（三）",
+    "url": "/1048.html/一切皆文件之块设备驱动（三）/",
+    "canonical": "https://www.laumy.tech/1048.html/一切皆文件之块设备驱动（三）/",
+    "description": "块设备驱动示例 #include <linux/blk_types.h> #include <linux/blkdev.h> #include <linux/device.h> #include <linux/blk-mq.h> #include <linux/list.h> #include <linux/module.h> #include <linux",
+    "cover": "/wp-content/uploads/2023/12/wp_editor_md_3b39892a88b0e1977741fd577a769fa7.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-06-04T05:33:08+00:00",
+    "modified": "2025-08-11T08:19:09+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.9-一切皆文件之块设备驱动（三）.md"
+  },
+  "1041": {
+    "id": 1041,
+    "title": "一切皆文件之块设备驱动（四）",
+    "url": "/1041.html/一切皆文件之块设备驱动（四）/",
+    "canonical": "https://www.laumy.tech/1041.html/一切皆文件之块设备驱动（四）/",
+    "description": "实验环境 kernel version: linux 5.15 kernel module: simpleblk.ko 参考上一章节 application：app_test 参考上一章节 块设备无文件系统方式读写 写数据 存储设备没有格式化挂载文件系统，那么对磁盘设备的操作会经过/dev/xxx tmpfs文件系统和bdev伪文件系统组合的方式读写磁盘。 ",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_c69fe5fb31aa6d753d775db469da9896.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-06-04T06:24:24+00:00",
+    "modified": "2024-11-14T06:22:37+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.10-一切皆文件之块设备驱动（四）.md"
+  },
+  "1043": {
+    "id": 1043,
+    "title": "一切皆文件之块设备驱动（五）",
+    "url": "/1043.html/一切皆文件之块设备驱动（五）/",
+    "canonical": "https://www.laumy.tech/1043.html/一切皆文件之块设备驱动（五）/",
+    "description": "实验环境 准备 kernel version: linux 5.15 kernel module: 块设备：simpleblk.ko 文件系统：simplefs.ko application： 制作文件系统：mkfs.simplefs 步骤 1.加载块设备驱动：insmod simpleblk.ko 2.加载文件系统：insmod simplefs.ko 3",
+    "cover": "/wp-content/uploads/2023/12/wp_editor_md_2f196a7cbc45e506672b1e90458d7272.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-06-04T06:26:18+00:00",
+    "modified": "2024-11-14T06:23:18+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.11-一切皆文件之块设备驱动（五）.md"
+  },
+  "786": {
+    "id": 786,
+    "title": "内存管理概述",
+    "url": "/786.html/内存管理概述/",
+    "canonical": "https://www.laumy.tech/786.html/内存管理概述/",
+    "description": "地址空间 虚拟地址：程序使用的内存地址；物理地址：硬件的地址空间。虚拟地址通过MMU转化为物理地址，虚拟地址的长度与实际的物理内存容量没有关系，从系统中每个进程的角度看，地址空间的进程无法感知其他进程的存在。 32位cpu处理的地址空间为2^32=4G，所以虚拟地址空间为4G，分为用户空间和内核空间。用户空间的范围0~TASK_SIZE（可配置）通常为0x0",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_cb7636562b9588e0d3070794adffec4e.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-06-04T08:52:50+00:00",
+    "modified": "2025-08-18T04:55:22+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.1-内存管理概述.md"
+  },
+  "776": {
+    "id": 776,
+    "title": "文件系统缓存",
+    "url": "/776.html/文件系统缓存/",
+    "canonical": "https://www.laumy.tech/776.html/文件系统缓存/",
+    "description": "#To free pagecache echo 1 > /proc/sys/vm/drop_caches #To free dentry and inode cache echo 2 > /proc/sys/vm/drop_caches #To free pagecache,dentry cache,inode cache echo 3 > /proc/sy",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_4563d1adba322baf728d76cc5d1408c9.jpg",
+    "category": "文件系统",
+    "category_path": [
+      "Linux",
+      "文件系统"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "文件系统"
+    ],
+    "tags": [],
+    "date": "2023-06-05T04:07:57+00:00",
+    "modified": "2024-11-14T06:24:07+00:00",
+    "source": "01-Linux/1.4-文件系统/1.4.12-文件系统缓存.md"
+  },
+  "788": {
+    "id": 788,
+    "title": "内存初始化基本概念",
+    "url": "/788.html/内存初始化之三级结构node、zone、page/",
+    "canonical": "https://www.laumy.tech/788.html/内存初始化之三级结构node、zone、page/",
+    "description": "三级结构Node、Zone、Page Node与内存架构UMA、NUMA UMA架构（uniform memory acces） 一致内存访问，所有CPU访问内存都需要过总线，距离都是一样的，所以每个处理器访问各个内存块都是同样快。如上图4个CPU都通过系统总线来访问物理内存DDR。目前大部分嵌入式系统或台式机系统采用UMA架构。 NUMA架构（Non-un",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_6d2fb92edac71f0ea5c3246ddc3268c6.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-06-10T09:02:09+00:00",
+    "modified": "2025-08-18T04:55:14+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.2-内存初始化基本概念.md"
+  },
+  "796": {
+    "id": 796,
+    "title": "内存初始化之页表基本操作",
+    "url": "/796.html/内存初始化之页表基本操作/",
+    "canonical": "https://www.laumy.tech/796.html/内存初始化之页表基本操作/",
+    "description": "页表级数 如何确定page table level？确定了VABITS和PAGES size之后，页表级数也可确定，根据内核的配置如下： config PGTABLE_LEVELS int default 2 if ARM64_16K_PAGES && ARM64_VA_BITS_36 default 2 if ARM64_64K_PAGES && ARM6",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_3be74c3ec0d0102af9dd1b1a1fd91fd7.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-06-18T09:14:26+00:00",
+    "modified": "2025-08-18T04:55:05+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.3-内存初始化之页表基本操作.md"
+  },
+  "798": {
+    "id": 798,
+    "title": "内存初始化之物理内存初始化",
+    "url": "/798.html/内存初始化之物理内存初始化（一）/",
+    "canonical": "https://www.laumy.tech/798.html/内存初始化之物理内存初始化（一）/",
+    "description": "恒等映射与内核镜像映射__create_page_tables preserve_boot_args：保持启动参数到boot_args[]数组 set_cpu_boot_maode_flag：设置关于cpu boot相关的全局变量 __create_page_tables：创建恒等映射页表，内核映像映射页表 __cpu_setup：为打开mmu做一些cpu相",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_0799025c3a2daf03a2a31ced36b88d37.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-07-01T09:26:41+00:00",
+    "modified": "2025-08-18T04:54:55+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.4-内存初始化之物理内存初始化.md"
+  },
+  "813": {
+    "id": 813,
+    "title": "伙伴系统",
+    "url": "/813.html/伙伴系统相关结构体/",
+    "canonical": "https://www.laumy.tech/813.html/伙伴系统相关结构体/",
+    "description": "相关结构体 核心结构体 struct pglist_data: 节点的描述，arm64 UMA架构中，只有一个节点。 struct zone node_zone[]：是一个数组，每个元素表示一个内存区域所对应的 struct zone 结构体。从名字可以看出，此数组的长度为 MAX_NR_ZONES，即它最多可以包含 MAX_NR_ZONES 个元素，因此，",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_145e1dfab349c93979e3382e570502f5.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-07-22T11:06:55+00:00",
+    "modified": "2025-08-18T04:54:37+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.5-伙伴系统.md"
+  },
+  "1988": {
+    "id": 1988,
+    "title": "slub分配器",
+    "url": "/1988.html/slub分配器/",
+    "canonical": "https://www.laumy.tech/1988.html/slub分配器/",
+    "description": "伙伴系统内存分配是以物理页面4KB为单位，但是实际使用的时候不会一下使用到4KB。实际使用中很多情况会以字节为单位。因此为了更精确的划分使用内存，linux内核在伙伴系统之上使用slab分配器来进行管理。截止目前linux内核中从最初slab发展到现在，衍生了slub，slob三种方式。Linux内核通过配置，选择其中一种。本章节主要围绕slub分配器进行说",
+    "cover": "/wp-content/uploads/2023/11/wp_editor_md_b83b6edbd01e56ece49cfe743e233112.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-08-13T03:48:45+00:00",
+    "modified": "2025-08-18T04:54:26+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.6-slub分配器.md"
+  },
+  "917": {
+    "id": 917,
+    "title": "连续内存分配器CMA",
+    "url": "/917.html/连续内存分配器cma/",
+    "canonical": "https://www.laumy.tech/917.html/连续内存分配器cma/",
+    "description": "CMA,contiguous memory allocator是内存管理子系统的一个模块，其主要为了解决分配连续的物理内存。尽管有了伙伴系统、slab分配器以及相关的内存回收机制，但是对于一些驱动如camera、display等模块一下需要分配比较大的一块连续物理内存，随着系统运行久之后，碎片化严重，分配较大的连续内存会变得困难，而同时又不能直接预留一块大的",
+    "cover": "/wp-content/uploads/2023/12/wp_editor_md_534a275819ad65dd5978c0d341381b29.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-08-19T05:41:00+00:00",
+    "modified": "2025-08-18T04:54:13+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.7-连续内存分配器CMA.md"
+  },
+  "919": {
+    "id": 919,
+    "title": "DMA与cache一致性",
+    "url": "/919.html/dma与cache一致性/",
+    "canonical": "https://www.laumy.tech/919.html/dma与cache一致性/",
+    "description": "无DMA时：设备与内存之间数据搬运需要依靠CPU来完成。 有DMA时：DMA可以直接完成设备与内存直接的数据搬运，不需要cpu介入。 DMA的引入，优点是数据在内存和设备之间的搬运不需要CPU参与，这极大降低了CPU的负荷。但是也引入了新的问题，即cpu读取到的数据不一定是最新的，是因为中间cache的存在（如上图有DMA的情况），具体表现为当DMA修改从D",
+    "cover": "/wp-content/uploads/2023/12/wp_editor_md_44b39971f1e5ad8a531008c14799ad49.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-08-20T05:50:53+00:00",
+    "modified": "2025-08-18T04:54:02+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.8-DMA与cache一致性.md"
+  },
+  "958": {
+    "id": 958,
+    "title": "进程虚拟内存",
+    "url": "/958.html/进程虚拟内存-2/",
+    "canonical": "https://www.laumy.tech/958.html/进程虚拟内存-2/",
+    "description": "进程虚拟地址空间 Executable and Linkable Format（ELF） 上图是可执行文件的内容结构图，由ELF header、program headers、各section、sections headers组成。 - ELF header：描述整个文件的基本属性，如文件版本号、目标机器型号、程序入口地址等。 - program heade",
+    "cover": "/wp-content/uploads/2023/12/wp_editor_md_084108bffd6a37851ac96f61c55c3863.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-08-26T13:11:38+00:00",
+    "modified": "2024-11-14T07:12:48+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.9-进程虚拟内存.md"
+  },
+  "968": {
+    "id": 968,
+    "title": "wordpress设定固定链接",
+    "url": "/968.html/wordpress设定固定链接/",
+    "canonical": "https://www.laumy.tech/968.html/wordpress设定固定链接/",
+    "description": "仪表盘设置固定链接 wordpress仪表盘面板->设置->固定链接 这里选择自定义结构：htttps://your.domain.tech/%post_id%.html 网站支持伪静态 按照上面方法修改后，发现访问之前的文章出现404，那是没有设置网站环境支持伪静态，使用Nginx服务器，所以需要修改/etc/nginx/nginx.conf文件，注意该文",
+    "cover": "",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2023-08-27T02:26:16+00:00",
+    "modified": "2023-12-06T02:27:35+00:00",
+    "source": "12-其他/12.3-wordpress设定固定链接.md"
+  },
+  "962": {
+    "id": 962,
+    "title": "内存测量",
+    "url": "/962.html/内存测量/",
+    "canonical": "https://www.laumy.tech/962.html/内存测量/",
+    "description": "系统占用内存 free 旧版本free $ free total used free shared buffers cached Mem: 65960636 63933576 2027060 73392 1602076 32628548 -/+ buffers/cache: 29702952 36257684 Swap: 0 0 0 （1）第一行Mem：内存",
+    "cover": "/wp-content/uploads/2023/12/wp_editor_md_e4093f7be650c02635a1db87f9cb821f.jpg",
+    "category": "内存管理",
+    "category_path": [
+      "Linux",
+      "内存管理"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "内存管理"
+    ],
+    "tags": [],
+    "date": "2023-08-27T13:12:59+00:00",
+    "modified": "2024-11-14T07:14:03+00:00",
+    "source": "01-Linux/1.2-内存管理/1.2.10-内存测量.md"
+  },
+  "972": {
+    "id": 972,
+    "title": "使用wordpress搭建https client的测试服务器",
+    "url": "/972.html/使用wordpress搭建https-client的测试服务器/",
+    "canonical": "https://www.laumy.tech/972.html/使用wordpress搭建https-client的测试服务器/",
+    "description": "前置条件：将wordpress设置为固定链接，参考前面章节 http://www.laumy.tech/968.html 进行先设置。 外观->主题编辑器->function.php添加以下代码： add_action( 'rest_api_init', function () { // GET请求的路由 register_rest_route( 'myte",
+    "cover": "",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2023-12-06T03:01:29+00:00",
+    "modified": "2023-12-06T03:02:27+00:00",
+    "source": "12-其他/12.4-使用wordpress搭建https client的测试服务器.md"
+  },
+  "975": {
+    "id": 975,
+    "title": "wordpress怎么被google，百度搜索到。",
+    "url": "/975.html/博客可以被google，百度搜索到。/",
+    "canonical": "https://www.laumy.tech/975.html/博客可以被google，百度搜索到。/",
+    "description": "前置 先安装插件Yoast SEO,获取到XML 站点地图 Yoast SEO --》设置界面 --->API接口（拉到最下页面） 复制下面几个链接 然后登陆谷歌和百度添加到资源文件 谷歌 https://search.google.com/search-console/about?hl=zh-cn 百度 https://ziyuan.baidu.com/?",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_0e36079f59fcfbd6d466dd2ca06023d4.jpg",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2023-12-06T06:12:37+00:00",
+    "modified": "2024-05-21T11:36:50+00:00",
+    "source": "12-其他/12.5-wordpress怎么被google，百度搜索到。.md"
+  },
+  "1077": {
+    "id": 1077,
+    "title": "内存相关问题排查思路",
+    "url": "/1077.html/内存相关问题排查思路/",
+    "canonical": "https://www.laumy.tech/1077.html/内存相关问题排查思路/",
+    "description": "最近在项目上遇到一个棘手问题，有一块内存在运行过程中概率性的被异常修改，由于牵扯到多方的应用程序，受限于调试手段排查了不少时间，现简单总结下遇到此类问题的排查思路。 添加额外的magic 核心原理就是在malloc的时候，额外多申请一些内存，通常情况下是在头部和尾部多申请一块空间，填充固定的值如0x55,待调用free函数的时候就检测该头部和尾部的数据是否还",
+    "cover": "",
+    "category": "RTOS",
+    "category_path": [
+      "RTOS"
+    ],
+    "root_category": "RTOS",
+    "raw_categories": [
+      "RTOS"
+    ],
+    "tags": [],
+    "date": "2024-01-08T09:08:18+00:00",
+    "modified": "2025-06-12T08:33:48+00:00",
+    "source": "03-RTOS/3.2-内存相关问题排查思路.md"
+  },
+  "1079": {
+    "id": 1079,
+    "title": "SPI与DBI概念",
+    "url": "/1079.html/spi与dbi概念/",
+    "canonical": "https://www.laumy.tech/1079.html/spi与dbi概念/",
+    "description": "SPI 标准SPI 标准SPI接口，4根线CS、CLK、MISO、MOSI。4根线都是单线传输，主机通过MOSI发送数据，设备通过MISO发送数据给主机。标准的SPI可以支持全双工（发和收同时）、半双工（某个时刻发或收）、单双工（单方向传输，主机要么只能发送，要么只能接收）。 Dual SPI 双线SPI，顾名思义就是数据传输使用2根数据线。与标准SPI的线",
+    "cover": "/wp-content/uploads/2024/01/wp_editor_md_f1f109bf8df1c879e03a9d6fc735b013.jpg",
+    "category": "外设",
+    "category_path": [
+      "外设"
+    ],
+    "root_category": "外设",
+    "raw_categories": [
+      "外设"
+    ],
+    "tags": [],
+    "date": "2024-01-10T01:51:28+00:00",
+    "modified": "2024-01-10T01:57:17+00:00",
+    "source": "07-外设/7.3-SPI与DBI概念.md"
+  },
+  "1085": {
+    "id": 1085,
+    "title": "ELF格式解析",
+    "url": "/1085.html/elf格式解析/",
+    "canonical": "https://www.laumy.tech/1085.html/elf格式解析/",
+    "description": "编译过程 工具链把程序源文件翻译成可执行文件一般经理4个步骤：预处理、编译、汇编、链接。本章节关于静态链接和动态链接的过程主要就是在第4个过程。链接器会将输入目标文件(.o)经过加工后合并成一个输出文件，这里的输出文件以linux的ELF为例。链接器会将相同性质的段合并在一起，如将所有输入文件的\\\".text\\\"合并到输出文件的\\\".text\\\"段，接着是\\",
+    "cover": "/wp-content/uploads/2024/01/wp_editor_md_d1e60ab63ca46a82bde01c54980a0070.jpg",
+    "category": "调试",
+    "category_path": [
+      "调试"
+    ],
+    "root_category": "调试",
+    "raw_categories": [
+      "调试"
+    ],
+    "tags": [],
+    "date": "2024-01-14T01:56:12+00:00",
+    "modified": "2024-11-20T01:14:24+00:00",
+    "source": "09-调试/9.1-ELF格式解析.md"
+  },
+  "1091": {
+    "id": 1091,
+    "title": "静态链接与动态链接",
+    "url": "/1091.html/静态链接与动态链接/",
+    "canonical": "https://www.laumy.tech/1091.html/静态链接与动态链接/",
+    "description": "经过[ELF格式解析](http://www.laumy.tech/1085.html \\\\\"ELF格式解析\\\\\")章节描述，对ELF文件有了一定的了解，本章节继续来探讨处于链接阶段的：静态链接与动态链接。 静态链接 以下是本小节的实验代码。 ----> a.c extern int shared; int s; int main() { int a = 1",
+    "cover": "/wp-content/uploads/2024/01/wp_editor_md_3a5fd321b0149ea88c936a9277eb0ea0.jpg",
+    "category": "调试",
+    "category_path": [
+      "调试"
+    ],
+    "root_category": "调试",
+    "raw_categories": [
+      "调试"
+    ],
+    "tags": [],
+    "date": "2024-01-15T01:59:25+00:00",
+    "modified": "2024-11-20T01:16:36+00:00",
+    "source": "09-调试/9.2-静态链接与动态链接.md"
+  },
+  "1112": {
+    "id": 1112,
+    "title": "麦肯锡意识",
+    "url": "/1112.html/麦肯锡意识感悟/",
+    "canonical": "https://www.laumy.tech/1112.html/麦肯锡意识感悟/",
+    "description": "",
+    "cover": "/wp-content/uploads/2024/02/wp_editor_md_9595a2a7eb7a98ce0eabfc5d7ede4847.jpg",
+    "category": "阅读",
+    "category_path": [
+      "阅读"
+    ],
+    "root_category": "阅读",
+    "raw_categories": [
+      "阅读"
+    ],
+    "tags": [],
+    "date": "2024-02-23T09:49:33+00:00",
+    "modified": "2024-11-14T09:08:05+00:00",
+    "source": "11-阅读/11.2-麦肯锡意识.md"
+  },
+  "1127": {
+    "id": 1127,
+    "title": "环境搭建",
+    "url": "/1127.html/环境搭建/",
+    "canonical": "https://www.laumy.tech/1127.html/环境搭建/",
+    "description": "risc-v32入门 https://github.com/plctlab/riscv-operating-system-mooc/blob/main/README_zh.md 按照上面的进行搭建，工具链和qemu都不用编译，直接解压设置环境变量后可使用，需要注意的是ubuntu使用20.04以上版本。 对于asm下面的code编译方式，需要修改一下Make",
+    "cover": "/wp-content/uploads/2024/04/wp_editor_md_60883b69c14032bcd5645c6f597d216b.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-03-09T13:22:32+00:00",
+    "modified": "2024-11-19T03:40:24+00:00",
+    "source": "02-RISC-V/2.1-环境搭建.md"
+  },
+  "1119": {
+    "id": 1119,
+    "title": "HTML+CSS学习随记",
+    "url": "/1119.html/学习笔记/",
+    "canonical": "https://www.laumy.tech/1119.html/学习笔记/",
+    "description": "HTML基本结构 示例1 <!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01//EN\\\" \\\"http://www.w3.org/TR/html4/strict.dtd\\\"> 1.这是 HTML 4.01 的文档类型声明，表示该文档遵循 HTML 4.01 标准。它告知浏览器页面的解析方式 <html lang=\\\"z",
+    "cover": "",
+    "category": "语言",
+    "category_path": [
+      "语言"
+    ],
+    "root_category": "语言",
+    "raw_categories": [
+      "语言"
+    ],
+    "tags": [],
+    "date": "2024-03-17T20:11:36+00:00",
+    "modified": "2025-08-11T08:19:23+00:00",
+    "source": "10-语言/10.1-HTML+CSS学习随记.md"
+  },
+  "1765": {
+    "id": 1765,
+    "title": "Javascript笔记",
+    "url": "/1765.html/javascript笔记/",
+    "canonical": "https://www.laumy.tech/1765.html/javascript笔记/",
+    "description": "JS JS简介 JS实现网页交互过程 javascript： 1.让用户和网页进行交互 网站登录功能， 点击，弹出一个按钮 滚动加载 返回底部 2.交互三要素 目标：网页中的那些html元素 事件：触发了什么事件 事件处理程序：针对事件要做什么要的动作 <body> <button id=\\\"chsize\\\"> 增大字体 </button> <script>",
+    "cover": "",
+    "category": "语言",
+    "category_path": [
+      "语言"
+    ],
+    "root_category": "语言",
+    "raw_categories": [
+      "语言"
+    ],
+    "tags": [],
+    "date": "2024-03-17T14:49:58+00:00",
+    "modified": "2025-08-11T08:19:18+00:00",
+    "source": "10-语言/10.2-Javascript笔记.md"
+  },
+  "1141": {
+    "id": 1141,
+    "title": "RISC-V汇编指令",
+    "url": "/1141.html/risc-v汇编指令/",
+    "canonical": "https://www.laumy.tech/1141.html/risc-v汇编指令/",
+    "description": "C源代码 unsigned int arithmetic(unsigned int a, unsigned int b) { unsigned int sum, diff, upper; sum = a + b; sum = sum + 2; diff = a - b; diff = diff -1; upper = 8192; return sum + d",
+    "cover": "/wp-content/uploads/2024/04/wp_editor_md_454b9e20357eb9da142038854279f4c7.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-04-11T14:32:42+00:00",
+    "modified": "2024-11-19T03:39:42+00:00",
+    "source": "02-RISC-V/2.2-RISC-V汇编指令.md"
+  },
+  "1150": {
+    "id": 1150,
+    "title": "qemu-system-riscv64 virt平台ROM代码启动分析",
+    "url": "/1150.html/qemu-system-riscv64-virt平台启动分析/",
+    "canonical": "https://www.laumy.tech/1150.html/qemu-system-riscv64-virt平台启动分析/",
+    "description": "为什么下面qemu启动elf时，text地址要从0x80000000开始？ qemu-system-riscv64 -machine virt -cpu c910v -nographic -smp 1 -bios none -kernel xxx.elf 从memory mapping角度 下面是qemu virt平台的memory mapping http",
+    "cover": "/wp-content/uploads/2024/04/wp_editor_md_3f4a793f5a7f526d2387778306628293.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-04-12T13:04:23+00:00",
+    "modified": "2024-11-19T03:39:05+00:00",
+    "source": "02-RISC-V/2.3-qemu-system-riscv64 virt平台ROM代码启动分析.md"
+  },
+  "1157": {
+    "id": 1157,
+    "title": "RISC-V指令集架构",
+    "url": "/1157.html/risc-v指令集架构/",
+    "canonical": "https://www.laumy.tech/1157.html/risc-v指令集架构/",
+    "description": "简介 RISC-V是一个通用的指令集架构（ISA），ISA是底层硬件电路面向上层软件程序提供的一层接口规范，ISA定义了： 基本数据类型，BYTE/HALFWORD/WORD 寄存器 指令 寻址模式 异常或中断处理方式 之所以需要ISA，是为上层软件提供一层抽象，制定规则和约束，让编程者不用关心具体的电路结构，目前的指令集架构有两种类别: - CISC复杂指",
+    "cover": "/wp-content/uploads/2024/04/wp_editor_md_09497aa55c661c176eb5beab5d2dd0c8.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-04-27T05:18:39+00:00",
+    "modified": "2024-11-19T03:38:40+00:00",
+    "source": "02-RISC-V/2.4-RISC-V指令集架构.md"
+  },
+  "1163": {
+    "id": 1163,
+    "title": "平头哥RISC-V+gdb+vscode调试",
+    "url": "/1163.html/平头哥risc-vgdbvscode调试/",
+    "canonical": "https://www.laumy.tech/1163.html/平头哥risc-vgdbvscode调试/",
+    "description": "工具准备 T-HeadDebugServer工具： https://www.xrvm.cn/community/download?id=4238019891233361920 T-HeadDebugServer使用说明： https://www.xrvm.cn/community/download?id=4170589434888130560 vscode下",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_c3f838b6069cbf2b18e89b74313be139.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-07T12:42:05+00:00",
+    "modified": "2025-05-03T12:46:56+00:00",
+    "source": "02-RISC-V/2.5-平头哥RISC-V+gdb+vscode调试.md"
+  },
+  "1169": {
+    "id": 1169,
+    "title": "平头哥E90X的head.S分析",
+    "url": "/1169.html/平头哥e90x的head-s分析/",
+    "canonical": "https://www.laumy.tech/1169.html/平头哥e90x的head-s分析/",
+    "description": "关闭中断 /* disable interrupt */ li t0, MR_MIE --- t0=0x08 csrc mstatus, t0 --- mstatus = mstatus | ~t0 csrw mie, zero --- mie = zero mstatus第4bit清0，mie清0。 设置异常处理入口 /* setup the addres",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_654ac9ad45d1a7b860525a5fce358d03.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-09T09:45:57+00:00",
+    "modified": "2024-11-19T01:14:37+00:00",
+    "source": "02-RISC-V/2.6-平头哥E90X的head.S分析.md"
+  },
+  "1171": {
+    "id": 1171,
+    "title": "平头哥E90X异常处理",
+    "url": "/1171.html/平头哥e90x异常处理/",
+    "canonical": "https://www.laumy.tech/1171.html/平头哥e90x异常处理/",
+    "description": "上下文入栈保存 addi sp, sp, -portCONTEXT_SIZE ----开辟一段栈空间，这里的sp可能是主栈或任务栈 store_x x1, 1 * portWORD_SIZE( sp ) ----依次存储相关寄存器 store_x x5, 2 * portWORD_SIZE( sp ) store_x x6, 3 * portWORD_SIZ",
+    "cover": "",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-09T10:38:14+00:00",
+    "modified": "2024-11-19T01:15:18+00:00",
+    "source": "02-RISC-V/2.7-平头哥E90X异常处理.md"
+  },
+  "1175": {
+    "id": 1175,
+    "title": "平头哥E90X中断处理汇编部分",
+    "url": "/1175.html/平头哥e90x中断处理汇编部分/",
+    "canonical": "https://www.laumy.tech/1175.html/平头哥e90x中断处理汇编部分/",
+    "description": "任务上下文保存 addi sp, sp, -portCONTEXT_SIZE store_x x1, 1 * portWORD_SIZE( sp ) store_x x5, 2 * portWORD_SIZE( sp ) store_x x6, 3 * portWORD_SIZE( sp ) store_x x7, 4 * portWORD_SIZE( sp",
+    "cover": "",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-09T11:11:57+00:00",
+    "modified": "2024-05-09T11:11:57+00:00",
+    "source": "02-RISC-V/2.8-平头哥E90X中断处理汇编部分.md"
+  },
+  "1177": {
+    "id": 1177,
+    "title": "RISC-V架构与FreeRTOS任务栈变化",
+    "url": "/1177.html/risc-v架构与freertos任务调度/",
+    "canonical": "https://www.laumy.tech/1177.html/risc-v架构与freertos任务调度/",
+    "description": "栈的基本概念 在FreeRTOS中，每个任务有一个全局的tskTCB实例，pxCurrentTCB指针指向的是正在运行的任务实例，有三个和栈相关的变量pxTopOfStack和pxStack，pxEndOfStack。 pxTopOfStack指向当前堆栈栈顶，随着进栈出栈，pxTopOfStack指向的位置是会变化的； pxStack指向当前堆栈的起始位置",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_287d5adca82e4cebb65d666347e94fd1.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-10T09:42:34+00:00",
+    "modified": "2024-11-19T01:16:28+00:00",
+    "source": "02-RISC-V/2.9-RISC-V架构与FreeRTOS任务栈变化.md"
+  },
+  "1186": {
+    "id": 1186,
+    "title": "qemu+opensbi+uboot+linux+busybox启动环境搭建",
+    "url": "/1186.html/qemuopensbiubootlinuxbusybox启动环境搭建/",
+    "canonical": "https://www.laumy.tech/1186.html/qemuopensbiubootlinuxbusybox启动环境搭建/",
+    "description": "前置条件 qemu+工具链安装 安装好交叉编译工具链和qemu环境，参考： http://www.laumy.tech/1127.html#risc-v64_Xuantie 代码下载 opensbi：[version: v1.2](https://gitee.com/tinylab/qemu-opensbi \\\"version: v1.2\\\") uboot:",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_9904e694a17356e4682f1c5d66baaad0.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-14T11:30:11+00:00",
+    "modified": "2024-11-19T01:18:52+00:00",
+    "source": "02-RISC-V/2.10-qemu+opensbi+uboot+linux+busybox启动环境搭建.md"
+  },
+  "1192": {
+    "id": 1192,
+    "title": "opensbi分析（一）",
+    "url": "/1192.html/opensbi分析（一）/",
+    "canonical": "https://www.laumy.tech/1192.html/opensbi分析（一）/",
+    "description": "引导Hart启动 _start: /* Find preferred boot HART id */ MOV_3R s0, a0, s1, a1, s2, a2 # 将a0,a1,a2的参数分别赋值为s0,s1,s2,这3个参数是前一阶段传入的参数。 # a0: hart id # a1: device tree # a2: struct fw_dynami",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_9c3807da2c0941724b7dbfc629354ac2.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-16T12:45:33+00:00",
+    "modified": "2024-11-19T01:20:13+00:00",
+    "source": "02-RISC-V/2.11-opensbi分析（一）.md"
+  },
+  "1204": {
+    "id": 1204,
+    "title": "opensbi分析（二）",
+    "url": "/1204.html/opensbi分析（二）/",
+    "canonical": "https://www.laumy.tech/1204.html/opensbi分析（二）/",
+    "description": "待补充...... 参考： 玄铁处理器Linux移植",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_de137d3f339bba2861223978a646f5d1.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-17T11:25:24+00:00",
+    "modified": "2024-05-17T11:26:23+00:00",
+    "source": "02-RISC-V/2.12-opensbi分析（二）.md"
+  },
+  "1212": {
+    "id": 1212,
+    "title": "RISC-V动态链接实验",
+    "url": "/1212.html/risc-v动态链接实验/",
+    "canonical": "https://www.laumy.tech/1212.html/risc-v动态链接实验/",
+    "description": "准备 实验环境 qemu linux启动环境： http://www.laumy.tech/1186.html 代码 动态库 cat swap.c #include <stdio.h> int shared = 1; int z; void swap(int *a, int *b) { printf(\"%s,%d\\\\n\",__func__,__LINE__)",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_37f368d5fce10c18a29432289ae7c530.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-18T06:58:12+00:00",
+    "modified": "2025-08-11T08:20:03+00:00",
+    "source": "02-RISC-V/2.13-RISC-V动态链接实验.md"
+  },
+  "1214": {
+    "id": 1214,
+    "title": "RISC-V backtrace实现原理",
+    "url": "/1214.html/risc-v-backtrace实现原理/",
+    "canonical": "https://www.laumy.tech/1214.html/risc-v-backtrace实现原理/",
+    "description": "start_kernel addi sp,sp,-16 ---① 分配栈帧sp=sp-16,sp指向栈顶 sw ra,12(sp) ---② 将ra存储到sp+12的位置 sw s0,8(sp) xxxxxx jal ra, 6000dba2 <backtrace> xxxxxx lw s0,8(sp) lw ra,12(sp) addi sp,sp,16 ",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_28488988b05ce9451cdfe90bd5aecc29.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-05-21T07:51:07+00:00",
+    "modified": "2024-05-21T12:01:20+00:00",
+    "source": "02-RISC-V/2.14-RISC-V backtrace实现原理.md"
+  },
+  "1225": {
+    "id": 1225,
+    "title": "freertos栈溢出检测原理",
+    "url": "/1225.html/crash问题排查/",
+    "canonical": "https://www.laumy.tech/1225.html/crash问题排查/",
+    "description": "portSTACK_GROWTH > 0：栈向上生长 portSTACK_GROWTH < 0: 栈向下生长，本章使用栈向下生长 打开 configRECORD_STACK_HIGH_ADDRESS 1，将PCB中将打开pxEndOfStack，结构如下。 adress:0+ulStackDepth ------------------- pxEndOfSt",
+    "cover": "",
+    "category": "RTOS",
+    "category_path": [
+      "RTOS"
+    ],
+    "root_category": "RTOS",
+    "raw_categories": [
+      "RTOS"
+    ],
+    "tags": [],
+    "date": "2024-05-24T11:00:39+00:00",
+    "modified": "2025-06-12T08:33:24+00:00",
+    "source": "03-RTOS/3.3-freertos栈溢出检测原理.md"
+  },
+  "1228": {
+    "id": 1228,
+    "title": "kasan原理",
+    "url": "/1228.html/kasan原理/",
+    "canonical": "https://www.laumy.tech/1228.html/kasan原理/",
+    "description": "kasan是什么？（基本原理） kasan是用于内存检测的工具，能够检测内存以下异常。 buffer-overflow in heap,stack and globals use-after-free uninitialized-memory-read user-memory-access 如若要支持kasan需要多划分1/8的内存用于内存检测的管理，如上图",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_54ee3f7bb483f2711bf976d7be7473a8.jpg",
+    "category": "调试",
+    "category_path": [
+      "调试"
+    ],
+    "root_category": "调试",
+    "raw_categories": [
+      "调试"
+    ],
+    "tags": [],
+    "date": "2024-05-24T12:44:14+00:00",
+    "modified": "2024-11-20T01:09:51+00:00",
+    "source": "09-调试/9.3-kasan原理.md"
+  },
+  "1238": {
+    "id": 1238,
+    "title": "道德经",
+    "url": "/1238.html/道德经-第一章/",
+    "canonical": "https://www.laumy.tech/1238.html/道德经-第一章/",
+    "description": "第一章 原文 道可道，非常道；名可名，非常名。 无名天地之始，有名万物之母。 故常无，欲以观其妙；常有，欲以观其徼（jiao,叫）。 此两者，同出而异名，同谓之玄。 玄之又玄，众秒之门。 译文 “道”，如果可以说得出来，那么它就不是永恒不变的“道”（即不是那个“道”）。 “名”，如果可以具体命名，那么它就不是永恒不变的“名”。 无具体形象，无明确称谓，这是天",
+    "cover": "",
+    "category": "阅读",
+    "category_path": [
+      "阅读"
+    ],
+    "root_category": "阅读",
+    "raw_categories": [
+      "阅读"
+    ],
+    "tags": [],
+    "date": "2024-05-26T10:26:04+00:00",
+    "modified": "2025-06-14T14:10:03+00:00",
+    "source": "11-阅读/11.3-道德经.md"
+  },
+  "1256": {
+    "id": 1256,
+    "title": "freertos内存管理",
+    "url": "/1256.html/freertos内存管理/",
+    "canonical": "https://www.laumy.tech/1256.html/freertos内存管理/",
+    "description": "freertos一共有5种内存管理算法，heap3直接使用的是c库的管理算法，只是对c库封装了一层接口。本章节主要分析heap1、heap2、heap4； heap1 heap2 heap4 heap5 heap5与heap4相比，支持了允许内存堆跨越多个不连续的内存段，这种情况针对一颗soc内部有多块硬件存储设备而言就比较方便，如一个soc内置了1MB S",
+    "cover": "/wp-content/uploads/2024/05/wp_editor_md_6adc983a2528652d892331d49be15695.jpg",
+    "category": "RTOS",
+    "category_path": [
+      "RTOS"
+    ],
+    "root_category": "RTOS",
+    "raw_categories": [
+      "RTOS"
+    ],
+    "tags": [],
+    "date": "2024-05-29T07:45:37+00:00",
+    "modified": "2025-06-12T08:32:57+00:00",
+    "source": "03-RTOS/3.4-freertos内存管理.md"
+  },
+  "1267": {
+    "id": 1267,
+    "title": "Linux risc-v head.S调试记录",
+    "url": "/1267.html/linux-risc-v-head-s调试记录/",
+    "canonical": "https://www.laumy.tech/1267.html/linux-risc-v-head-s调试记录/",
+    "description": "调试准备 gdb调试 0x0000000080200000为opensbi跳转执行的物理地址，linux内核的img会加载到这个地址运行，如果要在这个地方断点，就b *(0x0000000080200000),没法对head.S中进行断点，因为linux加载后会变成虚拟地址。调试的符号需要把CONFIG_DEBUG_INFO=y打开。 li s4,-13 j",
+    "cover": "/wp-content/uploads/2024/06/wp_editor_md_bea9bd944eac8755afec8ce6e48abedd.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-06-13T12:55:52+00:00",
+    "modified": "2024-11-19T01:10:39+00:00",
+    "source": "02-RISC-V/2.15-Linux risc-v head.S调试记录.md"
+  },
+  "1276": {
+    "id": 1276,
+    "title": "Linux系统RISC-V架构启动流程分析之概述",
+    "url": "/1276.html/一、linux系统risc-v架构启动流程分析之概述/",
+    "canonical": "https://www.laumy.tech/1276.html/一、linux系统risc-v架构启动流程分析之概述/",
+    "description": "典型的linux系统启动流程如上，但本文主要探讨的是OS的启动流程，opensbi，uboot暂不涉及。主要围绕arch/riscv/kernel/head.S进行分析。 _start j _start_kernel _start_kernel arch init //关中断，关浮点检测，挑选一个主hart启动初始化序列 clear bss//清除BSS s",
+    "cover": "/wp-content/uploads/2024/07/wp_editor_md_916371e84407b542dab3272d403af53f.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T01:13:54+00:00",
+    "modified": "2025-08-11T08:19:55+00:00",
+    "source": "02-RISC-V/2.16-Linux系统RISC-V架构启动流程分析之概述.md"
+  },
+  "1278": {
+    "id": 1278,
+    "title": "arch初始化",
+    "url": "/1278.html/二、arch初始化/",
+    "canonical": "https://www.laumy.tech/1278.html/二、arch初始化/",
+    "description": "_start_kernel: /* Mask all interrupts */ csrw CSR_SIE, zero csrw CSR_SIP, zero ① 将sie，sip寄存器设置为0，关闭所有中断和清除中断的pending（不是异常）。 /* Load the global pointer */ .option push .option norel",
+    "cover": "",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T01:14:05+00:00",
+    "modified": "2025-08-11T08:19:51+00:00",
+    "source": "02-RISC-V/2.17-arch初始化.md"
+  },
+  "1280": {
+    "id": 1280,
+    "title": "虚拟地址与物理地址概念",
+    "url": "/1280.html/三、虚拟地址与物理地址概念/",
+    "canonical": "https://www.laumy.tech/1280.html/三、虚拟地址与物理地址概念/",
+    "description": "地址空间 虚拟地址：程序使用的内存地址；物理地址：硬件的地址空间。虚拟地址通过MMU转化为物理地址，虚拟地址的长度与实际的物理内存容量没有关系，从系统中每个进程的角度看，地址空间的进程无法感知其他进程的存在。 32位cpu处理的地址空间为2^32=4G，所以虚拟地址空间为4G，分为用户空间和内核空间。用户空间的范围0~TASK_SIZE（可配置）通常为0x0",
+    "cover": "/wp-content/uploads/2024/07/wp_editor_md_1f236d08257ff16646b4ff4b3e00e63b.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T02:26:36+00:00",
+    "modified": "2025-08-15T13:14:44+00:00",
+    "source": "02-RISC-V/2.18-虚拟地址与物理地址概念.md"
+  },
+  "1282": {
+    "id": 1282,
+    "title": "临时虚拟地址空间映射",
+    "url": "/1282.html/四、临时虚拟地址空间映射/",
+    "canonical": "https://www.laumy.tech/1282.html/四、临时虚拟地址空间映射/",
+    "description": "概述 为什么要做临时虚拟地址空间映射？ 一旦开启MMU，PC的下一条指令地址会经过MMU转化，未开启MMU之前地址的翻译是不需要经过MMU转化直接访问。对应开启MMU之后，应该要使用虚拟地址，才能访问到正确的指令内存。 前面描述了虚拟地址转换为物理地址是通过MMU自动转换，但是需要给MMU创建好页表，这样MMU才能自动查询到物理地址。页表也是对应的物理内存，",
+    "cover": "/wp-content/uploads/2024/07/wp_editor_md_b4dc7dc2cd99e6cdaffbe6a5bba2bd34.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T02:35:00+00:00",
+    "modified": "2025-08-11T08:19:43+00:00",
+    "source": "02-RISC-V/2.19-临时虚拟地址空间映射.md"
+  },
+  "1284": {
+    "id": 1284,
+    "title": "使能MMU",
+    "url": "/1284.html/五、使能mmu/",
+    "canonical": "https://www.laumy.tech/1284.html/五、使能mmu/",
+    "description": "① 多核情况使能MMU .Lsecondary_start: #ifdef CONFIG_SMP /* Set trap vector to spin forever to help debug */ la a3, .Lsecondary_park csrw CSR_STVEC, a3 slli a3, a0, LGREG la a1, __cpu_up_s",
+    "cover": "",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T02:43:39+00:00",
+    "modified": "2025-08-11T08:19:40+00:00",
+    "source": "02-RISC-V/2.20-使能MMU.md"
+  },
+  "1286": {
+    "id": 1286,
+    "title": "虚拟地址空间与物理地址空间完整映射",
+    "url": "/1286.html/六、虚拟地址空间与物理地址空间完整映射/",
+    "canonical": "https://www.laumy.tech/1286.html/六、虚拟地址空间与物理地址空间完整映射/",
+    "description": "setup bootmem 物理内存都添加到系统之后，会调用setup_bootmem对整个物理内存进行整理，主要的工作就是remove掉一些no-map区域（不归内核管理），同时保留一些关键区域，如内核镜像区，dtb中reserved的内存节点。 上图中，浅绿色的就是reserved部分，不能被分配使用，而剩下的部分就可以通过调用上小章节中的函数去使用内存",
+    "cover": "/wp-content/uploads/2024/07/wp_editor_md_2e42fa1b407a7f2adcede12a1f21e93c.jpg",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T02:45:01+00:00",
+    "modified": "2025-08-11T08:19:36+00:00",
+    "source": "02-RISC-V/2.21-虚拟地址空间与物理地址空间完整映射.md"
+  },
+  "1288": {
+    "id": 1288,
+    "title": "异常初始化",
+    "url": "/1288.html/七、异常初始化/",
+    "canonical": "https://www.laumy.tech/1288.html/七、异常初始化/",
+    "description": "异常处理概述 略 异常入口 start_kernel trap_init(); void __init trap_init(void) { /* * Set sup0 scratch register to 0, indicating to exception vector * that we are presently executing in the k",
+    "cover": "",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T02:47:17+00:00",
+    "modified": "2025-08-11T08:19:32+00:00",
+    "source": "02-RISC-V/2.22-异常初始化.md"
+  },
+  "1290": {
+    "id": 1290,
+    "title": "挂载根文件系统",
+    "url": "/1290.html/八、挂载根文件系统/",
+    "canonical": "https://www.laumy.tech/1290.html/八、挂载根文件系统/",
+    "description": "根文件系统是控制权从linux内核转移到用户空间的一个桥梁，文件系统的挂载需要提供挂载点，linux内核在初始化时汇初始化一个虚拟的“/”目录用于根文件系统的挂载。 start_kernel vfs_caches_init() mnt_init() init_rootfs() init_mount_tree() vfs_kern_mount(&rootfs_",
+    "cover": "",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T02:49:34+00:00",
+    "modified": "2025-08-11T08:18:40+00:00",
+    "source": "02-RISC-V/2.23-挂载根文件系统.md"
+  },
+  "1292": {
+    "id": 1292,
+    "title": "启动第一个应用进程",
+    "url": "/1292.html/九、启动第一个应用进程/",
+    "canonical": "https://www.laumy.tech/1292.html/九、启动第一个应用进程/",
+    "description": "start_kernel ...... arch_call_rest_init() rest_init(); pid = kernel_thread(kernel_init, NULL, CLONE_FS); static int __ref kernel_init(void *unused) { int ret; kernel_init_freeable(",
+    "cover": "",
+    "category": "RISC-V",
+    "category_path": [
+      "RISC-V"
+    ],
+    "root_category": "RISC-V",
+    "raw_categories": [
+      "RISC-V"
+    ],
+    "tags": [],
+    "date": "2024-07-07T02:54:36+00:00",
+    "modified": "2025-08-11T08:18:34+00:00",
+    "source": "02-RISC-V/2.24-启动第一个应用进程.md"
+  },
+  "2771": {
+    "id": 2771,
+    "title": "亿图图示工具配置",
+    "url": "/2771.html/亿图图示工具修改/",
+    "canonical": "https://www.laumy.tech/2771.html/亿图图示工具修改/",
+    "description": "矩形框修改文字后不要自动变大 链接线不要跳线 默认配置",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_f195fcbb42efe185a19753eef0e0780b_1756279876.jpg",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2024-08-27T07:30:23+00:00",
+    "modified": "2025-08-27T07:56:50+00:00",
+    "source": "12-其他/12.6-亿图图示工具配置.md"
+  },
+  "1300": {
+    "id": 1300,
+    "title": "ftrace-概述",
+    "url": "/1300.html/ftrace-概述/",
+    "canonical": "https://www.laumy.tech/1300.html/ftrace-概述/",
+    "description": "ftrace是一个内部跟踪器，用于帮助开发人员查找内核正在发生的事情，它可用于调试或分析用户空间之外发生的延迟和性能问题。ftrace从名称上看是function trace，函数跟踪器，但它实际并不限制函数跟踪，而是多个不同跟踪实用程序的框架。延迟跟踪可以检查在禁用和启用中断之间发生的情况，以及抢占和从唤醒任务到实际运行任务的时间。 ftrace最常见的用",
+    "cover": "/wp-content/uploads/2024/08/wp_editor_md_1bb420627685200b9cfc21e886ecadcc.jpg",
+    "category": "性能工具",
+    "category_path": [
+      "Linux",
+      "性能工具"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "性能工具"
+    ],
+    "tags": [],
+    "date": "2024-08-27T12:48:08+00:00",
+    "modified": "2025-08-18T04:56:53+00:00",
+    "source": "01-Linux/1.3-性能工具/1.3.1-ftrace-概述.md"
+  },
+  "1302": {
+    "id": 1302,
+    "title": "ftrace的使用",
+    "url": "/1302.html/tracer的使用/",
+    "canonical": "https://www.laumy.tech/1302.html/tracer的使用/",
+    "description": "tracer irqsoff 当关闭中断时，CPU就无法响应中断了（NMI和SMI除外），无法响应外部事件做出反应。这会阻止定时器触发或鼠标中断触发，导致系统延迟。 irqsoff跟踪器跟踪中断被禁用的时间，当达到新的最大延迟时，跟踪器会保存导致该延迟点的跟踪，一边每次达到新的最大值，旧的保存的跟踪会被丢弃，新的跟踪会被保存。如果要重置最大值，用echo 0",
+    "cover": "/wp-content/uploads/2024/08/wp_editor_md_3b7340fb5fcf13be7e879fb3db8587bf.jpg",
+    "category": "性能工具",
+    "category_path": [
+      "Linux",
+      "性能工具"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "性能工具"
+    ],
+    "tags": [],
+    "date": "2024-08-27T13:50:51+00:00",
+    "modified": "2025-08-18T04:56:42+00:00",
+    "source": "01-Linux/1.3-性能工具/1.3.2-ftrace的使用.md"
+  },
+  "1304": {
+    "id": 1304,
+    "title": "动态function tracer原理",
+    "url": "/1304.html/动态function-tracer原理/",
+    "canonical": "https://www.laumy.tech/1304.html/动态function-tracer原理/",
+    "description": "fpatchable-function-entry选项 编译时指定-fpatchable-function-entry=N[,M]，①会在函数入口第一个指令之前插入N个nop，但是会保留M个放到函数入口之前，如果省略M则默认为0；②同时需要一个特殊的-fpatchable-function-entry段来记录所有函数的入口，如下蓝色部分。nop指令保留了额外",
+    "cover": "/wp-content/uploads/2024/08/wp_editor_md_ecdbca386943ae87e8907eb2d9c8fcaa.jpg",
+    "category": "性能工具",
+    "category_path": [
+      "Linux",
+      "性能工具"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "性能工具"
+    ],
+    "tags": [],
+    "date": "2024-08-28T14:29:22+00:00",
+    "modified": "2025-08-18T05:04:12+00:00",
+    "source": "01-Linux/1.3-性能工具/1.3.3-动态function tracer原理.md"
+  },
+  "1306": {
+    "id": 1306,
+    "title": "静态ftrace",
+    "url": "/1306.html/静态ftrace/",
+    "canonical": "https://www.laumy.tech/1306.html/静态ftrace/",
+    "description": "上面章节主要描述的是动态ftrace，在早期还有静态ftrace。区别主要如下： - 动态ftrace与静态ftrace在编译参数方面静态编译使用的是参数“-pg”，而动态使用的是fpatchable-function-entry。 - 工具链使能“-pg”参数时，会在每个函数体前面插入_mcount函数。而动态ftrace会在函数入口（函数准备阶段前）插入",
+    "cover": "/wp-content/uploads/2024/08/wp_editor_md_0490cf5c14d6626155560b593b74cd17.jpg",
+    "category": "性能工具",
+    "category_path": [
+      "Linux",
+      "性能工具"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "性能工具"
+    ],
+    "tags": [],
+    "date": "2024-08-28T23:45:31+00:00",
+    "modified": "2025-08-18T04:56:04+00:00",
+    "source": "01-Linux/1.3-性能工具/1.3.4-静态ftrace.md"
+  },
+  "1310": {
+    "id": 1310,
+    "title": "Camera基础知识",
+    "url": "/1310.html/camera基础知识/",
+    "canonical": "https://www.laumy.tech/1310.html/camera基础知识/",
+    "description": "框架可以分为kernle层、Video input framework、Device Driver层 V4L2与Media device Framework V4L2 Framework： 是video for Linux Two的简称。是Linux标准通用基础视频框架，向下屏蔽的各厂商的事项，向上提供标准的接口。适用于收音机、视频编解码、视频捕获以及视频输",
+    "cover": "/wp-content/uploads/2024/08/wp_editor_md_26e12f1b4882155d60c3b04b7e5ebe1d.jpg",
+    "category": "设备驱动",
+    "category_path": [
+      "Linux",
+      "设备驱动"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "设备驱动"
+    ],
+    "tags": [],
+    "date": "2024-08-29T06:15:32+00:00",
+    "modified": "2024-11-18T08:25:12+00:00",
+    "source": "01-Linux/1.5-设备驱动/1.5.1-Camera基础知识.md"
+  },
+  "1308": {
+    "id": 1308,
+    "title": "function graph tracer原理",
+    "url": "/1308.html/function-graph-tracer原理/",
+    "canonical": "https://www.laumy.tech/1308.html/function-graph-tracer原理/",
+    "description": "概述 Function graph相对function trace的不同点是，在函数入口会trace，在函数出口也会trace。 ksys_read ->vfs_read ->ftrace_caller ->prepare_ftrace_return ->function_graph_enter ->ftrace_push_return_trace(&tra",
+    "cover": "/wp-content/uploads/2024/08/wp_editor_md_d0687c3196452c2594f464e24b0c7aac.jpg",
+    "category": "性能工具",
+    "category_path": [
+      "Linux",
+      "性能工具"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "性能工具"
+    ],
+    "tags": [],
+    "date": "2024-08-31T00:00:07+00:00",
+    "modified": "2025-08-18T04:55:53+00:00",
+    "source": "01-Linux/1.3-性能工具/1.3.5-function graph tracer原理.md"
+  },
+  "1312": {
+    "id": 1312,
+    "title": "内存地址对齐",
+    "url": "/1312.html/内存地址对齐/",
+    "canonical": "https://www.laumy.tech/1312.html/内存地址对齐/",
+    "description": "内存地址对齐是在内存中的数据（具体为变量的地址、内存块的地址）按照指定地址长度对齐，包含了基本的变量数据对齐和结构体数据对齐。 为什么需要内存对齐？ 可以提高CPU和内存交互的效率，比如一个32位的系统，CPU读取内存，硬件设计上只支持4字节或4字节的倍数对齐进行地址访问，CPU在每次访问内存时，一个周期可以访问4字节，如果要访问的数据是4字节对齐的地址，C",
+    "cover": "",
+    "category": "调试",
+    "category_path": [
+      "调试"
+    ],
+    "root_category": "调试",
+    "raw_categories": [
+      "调试"
+    ],
+    "tags": [],
+    "date": "2024-09-03T06:04:34+00:00",
+    "modified": "2024-11-14T08:27:08+00:00",
+    "source": "09-调试/9.4-内存地址对齐.md"
+  },
+  "1319": {
+    "id": 1319,
+    "title": "视频编码示例",
+    "url": "/1319.html/mpp编码示例/",
+    "canonical": "https://www.laumy.tech/1319.html/mpp编码示例/",
+    "description": "通路：CSI > ISP > VIPP > VirChn > VENC。 CSI：表示物理 Camera Signal Input Pasrse Device 的接口。CSI 可以选择连接任意一个 ISP。最多支持 3 个 CSI。 ISP：表示物理 ISP。ISP 可以选择连接任意多个 VIPP。最多支持 5 个 ISP。 VIPP：表示物理 Scale ",
+    "cover": "",
+    "category": "设备驱动",
+    "category_path": [
+      "Linux",
+      "设备驱动"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "设备驱动"
+    ],
+    "tags": [],
+    "date": "2024-09-05T08:55:02+00:00",
+    "modified": "2024-11-18T06:41:37+00:00",
+    "source": "01-Linux/1.5-设备驱动/1.5.2-视频编码示例.md"
+  },
+  "1321": {
+    "id": 1321,
+    "title": "系统死机排查思路",
+    "url": "/1321.html/系统死机排查思路/",
+    "canonical": "https://www.laumy.tech/1321.html/系统死机排查思路/",
+    "description": "反汇编现场寄存器 kasan watchpoint： 针对固定位置 栈溢出检测： cache：检查地址对齐、长度对齐（少/多刷，少/多无效）。 现象一般是watchpoint抓不到，软件复位无效，如USB驱动与cpu会同时操作内存。 硬件： 排除个体差异，存在电压、电流等不稳定，或者芯片不良等异常或内存、flash异常。",
+    "cover": "",
+    "category": "RTOS",
+    "category_path": [
+      "RTOS"
+    ],
+    "root_category": "RTOS",
+    "raw_categories": [
+      "RTOS"
+    ],
+    "tags": [],
+    "date": "2024-09-13T06:13:37+00:00",
+    "modified": "2025-05-04T01:20:55+00:00",
+    "source": "03-RTOS/3.5-系统死机排查思路.md"
+  },
+  "3006": {
+    "id": 3006,
+    "title": "第一性原理",
+    "url": "/3006.html/第一性原理/",
+    "canonical": "https://www.laumy.tech/3006.html/第一性原理/",
+    "description": "从\"经验思维\"切换\"原理思维\" 大多数人遇到问题，直接想到的是\"别人怎么做\"，\"有什么经验\"，\"我以前怎么做\"，这叫做\"经验驱动\"或\"归纳思维\"。 作者说归纳法只能“证伪”而不能“证明”；很多人错误把观察到的经验当作永远成立的规律。 个人认为经验不是不重要，但是如果想要创新或者变化可以尝试换种思路。可以尝试这如果我什么都不知道，只能从物理、逻辑、人性等最基本",
+    "cover": "",
+    "category": "阅读",
+    "category_path": [
+      "阅读"
+    ],
+    "root_category": "阅读",
+    "raw_categories": [
+      "阅读"
+    ],
+    "tags": [],
+    "date": "2024-10-10T02:38:30+00:00",
+    "modified": "2025-10-10T13:44:02+00:00",
+    "source": "11-阅读/11.4-第一性原理.md"
+  },
+  "1328": {
+    "id": 1328,
+    "title": "I2C协议总结",
+    "url": "/1328.html/i2c协议总结/",
+    "canonical": "https://www.laumy.tech/1328.html/i2c协议总结/",
+    "description": "简介 以下是 I2C 总线的一些特性： 只需要两条线；串行数据线（SDA）和串行时钟线（SCL）。 连接到总线的每个设备都可以通过唯一的地址进行软件寻址简单的控制器/目标关系始终存在；控制器可以作为控制器发射器或控制器接收器。 它是真正的多控制器总线，包括冲突检测和仲裁，以防止如果两个或多个控制器同时发起数据传输，则会导致数据损坏。 串行面向8位的双向数据传",
+    "cover": "/wp-content/uploads/2024/10/wp_editor_md_4f79e3cb304c7d4578252acb6f09e537.jpg",
+    "category": "外设",
+    "category_path": [
+      "外设"
+    ],
+    "root_category": "外设",
+    "raw_categories": [
+      "外设"
+    ],
+    "tags": [],
+    "date": "2024-10-31T08:39:47+00:00",
+    "modified": "2024-11-14T09:43:34+00:00",
+    "source": "07-外设/7.4-I2C协议总结.md"
+  },
+  "1108": {
+    "id": 1108,
+    "title": "随记",
+    "url": "/1108.html/随记/",
+    "canonical": "https://www.laumy.tech/1108.html/随记/",
+    "description": "书籍： 《麦肯锡意识》 领导力技能 领导技能：新职务需要的能力 时间管理：时间分配结构，决定如何工作 工作理念：信念和价值观，让工作聚焦 不同维度的示例 领导力技能 领导技能：新职务需要的能力 时间管理：时间分配结构，决定如何工作 工作理念：信念和价值观，让工作聚焦 不同维度的示例 目标的设定，smart原则 Specific： 明确的 Measurable",
+    "cover": "/wp-content/uploads/2024/02/wp_editor_md_0b34726309a44bda580037353ac4aab9.jpg",
+    "category": "阅读",
+    "category_path": [
+      "阅读"
+    ],
+    "root_category": "阅读",
+    "raw_categories": [
+      "阅读"
+    ],
+    "tags": [],
+    "date": "2024-11-14T09:48:11+00:00",
+    "modified": "2025-11-12T01:14:55+00:00",
+    "source": "11-阅读/11.5-随记.md"
+  },
+  "3103": {
+    "id": 3103,
+    "title": "vscode设置",
+    "url": "/3103.html/vscode设置/",
+    "canonical": "https://www.laumy.tech/3103.html/vscode设置/",
+    "description": "鼠标滚轮代码大小调整 代码前进后退 C/C++代码跳转 需要安装C/C++插件，如果是cursor的话安装clangd插件，安装完之后，先make clean，然后本地执行：bear -- make，就会在本地生成一个compile_commands.json。这样就可以识别跳转了。",
+    "cover": "/wp-content/uploads/2025/11/wp_editor_md_4f5a6069e581ead24c496084c857c8e7_1763173878.png",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2024-11-15T02:30:34+00:00",
+    "modified": "2025-11-18T05:57:02+00:00",
+    "source": "12-其他/12.7-vscode设置.md"
+  },
+  "1532": {
+    "id": 1532,
+    "title": "Linux系统编译生成镜像流程",
+    "url": "/1532.html/linux系统编译流程/",
+    "canonical": "https://www.laumy.tech/1532.html/linux系统编译流程/",
+    "description": "编译内核 清除内核 命令 ${MAKE} O= mrproper 示例 make CROSS_COMPILE=riscv32-unknown-linux- ARCH=riscv -j16 O=kernel/build KERNEL_SRC=kernel/linux-5.4 INSTALL_MOD_PATH=kernel/staging O= mrproper",
+    "cover": "",
+    "category": "调试",
+    "category_path": [
+      "调试"
+    ],
+    "root_category": "调试",
+    "raw_categories": [
+      "调试"
+    ],
+    "tags": [],
+    "date": "2024-11-15T11:28:39+00:00",
+    "modified": "2025-08-18T04:41:55+00:00",
+    "source": "09-调试/9.5-Linux系统编译生成镜像流程.md"
+  },
+  "1602": {
+    "id": 1602,
+    "title": "SSL证书更新",
+    "url": "/1602.html/ssl证书更新/",
+    "canonical": "https://www.laumy.tech/1602.html/ssl证书更新/",
+    "description": "获取免费证书 下载证书 下载证书文件 解压后的文件如下 安装证书 步骤1： 登录服务器，找到证书路径，可以使用nginx -t查找证书路径。 [root@laumy conf.d]# nginx -t nginx: the configuration file /etc/nginx/nginx.conf syntax is ok nginx: configu",
+    "cover": "/wp-content/uploads/2024/11/wp_editor_md_f846f05ce46e983b4210cb093bf2800f.jpg",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2024-11-16T12:46:33+00:00",
+    "modified": "2025-08-17T02:28:39+00:00",
+    "source": "06-前后端/6.1-SSL证书更新.md"
+  },
+  "1593": {
+    "id": 1593,
+    "title": "拍照示例代码分析",
+    "url": "/1593.html/拍照示例代码分析/",
+    "canonical": "https://www.laumy.tech/1593.html/拍照示例代码分析/",
+    "description": "数据结构 待补充 初始化启动 启动MPP系统 MPP_SYS_CONF_S mSysConf; memset(&mSysConf, 0, sizeof(MPP_SYS_CONF_S)); mSysConf.nAlignWidth = 32; AW_MPI_SYS_SetConf(&mSysConf); ret = AW_MPI_SYS_Init(); 使能V",
+    "cover": "",
+    "category": "设备驱动",
+    "category_path": [
+      "Linux",
+      "设备驱动"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "设备驱动"
+    ],
+    "tags": [],
+    "date": "2024-11-17T12:35:48+00:00",
+    "modified": "2024-11-28T13:31:38+00:00",
+    "source": "01-Linux/1.5-设备驱动/1.5.3-拍照示例代码分析.md"
+  },
+  "1569": {
+    "id": 1569,
+    "title": "RTSP视频传输示例代码分析",
+    "url": "/1569.html/rtsp视频传输示例代码分析/",
+    "canonical": "https://www.laumy.tech/1569.html/rtsp视频传输示例代码分析/",
+    "description": "数据流通路： CSI -> ISP -> VIPP -> VirChn -> VENC CSI：表示物理 Camera Signal Input Pasrse Device 的接口。CSI 可以选择连接任意一个 ISP。最多支持 3 个 CSI。 ISP：表示物理 ISP。ISP 可以选择连接任意多个 VIPP。最多支持 5 个 ISP。 VIPP：表示物理",
+    "cover": "",
+    "category": "设备驱动",
+    "category_path": [
+      "Linux",
+      "设备驱动"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "设备驱动"
+    ],
+    "tags": [],
+    "date": "2024-11-17T12:47:37+00:00",
+    "modified": "2024-11-28T13:32:01+00:00",
+    "source": "01-Linux/1.5-设备驱动/1.5.4-RTSP视频传输示例代码分析.md"
+  },
+  "1598": {
+    "id": 1598,
+    "title": "移动检测代码示例分析",
+    "url": "/1598.html/移动检测代码示例分析/",
+    "canonical": "https://www.laumy.tech/1598.html/移动检测代码示例分析/",
+    "description": "数据结构 VencMotionSearchParam typedef struct { int en_motion_search; // 移动侦测功能使能开关，1：开，0：关。 int dis_default_para; // 是否禁用默认参数，1：使用用户自定义参数，0：使用默认参数。 int hor_region_num; // 水平方向上划分区域的个数",
+    "cover": "",
+    "category": "设备驱动",
+    "category_path": [
+      "Linux",
+      "设备驱动"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "设备驱动"
+    ],
+    "tags": [],
+    "date": "2024-11-17T13:57:18+00:00",
+    "modified": "2024-11-28T13:31:26+00:00",
+    "source": "01-Linux/1.5-设备驱动/1.5.5-移动检测代码示例分析.md"
+  },
+  "1612": {
+    "id": 1612,
+    "title": "SSL/TLS协议分析",
+    "url": "/1612.html/tls/",
+    "canonical": "https://www.laumy.tech/1612.html/tls/",
+    "description": "什么是TLS 1994: SSL 1.0 NetScape公司提出SSL第一版，未公开。 1995: SLL 2.0 公开发布了第二版，与2011年弃用。 1996: SSL 3.0 第三版得到大规模应，于2015年弃用。 1999: TLS 1.0 RFC2246，被IETF纳入标准化，没太大改动，改名TLS。 2006: TLS 1.1 RFC4346，",
+    "cover": "/wp-content/uploads/2024/11/wp_editor_md_e9f9ffc568940f68b439583170b3103a.jpg",
+    "category": "网络",
+    "category_path": [
+      "网络"
+    ],
+    "root_category": "网络",
+    "raw_categories": [
+      "网络"
+    ],
+    "tags": [],
+    "date": "2024-11-22T12:15:32+00:00",
+    "modified": "2024-11-22T23:17:08+00:00",
+    "source": "08-网络/8.2-SSL-TLS协议分析.md"
+  },
+  "1630": {
+    "id": 1630,
+    "title": "MQTT协议分析",
+    "url": "/1630.html/mqtt协议分析/",
+    "canonical": "https://www.laumy.tech/1630.html/mqtt协议分析/",
+    "description": "什么是MQTT MQTT是基于TCP/IP网络协议栈构建的异步通信消息协议，基于发布-订阅模式进行传输。实现MQTT协议需要客户端和服务器端通讯完成，在通讯过程中, MQTT协议中有三种身份: 发布者(Publish)、代理(Broker)(服务器)、订阅者(Subscribe)。 其中消息的发布者和订阅者都是客户端，消息代理是服务器，消息发布者可以同时是订",
+    "cover": "/wp-content/uploads/2024/11/wp_editor_md_c8bb7c238945b79af7fca03d4fd1a823.jpg",
+    "category": "网络",
+    "category_path": [
+      "网络"
+    ],
+    "root_category": "网络",
+    "raw_categories": [
+      "网络"
+    ],
+    "tags": [],
+    "date": "2024-11-23T03:26:36+00:00",
+    "modified": "2026-03-24T11:29:40+00:00",
+    "source": "08-网络/8.3-MQTT协议分析.md"
+  },
+  "1636": {
+    "id": 1636,
+    "title": "看wireshark报文技巧",
+    "url": "/1636.html/关于看wireshark报技巧/",
+    "canonical": "https://www.laumy.tech/1636.html/关于看wireshark报技巧/",
+    "description": "TCP握手与挥手 握手看SYNC与ACK 第一次握手[SYNC]标志, 第二次握手看[SYNC,ACK]标志，第三次ACK。 挥手看FIN 报文交互 正常交互 先看len，当长度为0,这个包是ack包，长度不为0表示是发送的数据包。 再看ack，表示该值以前的序号都收到了。ack是对端上一个报文的seq+len，同时也是期望对端下一个发包。 警告交互 TCP",
+    "cover": "/wp-content/uploads/2024/11/wp_editor_md_15c18286b29b68b5e81affedc114f545.jpg",
+    "category": "网络",
+    "category_path": [
+      "网络"
+    ],
+    "root_category": "网络",
+    "raw_categories": [
+      "网络"
+    ],
+    "tags": [],
+    "date": "2024-11-23T12:00:04+00:00",
+    "modified": "2024-11-25T01:05:47+00:00",
+    "source": "08-网络/8.4-看wireshark报文技巧.md"
+  },
+  "1666": {
+    "id": 1666,
+    "title": "乌龟图分析法",
+    "url": "/1666.html/乌龟图分析法/",
+    "canonical": "https://www.laumy.tech/1666.html/乌龟图分析法/",
+    "description": "结构形似乌龟，身体是主体，头尾脚代表着互相关联的六个要素。 身体：代表过程、活动。 头部：达标input，即过程的要求，是分析的关键。 左前脚：代表Procedure，指的操作的方法，怎么做？ 右前脚：达标Resources，是做成这件事需要的非人工资源。 右后脚：代表who，谁负责这个事情，对人有什么要求？ 左后脚：代表KPI，衡量这个过程的指标，有效性。",
+    "cover": "",
+    "category": "阅读",
+    "category_path": [
+      "阅读"
+    ],
+    "root_category": "阅读",
+    "raw_categories": [
+      "阅读"
+    ],
+    "tags": [],
+    "date": "2024-11-24T12:35:42+00:00",
+    "modified": "2024-11-28T13:30:48+00:00",
+    "source": "11-阅读/11.6-乌龟图分析法.md"
+  },
+  "1680": {
+    "id": 1680,
+    "title": "libpeer分析",
+    "url": "/1680.html/libpeer分析/",
+    "canonical": "https://www.laumy.tech/1680.html/libpeer分析/",
+    "description": "关键数据结构 PeerConfiguration typedef struct PeerConfiguration { IceServer ice_servers[5]; MediaCodec audio_codec; MediaCodec video_codec; DataChannelType datachannel; void (*onaudiotra",
+    "cover": "/wp-content/uploads/2024/11/wp_editor_md_56afa863b5c90a096509fe1610c735b7.jpg",
+    "category": "网络",
+    "category_path": [
+      "网络"
+    ],
+    "root_category": "网络",
+    "raw_categories": [
+      "网络"
+    ],
+    "tags": [],
+    "date": "2024-11-24T12:57:08+00:00",
+    "modified": "2025-04-27T01:07:47+00:00",
+    "source": "08-网络/8.5-libpeer分析.md"
+  },
+  "1673": {
+    "id": 1673,
+    "title": "STUN协议",
+    "url": "/1673.html/stun协议/",
+    "canonical": "https://www.laumy.tech/1673.html/stun协议/",
+    "description": "NAT墙 完全锥形 IP限制型锥形 端口限制型锥形 对称型 NAT穿透 STUN协议简介 STUN（Session Traversal Utilities for NAT）是一个用于帮助客户端发现其所在NAT之后的公网IP地址和端口号。通信的双方都能知道所在的公网IP，并且能够让公网的NAT帮助转发，从而实现NAT穿透。STUN协议广泛应用在WebRTC实时",
+    "cover": "/wp-content/uploads/2024/12/wp_editor_md_ab489a74a77e9b82ed1d9d7fa6aa9b2c.jpg",
+    "category": "网络",
+    "category_path": [
+      "网络"
+    ],
+    "root_category": "网络",
+    "raw_categories": [
+      "网络"
+    ],
+    "tags": [],
+    "date": "2024-11-26T12:00:30+00:00",
+    "modified": "2025-04-27T01:09:37+00:00",
+    "source": "08-网络/8.6-STUN协议.md"
+  },
+  "1706": {
+    "id": 1706,
+    "title": "coturn安装",
+    "url": "/1706.html/coturn安装/",
+    "canonical": "https://www.laumy.tech/1706.html/coturn安装/",
+    "description": "安装 yum install coturn -y 配置 vim /etc/coturn/turnserver.conf listening-port=3478 #指定 coturn 监听的端口。默认的 TURN 协议端口是 3478，用于接收 TURN 客户端的连接请求。 tls-listening-port=5349 #指定用于 TLS (传输层安全协议)",
+    "cover": "",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2024-11-30T01:03:19+00:00",
+    "modified": "2024-12-14T05:14:37+00:00",
+    "source": "06-前后端/6.2-coturn安装.md"
+  },
+  "1697": {
+    "id": 1697,
+    "title": "部署MQTT云服务",
+    "url": "/1697.html/部署mqtt云服务/",
+    "canonical": "https://www.laumy.tech/1697.html/部署mqtt云服务/",
+    "description": "Centos安装 配置emqx的源 curl -s https://assets.emqx.com/scripts/install-emqx-rpm.sh | sudo bash 安装emqx sudo yum install emqx -y 启动emqx sudo systemctl start emqx 如果要卸载 sudo yum remove emq",
+    "cover": "",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2024-12-01T02:30:59+00:00",
+    "modified": "2024-12-14T05:14:29+00:00",
+    "source": "06-前后端/6.3-部署MQTT云服务.md"
+  },
+  "1703": {
+    "id": 1703,
+    "title": "Cmake构建模版",
+    "url": "/1703.html/cmake构建模版/",
+    "canonical": "https://www.laumy.tech/1703.html/cmake构建模版/",
+    "description": "基础示例 # 最低 CMake 版本要求 cmake_minimum_required(VERSION 3.16) # 定义工程名称和语言 project(mlink_device VERSION 1.0.0 LANGUAGES C) # ============================================ # 收集源码文件 # ====",
+    "cover": "",
+    "category": "调试",
+    "category_path": [
+      "调试"
+    ],
+    "root_category": "调试",
+    "raw_categories": [
+      "调试"
+    ],
+    "tags": [],
+    "date": "2024-12-01T05:30:43+00:00",
+    "modified": "2025-11-26T01:09:43+00:00",
+    "source": "09-调试/9.6-Cmake构建模版.md"
+  },
+  "1721": {
+    "id": 1721,
+    "title": "openwrt规则编译cmake软件包",
+    "url": "/1721.html/openwrt规则编译cmake软件包/",
+    "canonical": "https://www.laumy.tech/1721.html/openwrt规则编译cmake软件包/",
+    "description": "软件包中有完整CMakelists.txt include $(TOPDIR)/rules.mk PKG_NAME:=usrsctp PKG_VERSION:=0.9.5.0 PKG_RELEASE:=3 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz PKG_SOURCE_URL:= https://codelo",
+    "cover": "",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2024-12-11T10:43:53+00:00",
+    "modified": "2024-12-11T10:43:53+00:00",
+    "source": "12-其他/12.8-openwrt规则编译cmake软件包.md"
+  },
+  "1755": {
+    "id": 1755,
+    "title": "快速搭建一个可访问的网页",
+    "url": "/1755.html/快速搭建一个可访问的网页/",
+    "canonical": "https://www.laumy.tech/1755.html/快速搭建一个可访问的网页/",
+    "description": "简介 搭建网站需要以下几个组件， Web服务器（如Apache、Nginx）：它是网页能够被访问的核心组件。当用户在浏览器中输入网站的域名或 IP 地址并请求访问网页时，Web 服务器软件会接收这些 HTTP 请求。负责从服务器的存储设备（如硬盘）中找到对应的网页文件（如 HTML、CSS、JavaScript 文件等），并将这些文件发送回用户的浏览器。 编",
+    "cover": "/wp-content/uploads/2024/12/wp_editor_md_1a0bcb4b41b28de0a84f18b9ebad73c7.jpg",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2024-12-13T07:22:06+00:00",
+    "modified": "2024-12-17T01:31:24+00:00",
+    "source": "06-前后端/6.4-快速搭建一个可访问的网页.md"
+  },
+  "1772": {
+    "id": 1772,
+    "title": "javascript之dom",
+    "url": "/1772.html/javascript之dom/",
+    "canonical": "https://www.laumy.tech/1772.html/javascript之dom/",
+    "description": "什么是dom DOM（Document Object Model）是一个编程接口，它将 HTML 或 XML 文档呈现为一个由节点和对象（这些节点和对象其实是文档的各种元素、属性和文本内容等）组成的树形结构。这个树形结构允许开发者使用编程语言（如 JavaScript）来访问、修改和操作文档的内容、结构和样式。对于以下简单的 HTML 文档： <!DOCTY",
+    "cover": "",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2024-12-14T05:09:39+00:00",
+    "modified": "2024-12-14T05:11:50+00:00",
+    "source": "06-前后端/6.5-javascript之dom.md"
+  },
+  "1750": {
+    "id": 1750,
+    "title": "webrtc网页代码分析一",
+    "url": "/1750.html/webrtc网页代码分析/",
+    "canonical": "https://www.laumy.tech/1750.html/webrtc网页代码分析/",
+    "description": "文档结构 <!doctype html> <html lang=\"en\"> <head> ... </head> <body> ... </body> </html> 文档类型声明（ ）：声明文档使用HTML5标准。 html标签：设置文档的语言为英语（lang=\\\"en\\\"）。 head标签：包含元数据、样式、外部链接等，定义网页的头部信息。 body标签",
+    "cover": "",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2024-12-14T05:26:53+00:00",
+    "modified": "2025-04-27T01:08:48+00:00",
+    "source": "06-前后端/6.6-webrtc网页代码分析一.md"
+  },
+  "1788": {
+    "id": 1788,
+    "title": "webrtc网页代码分析二",
+    "url": "/1788.html/webrtc网页代码分析二/",
+    "canonical": "https://www.laumy.tech/1788.html/webrtc网页代码分析二/",
+    "description": "交互流程 上图是完整的处理流程。 获取URL参数 const queryString = window.location.search; const urlParams = new URLSearchParams(queryString); const deviceId = urlParams.get('deviceId'); 这段代码先获取当前页面 URL",
+    "cover": "/wp-content/uploads/2024/12/wp_editor_md_7a3e5882d13fb51eecfaaf7fc8c53b59.jpg",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2024-12-14T08:22:45+00:00",
+    "modified": "2024-12-14T08:39:58+00:00",
+    "source": "06-前后端/6.7-webrtc网页代码分析二.md"
+  },
+  "1801": {
+    "id": 1801,
+    "title": "基于nodejs搭建jsonp环境",
+    "url": "/1801.html/基于nodejs搭建jsonp环境/",
+    "canonical": "https://www.laumy.tech/1801.html/基于nodejs搭建jsonp环境/",
+    "description": "安装 安装 Node.js 和 npm：执行以下命令安装 Node.js 和 npm： yum install -y nodejs 创建工程 步骤1： 创建一个新的Node.js项目目录，并进入该目录： mkdir jsonp-server cd jsonp-server 步骤2：初始化Node.js项目，并安装Express框架 npm init -y n",
+    "cover": "",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2024-12-15T03:21:33+00:00",
+    "modified": "2024-12-17T03:26:13+00:00",
+    "source": "12-其他/12.9-基于nodejs搭建jsonp环境.md"
+  },
+  "1793": {
+    "id": 1793,
+    "title": "emqx通过REST API获取设备是否在线",
+    "url": "/1793.html/emqx获取设备是否在线/",
+    "canonical": "https://www.laumy.tech/1793.html/emqx获取设备是否在线/",
+    "description": "本文通过emqx REST API的方式来进行配置 创建一个API密钥 记录密钥的名称 API key是用户名称，Secret KEY是密码 浏览器登录验证 用户名就是 API Key，密码就是Secret KEY. 登录上之后就可以获取到设备的信息了。 可以参考： http://localhost:18083/api-docs/index.html 支持哪",
+    "cover": "/wp-content/uploads/2024/12/wp_editor_md_6f88e3d10ecea4b336a5a5624e9aed0b.jpg",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2024-12-16T11:29:04+00:00",
+    "modified": "2024-12-16T11:38:02+00:00",
+    "source": "06-前后端/6.8-emqx通过REST API获取设备是否在线.md"
+  },
+  "1809": {
+    "id": 1809,
+    "title": "MacBook上ubuntu虚拟机共享",
+    "url": "/1809.html/macbook上ubuntu虚拟机共享/",
+    "canonical": "https://www.laumy.tech/1809.html/macbook上ubuntu虚拟机共享/",
+    "description": "步骤1： 安装paralles tools 步骤2：执行install安装 报错处理 一通操作还是不行，原因是paralles tools没有匹配当前的内核版本，只能升级parallel 版本了。或者升级一个parallel desktop版本获取到parallel tools安装包放到低版本上。",
+    "cover": "/wp-content/uploads/2025/01/wp_editor_md_30b4e2f8572fc2fbb8662bd21bd1056c.jpg",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-01-01T06:23:18+00:00",
+    "modified": "2025-01-01T07:36:37+00:00",
+    "source": "12-其他/12.10-MacBook上ubuntu虚拟机共享.md"
+  },
+  "1807": {
+    "id": 1807,
+    "title": "豆包大模型接入体验",
+    "url": "/1807.html/豆包大模型接入体验/",
+    "canonical": "https://www.laumy.tech/1807.html/豆包大模型接入体验/",
+    "description": "前置条件 需要先创建获得API key和创建推理接入点。 API key获取 https://www.volcengine.com/docs/82379/1361424#f79da451 创建推理接入点 https://www.volcengine.com/docs/82379/1099522 安装python环境 python版本需要安装到Python 2",
+    "cover": "/wp-content/uploads/2025/01/wp_editor_md_43e096b28cfa11f56ab84efb2da7d7e9.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-01-01T09:54:22+00:00",
+    "modified": "2025-08-18T05:07:13+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.1-豆包大模型接入体验.md"
+  },
+  "3182": {
+    "id": 3182,
+    "title": "nvidia jetson nano刷固件",
+    "url": "/3182.html/nvidia-jetson-nano刷固件/",
+    "canonical": "https://www.laumy.tech/3182.html/nvidia-jetson-nano刷固件/",
+    "description": "下载刷机软件 主要以ubuntu系统为例，下面是下载地址。 https://developer.nvidia.com/sdk-manager 下载完成使用dpkg进行安装 dpkg -i sdkmanager_2.4.0-13235_amd64.deb 机器进入烧录模式 短接这两个pin，然后电源上电就进入了烧录模式，接着使用type-USB接入电脑。 烧录",
+    "cover": "/wp-content/uploads/2026/01/wp_editor_md_f96b11a7349b897bc74be9bdd213e6b2_1768972146.png",
+    "category": "调试",
+    "category_path": [
+      "调试"
+    ],
+    "root_category": "调试",
+    "raw_categories": [
+      "调试"
+    ],
+    "tags": [],
+    "date": "2025-01-21T06:17:41+00:00",
+    "modified": "2026-01-21T06:17:57+00:00",
+    "source": "09-调试/9.7-nvidia jetson nano刷固件.md"
+  },
+  "3195": {
+    "id": 3195,
+    "title": "docker常用命令速记",
+    "url": "/3195.html/docker常用命令速记/",
+    "canonical": "https://www.laumy.tech/3195.html/docker常用命令速记/",
+    "description": "1. 镜像管理 (Images) 功能 命令 示例 拉取镜像 docker pull <image>:<tag> docker pull nginx:latest 查看本地镜像 docker images docker images 删除镜像 docker rmi <image_id> docker rmi fce28 构建镜像 docker build -",
+    "cover": "",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-01-22T09:14:18+00:00",
+    "modified": "2026-01-22T09:26:09+00:00",
+    "source": "12-其他/12.11-docker常用命令速记.md"
+  },
+  "1824": {
+    "id": 1824,
+    "title": "2条命令本地部署deepseek",
+    "url": "/1824.html/本地部署deepseek/",
+    "canonical": "https://www.laumy.tech/1824.html/本地部署deepseek/",
+    "description": "环境是centos，下面是部署步骤。 命令1： 安装ollama 安装命令：curl -fsSL https://ollama.com/install.sh | sh 安装日志： >>> Cleaning up old version at /usr/local/lib/ollama >>> Installing ollama to /usr/local >",
+    "cover": "",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-02-10T11:25:54+00:00",
+    "modified": "2025-08-18T05:06:58+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.2-条命令本地部署deepseek.md"
+  },
+  "1835": {
+    "id": 1835,
+    "title": "裁剪脚本",
+    "url": "/1835.html/裁剪脚本/",
+    "canonical": "https://www.laumy.tech/1835.html/裁剪脚本/",
+    "description": "查找当前目录大于指定大小 #!/bin/bash # 遍历当前目录及子目录中的所有文件 find . -type f -exec du -b {} + | while read size file; do # 如果文件大小为50KB（即50 * 1024字节） if [ \"$size\" -gt 51200 ]; then echo \"文件: $file, 大",
+    "cover": "",
+    "category": "调试",
+    "category_path": [
+      "调试"
+    ],
+    "root_category": "调试",
+    "raw_categories": [
+      "调试"
+    ],
+    "tags": [],
+    "date": "2025-03-18T05:47:37+00:00",
+    "modified": "2025-03-18T05:47:37+00:00",
+    "source": "09-调试/9.8-裁剪脚本.md"
+  },
+  "1838": {
+    "id": 1838,
+    "title": "C++回顾",
+    "url": "/1838.html/c回顾/",
+    "canonical": "https://www.laumy.tech/1838.html/c回顾/",
+    "description": "平时用C++比较少，最近项目需要用到C++,现简单再回顾一下。 单例模式 在某些场景下，一个类只需要有一个实例就足够了，例如配置管理类、日志记录器、数据库连接池等。使用单例模式可以避免创建多个实例导致的资源浪费、数据不一致等问题。 单例模式是一种创建型设计模式，它确保一个类只有一个实例，并提供一个全局访问点来获取该实例。在程序运行期间，这个类的实例始终只有一",
+    "cover": "",
+    "category": "语言",
+    "category_path": [
+      "语言"
+    ],
+    "root_category": "语言",
+    "raw_categories": [
+      "语言"
+    ],
+    "tags": [],
+    "date": "2025-03-27T12:10:56+00:00",
+    "modified": "2025-08-11T08:17:44+00:00",
+    "source": "10-语言/10.3-C++回顾.md"
+  },
+  "1840": {
+    "id": 1840,
+    "title": "小智Ai语音交互简要分析",
+    "url": "/1840.html/小智ai语音交互简要分析/",
+    "canonical": "https://www.laumy.tech/1840.html/小智ai语音交互简要分析/",
+    "description": "app start 主要是初始化板级、显示、WiFi连接、音频codec、编解码、协议、音效、唤醒几个环节。 auto& board = Board::GetInstance(); //获取板级实例 SetDeviceState(kDeviceStateStarting);//设置出事状态为kDeviceStateStarting /* Setup the ",
+    "cover": "",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-04-03T12:55:16+00:00",
+    "modified": "2025-08-18T05:06:49+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.3-小智Ai语音交互简要分析.md"
+  },
+  "2550": {
+    "id": 2550,
+    "title": "站点开源",
+    "url": "/2550.html/站点开源/",
+    "canonical": "https://www.laumy.tech/2550.html/站点开源/",
+    "description": "Laumy Fresh Theme 本站点是基于wordpress设计，现开源其主题代码，让感兴趣的爱好者直接可复用。源码地址： https://github.com/laumy0929/wd-laumy-fresh-theme 。 🚀 快速开始 方法一：WordPress后台安装（推荐） 下载主题压缩包 laumy-fresh-theme.zip 在Wor",
+    "cover": "/wp-content/uploads/2024/11/IMG_4920-scaled.jpg",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2025-04-19T08:03:43+00:00",
+    "modified": "2025-08-20T15:31:31+00:00",
+    "source": "06-前后端/6.9-站点开源.md"
+  },
+  "2562": {
+    "id": 2562,
+    "title": "站点centos系统迁移ubuntu系统",
+    "url": "/2562.html/站点centos系统迁移ubuntu系统/",
+    "canonical": "https://www.laumy.tech/2562.html/站点centos系统迁移ubuntu系统/",
+    "description": "概述 本站点最早使用的是centos系统，但是该系统官方不再更新维护了，随最近将服务器的系统更换为ubuntu系统，先记录站点的迁移过程。 迁移要点 由于本站点主要是基于php+nginx+wordpress框架设计。备份的原理是php、nginx、wordpress软件属于工具是可以在新的系统上新安装，但是wordpress相关的配置如主题、数据库、插件等",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_fb08a24c6a5a918f23917ef9c699defb_1755433781.png",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2025-04-20T03:42:55+00:00",
+    "modified": "2025-08-20T15:31:38+00:00",
+    "source": "06-前后端/6.10-站点centos系统迁移ubuntu系统.md"
+  },
+  "2026": {
+    "id": 2026,
+    "title": "非暴力沟通",
+    "url": "/2026.html/非暴力沟通/",
+    "canonical": "https://www.laumy.tech/2026.html/非暴力沟通/",
+    "description": "非暴力沟通要素 观察： 不带评论的观察 感受：体会(对方)和表达（自己）感受（区分想法和感受） 需要：体会（对方）和表达（自己）需求 请求：体会（对方）和表达（自己）请求（一定是要具体的请求，不要含糊） 沟通的过程 观察实际发生了什么事实？ 表达出我们看到的这些行为的感受 表达出我们的感受与什么需求相关联 说出我们一个具体的请求 疏离生命的语言 道德评判： ",
+    "cover": "",
+    "category": "阅读",
+    "category_path": [
+      "阅读"
+    ],
+    "root_category": "阅读",
+    "raw_categories": [
+      "阅读"
+    ],
+    "tags": [],
+    "date": "2025-05-06T15:26:37+00:00",
+    "modified": "2025-05-18T08:00:20+00:00",
+    "source": "11-阅读/11.7-非暴力沟通.md"
+  },
+  "2079": {
+    "id": 2079,
+    "title": "perf工具使用",
+    "url": "/2079.html/perf工具使用/",
+    "canonical": "https://www.laumy.tech/2079.html/perf工具使用/",
+    "description": "perf介绍 perf 是一个强大的 Linux 性能分析工具，广泛用于分析程序的性能瓶颈，帮助开发者进行调优。perf 工具能够收集并分析多种硬件和软件事件，包括 CPU 的指令执行、缓存命中与失误、上下文切换等。 硬件事件驱：通过访问 CPU 的 PMU（性能监控单元）捕获硬件级事件，如 CPU 周期数、缓存命中/未命中、分支预测失败等。 采样与统计机制",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_51abac8beee2dee0ca6db0c96bedf93c.jpg",
+    "category": "性能工具",
+    "category_path": [
+      "Linux",
+      "性能工具"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "性能工具"
+    ],
+    "tags": [],
+    "date": "2025-05-14T05:59:07+00:00",
+    "modified": "2025-08-18T04:55:39+00:00",
+    "source": "01-Linux/1.3-性能工具/1.3.6-perf工具使用.md"
+  },
+  "1893": {
+    "id": 1893,
+    "title": "线性回归实现",
+    "url": "/1893.html/结合线性回归的实现示例理解深度学习/",
+    "canonical": "https://www.laumy.tech/1893.html/结合线性回归的实现示例理解深度学习/",
+    "description": "线性回归 线性回归模型根据给定的数据集和对应的标签，通过一个函数模型来拟合数据集以及对应标签的映射关系。而这个模型可以设置为y=wx+b的一个函数，其中x和w是一个向量。目标就是找出权重w和偏执b的值，使得模型更逼近数据集合的规律，也就是能够预测的更准确。 线性回归示例实现 pytorch本身有线性回归的函数，只是这里通过实现pytoch来加深理解 读取数据",
+    "cover": "",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-01T04:01:16+00:00",
+    "modified": "2025-08-20T15:45:32+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.1-线性回归实现.md"
+  },
+  "1942": {
+    "id": 1942,
+    "title": "sotfmax回归实现",
+    "url": "/1942.html/sotfmax回归实现/",
+    "canonical": "https://www.laumy.tech/1942.html/sotfmax回归实现/",
+    "description": "什么是sotfmax回归 Softmax回归（Softmax Regression），也叫多项逻辑回归，是一种用于多分类问题的分类算法。它是对逻辑回归（Logistic Regression）的一种扩展，适用于处理输出类别数大于2的情况。Softmax回归通过使用Softmax函数来将每个类别的输出转化为一个概率分布，使得输出值能够表示每个类别的概率，并且所",
+    "cover": "/wp-content/uploads/2025/04/wp_editor_md_c498a5a2f4ecdcf9c2c6979444cfe20b.jpg",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-01T09:45:07+00:00",
+    "modified": "2025-08-20T15:45:39+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.2-sotfmax回归实现.md"
+  },
+  "1959": {
+    "id": 1959,
+    "title": "激活函数",
+    "url": "/1959.html/激活函数/",
+    "canonical": "https://www.laumy.tech/1959.html/激活函数/",
+    "description": "概念 前面我们主要使用的是线性模型，但是线性模型有很多局限性，因为我们要建模的问题并不能单纯使用线性模型就能够拟合的，如下示例。 我们要拟合红色部分的函数，使用线性模型即使在怎么调整W和b都没法进行拟合出来，要拟合这样的函数，我们需要非线性的函数。 如上图，要拟合这样的模型，我们可以使用①②③函数相加再加上一个b偏置。那这里的①②③函数怎么来了，可以看出是w",
+    "cover": "/wp-content/uploads/2025/04/wp_editor_md_2da7e842d509202e10eaf5e1a70a177c.jpg",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-02T03:05:06+00:00",
+    "modified": "2025-08-20T15:51:09+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.3-激活函数.md"
+  },
+  "1991": {
+    "id": 1991,
+    "title": "梯度计算",
+    "url": "/1991.html/梯度计算/",
+    "canonical": "https://www.laumy.tech/1991.html/梯度计算/",
+    "description": "什么是梯度 梯度(Gradient)是用于描述多元函数在某一点的变化率最大的方向及其大小。在深度学习中，梯度被广泛用于优化模型参数(如神经网络的权重和偏置)，通过梯度下降等算法最小化损失函数。 对于多元函数 $f(x_1, x_2, \\dots, x_n)$，其梯度是一个 向量 ，由函数对每个变量的偏导数组成，记作： $$ \\nabla f = \\left(",
+    "cover": "",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-03T04:38:37+00:00",
+    "modified": "2025-08-20T15:46:08+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.4-梯度计算.md"
+  },
+  "1999": {
+    "id": 1999,
+    "title": "前向传播、反向传播和计算图",
+    "url": "/1999.html/前向传播、反向传播和计算图/",
+    "canonical": "https://www.laumy.tech/1999.html/前向传播、反向传播和计算图/",
+    "description": "前向传播（Forward Propagation） 前向传播是神经网络中从输入数据到输出预测值的计算过程。它通过逐层应用权重（W）和偏置（b），最终生成预测值 $y' $，并计算损失函数$L $。 模型定义 $$ y' = W \\cdot x + b $$ 损失函数（均方误差） $$ L = \\frac{1}{n} \\sum_{i=1}^{n} (y'(i)",
+    "cover": "",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-04T05:11:11+00:00",
+    "modified": "2025-08-20T15:51:28+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.5-前向传播、反向传播和计算图.md"
+  },
+  "2153": {
+    "id": 2153,
+    "title": "Windows Ai开发环境安装",
+    "url": "/2153.html/windows-ai开发环境安装/",
+    "canonical": "https://www.laumy.tech/2153.html/windows-ai开发环境安装/",
+    "description": "annaconda可以理解为ai环境可以创建很多个房间，比如允许多个不同版本的python。每个房间可以保存不同的环境变量。 步骤1：下载安装包，安装anaconda， https://www.anaconda.com/ 步骤2：设置环境变量 设置环境变量需要根据软件实际的安装位置，这里的软件是安装的D盘的。在cmd命令中，执行conda info表示设置环",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_ac5083cd61b5c50d08c80b6887eb6687.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-05T00:47:47+00:00",
+    "modified": "2025-08-20T15:51:38+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.4-Windows Ai开发环境安装.md"
+  },
+  "2013": {
+    "id": 2013,
+    "title": "层与块",
+    "url": "/2013.html/层与块/",
+    "canonical": "https://www.laumy.tech/2013.html/层与块/",
+    "description": "简单来说，如下图，第一个图中间5个神经元组成了一个层。第二图3个层组成了块。第三个图中3个块组成了整个模型。 层 层是神经网络的基本计算单元，负责对输入数据进行特定形式的变换，如线性映射、非线性激活等。其主要的功能是接收输入数据，生成输出结果。其中包含学习参数（如全连接层的权重和偏置）或无参数操作（如激活函数），输出形状可能与输入不同，例如全连接层将维度di",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_63a09ff6fb21e747545f4d7ca1343104.jpg",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-05T12:38:46+00:00",
+    "modified": "2025-08-20T15:51:33+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.6-层与块.md"
+  },
+  "2024": {
+    "id": 2024,
+    "title": "卷积神经网络CNN",
+    "url": "/2024.html/卷积神经网络cnn/",
+    "canonical": "https://www.laumy.tech/2024.html/卷积神经网络cnn/",
+    "description": "图像卷积 图像卷积是有一个卷积核，这个卷积核对输入做相关运算。卷积核从输入的张量左上角开始、从左到右、从上到下进行滑动，每到一个位置时，在该窗口的部分张量与卷积核做点积得到一个输出。 为什么要使用卷积了，主要是要解决以下问题 参数爆炸问：传统全连接网络处理图像时参数规模过大（如1000×1000像素图像需30亿参数），而CNN通过局部连接和权值共享大幅减少参",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_5a5c8c18a3810713bcf153abf8162bd2.jpg",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-06T11:39:59+00:00",
+    "modified": "2025-08-20T15:51:45+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.7-卷积神经网络CNN.md"
+  },
+  "2032": {
+    "id": 2032,
+    "title": "现代卷积神经网络",
+    "url": "/2032.html/现代卷积神经网络/",
+    "canonical": "https://www.laumy.tech/2032.html/现代卷积神经网络/",
+    "description": "深度卷积神经网络AlexNet AlexNet相对LeNet的特点就是层数变得更深了，参数变得更多了。AlexNet由八层组成：五个卷积层、两个全连接隐藏层和一个全连接输出层。AlexNet使用ReLU而不是sigmoid作为其激活函数。 import torch from torch import nn from d2l import torch as d",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_65bcce48d7aa20221165ae7956314a1e.jpg",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-07T08:11:41+00:00",
+    "modified": "2025-08-20T15:51:53+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.8-现代卷积神经网络.md"
+  },
+  "2046": {
+    "id": 2046,
+    "title": "计算机视觉",
+    "url": "/2046.html/计算机视觉/",
+    "canonical": "https://www.laumy.tech/2046.html/计算机视觉/",
+    "description": "图像增广 什么是图像增广？图像增广（Image Augmentation）是通过对原始图像进行一系列随机变换（如旋转、裁剪、颜色调整等）生成多样化样本的数据增强技术，旨在扩充训练数据集、提升模型泛化能力。其核心逻辑是模拟真实场景中可能存在的多样性，使模型学习到更鲁棒的特征。 深度学习中泛化能力是模型对未见过的新数据的适应能力，其核心体现在从训练数据中学习通用",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_9024eb1c64bb38258d2bdcf20448fd97.jpg",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-08T08:59:13+00:00",
+    "modified": "2025-08-20T15:52:00+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.9-计算机视觉.md"
+  },
+  "2138": {
+    "id": 2138,
+    "title": "全连接层与卷积层参数计算",
+    "url": "/2138.html/全连接层与卷积层参数计算。/",
+    "canonical": "https://www.laumy.tech/2138.html/全连接层与卷积层参数计算。/",
+    "description": "层的概念 在前面 http://www.laumy.tech/2013.html 有说明\"层与块\"概念，为了加深影响，本章再简要概括一下深度学习中常见的层。 在深度学习中，层（Layer)是神经网络的基本构建模块，负责对输入数据进行特定变换（如线性加权、非线性激活、特征提取等）。每一层接收输入数据，通过内部参数和计算规则生成输出，传递给下一层。常见的层有全连",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_c6bd61395d65c213ab8bb7875a42da46.jpg",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-09T00:22:53+00:00",
+    "modified": "2025-08-20T15:52:06+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.10-全连接层与卷积层参数计算.md"
+  },
+  "2050": {
+    "id": 2050,
+    "title": "优化算法",
+    "url": "/2050.html/优化算法/",
+    "canonical": "https://www.laumy.tech/2050.html/优化算法/",
+    "description": "局部最小与全局最小 对应任何目标函数f(x)，当然这里的目标函数可以是损失函数。如果在x处对应的f(x)小于x附近任意点的f(x)，那么f(x)是局部最小的。如果f(x)在x处的值是整个域中目标函数的最小值，那么f(x)是全局最小值。 除了局部最优解外，鞍点也是梯度为0的区域。什么是鞍点了？如下图。 在深度学习模型训练中，通常往往会有许多局部最优解或鞍点，要",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_3c00370d20ac34f8d4b7429761b9cac3.jpg",
+    "category": "深度学习",
+    "category_path": [
+      "AI",
+      "深度学习"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "深度学习"
+    ],
+    "tags": [],
+    "date": "2025-07-10T11:18:19+00:00",
+    "modified": "2025-08-20T15:50:58+00:00",
+    "source": "04-AI/4.5-深度学习/4.5.11-优化算法.md"
+  },
+  "2092": {
+    "id": 2092,
+    "title": "opencv基础操作",
+    "url": "/2092.html/opencv基础操作/",
+    "canonical": "https://www.laumy.tech/2092.html/opencv基础操作/",
+    "description": "图像的读取和显示 读写图像 cv::Mat image = cv::imread(\"image.jpg\", cv::IMREAD_COLOR); 使用imread函数读取图像，第一个参数是图像文件的路径，第二个参数是解释图像的颜色和格式（如彩色图像、灰度图像等）。第二个参数可省略，默认是cv::IMREAD_COLOR，以彩色图像读取。 cv::imwrit",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_f2fcbb2b2eab15e13b085cd3f38d21ff.jpg",
+    "category": "opencv",
+    "category_path": [
+      "AI",
+      "opencv"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "opencv"
+    ],
+    "tags": [],
+    "date": "2025-07-11T00:09:59+00:00",
+    "modified": "2025-08-20T15:53:55+00:00",
+    "source": "04-AI/4.3-opencv/4.3.1-opencv基础操作.md"
+  },
+  "2115": {
+    "id": 2115,
+    "title": "opencv图像处理",
+    "url": "/2115.html/opencv图像处理/",
+    "canonical": "https://www.laumy.tech/2115.html/opencv图像处理/",
+    "description": "图像滤波 图像的滤波核心是 使用一个小的矩阵（滤波器或卷积核）在图像上进行滑动卷积，将计算得到的结果作为目标像素的值 。 均值滤波 cv::blur(InputArray src, OutputArray dst, Size ksize, Point anchor = Point(-1,-1), int borderType = BORDER_DEFAULT",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_60a334698f29ab4862d1ace5d67329c5.jpg",
+    "category": "opencv",
+    "category_path": [
+      "AI",
+      "opencv"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "opencv"
+    ],
+    "tags": [],
+    "date": "2025-07-11T02:03:26+00:00",
+    "modified": "2025-08-20T15:54:02+00:00",
+    "source": "04-AI/4.3-opencv/4.3.2-opencv图像处理.md"
+  },
+  "2099": {
+    "id": 2099,
+    "title": "opencv视频流",
+    "url": "/2099.html/opencv读取usb摄像头显示/",
+    "canonical": "https://www.laumy.tech/2099.html/opencv读取usb摄像头显示/",
+    "description": "环境准备 本文通过采集USB摄像头来示例说明 export LD_LIBRARY_PATH=/mnt/extsd/usr/lib:$LD_LIBRARY_PATH #指定库的路径 cat /sys/devices/platform/soc/usbc0/usb_host #激活USB host 摄像头采集 摄像头相关的主要使用的是VideoCapture类。 ",
+    "cover": "",
+    "category": "opencv",
+    "category_path": [
+      "AI",
+      "opencv"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "opencv"
+    ],
+    "tags": [],
+    "date": "2025-07-11T12:04:00+00:00",
+    "modified": "2025-08-20T15:52:49+00:00",
+    "source": "04-AI/4.3-opencv/4.3.3-opencv视频流.md"
+  },
+  "2157": {
+    "id": 2157,
+    "title": "YOLOv1目标检测原理",
+    "url": "/2157.html/yolov1目标检测原理/",
+    "canonical": "https://www.laumy.tech/2157.html/yolov1目标检测原理/",
+    "description": "介绍 YOLO在目标视觉检测应用广泛，You Only Look Once的简称。作者期望YOLO能像人一样只需要看一眼就能够立即识别其中的物体、位置及交互关系。能够达到快速、实时检测的效果。 YOLO检测系统可以简要分为3个步骤： Resize image：调整输入图像的大小为448 x 448。 Run Convolutional network:CNN",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_88d89ee6a71c02e0c8dd12a3a181126a.jpg",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-07-12T09:14:10+00:00",
+    "modified": "2025-08-20T15:35:01+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.1-YOLOv1目标检测原理.md"
+  },
+  "2170": {
+    "id": 2170,
+    "title": "YOLOv2和YOLOv3",
+    "url": "/2170.html/yolov2和yolov3/",
+    "canonical": "https://www.laumy.tech/2170.html/yolov2和yolov3/",
+    "description": "YOLOv2 回顾一下YOLOv1有哪些缺陷？ 边界框训练时回归不稳定，导致定位误差大。 每个网格只能预测两个边界框且只能识别一类目标。 小目标检测效果差。 针对以上的问题，YOLOv2进行了改进，下面从检测机制优化、网络结构优化、训练策略优化3个维度进行。 检测机制优化 锚框（Anchor Box）机制 YOLOv1每个网格只会预测一个目标，因为每个网格预",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_031903d790eb2478fee62ecd88bbb4e2.jpg",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-07-13T09:19:44+00:00",
+    "modified": "2025-08-20T15:35:08+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.2-YOLOv2和YOLOv3.md"
+  },
+  "2177": {
+    "id": 2177,
+    "title": "云服务器搭建YOLOv5训练环境",
+    "url": "/2177.html/云服务器搭建yolov5环境/",
+    "canonical": "https://www.laumy.tech/2177.html/云服务器搭建yolov5环境/",
+    "description": "介绍 本文使用AutoDL云服务搭建YOLOv5的运行环境。 获取云服务器 在这个链接上 https://www.autodl.com/home 订阅服务，这里选择的是按量计费。 镜像选择基础镜像Mniconda最新ubuntu环境。 交钱订阅完成后就可以获取到登录的信息了。 这里使用的是ssh工具根据获取到的登录名和密码进行登录，需要注意的是端口可能不是默",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_0d79baa7dc8124d23f11b3e67f773aba.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-14T10:00:23+00:00",
+    "modified": "2025-08-20T15:35:15+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.5-云服务器搭建YOLOv5训练环境.md"
+  },
+  "2187": {
+    "id": 2187,
+    "title": "端侧部署YOLOv5模型",
+    "url": "/2187.html/端侧部署yolov5模型/",
+    "canonical": "https://www.laumy.tech/2187.html/端侧部署yolov5模型/",
+    "description": "导出 ONNX模型 python export.py --weights runs/train/exp2/weights/ NPU不支持动态输入，使用onnxim工具进行转换为固定输入，先安装onnxsim工具。 pip install onnxsim -i https://pypi.doubanio.com/simple/ 接着进行转换 python -m",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_204850277dfc6d569f66e9aa21b23bb8.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-15T11:46:48+00:00",
+    "modified": "2025-08-20T15:35:21+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.6-端侧部署YOLOv5模型.md"
+  },
+  "2132": {
+    "id": 2132,
+    "title": "YOLOv5端侧部署代码分析",
+    "url": "/2132.html/yolov5端侧部署代码分析/",
+    "canonical": "https://www.laumy.tech/2132.html/yolov5端侧部署代码分析/",
+    "description": "模型流程 1. NPU初始化 NpuUint npu_uint; int ret = npu_uint.npu_init(); 2.根据传入的模型文件，创建网络 NetworkItem yolov5; status = yolov5.network_create(model_file, network_id); vip_create_network() ne",
+    "cover": "/wp-content/uploads/2025/05/wp_editor_md_e1d8da4bdb5dea095e1d2d5738dddf72.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-16T08:09:54+00:00",
+    "modified": "2025-08-20T15:35:27+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.7-YOLOv5端侧部署代码分析.md"
+  },
+  "2048": {
+    "id": 2048,
+    "title": "自注意力机制",
+    "url": "/2048.html/注意力机制/",
+    "canonical": "https://www.laumy.tech/2048.html/注意力机制/",
+    "description": "运作原理 自注意力机制要解决的是让机器根据输入序列能根据上下文来理解。举个例子，输入句子为\"我有一个苹果手机\"，对于机器来说这里的\"苹果\"应该是指水果还是手机品牌了？所以要解决这个问题，就需要在上下文中去理解，那怎么在上下文中去理解了？那就是由句子中的其他词对于施加权重，让\"苹果\"更靠近\"手机\"。具体怎么做了？来看看下面的图。 上图中的a1~a4是输入的词，",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_bbf1ba7eca0ef38d8529b14969f6ea17.jpg",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-07-17T03:59:17+00:00",
+    "modified": "2025-08-20T15:35:34+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.3-自注意力机制.md"
+  },
+  "2211": {
+    "id": 2211,
+    "title": "transformer",
+    "url": "/2211.html/transformer/",
+    "canonical": "https://www.laumy.tech/2211.html/transformer/",
+    "description": "模型结构 transform使用了自注意力机制，由编码器和解码器组成。 编码器 transformer的编码器输入一排向量，输出另外一排同样长度的向量。transformer的编码中加入了残差连接和层归一化，其中N X表示重复N此。首先在输入的地方需要加上位置编码，经过自注意力处理后，再嘉盛残差连接和层归一化。接下来经过全连接的前馈神经网络，再做一次残差连接",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_aa5713ab06deff5343b019c303b81e3f.jpg",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-07-18T06:46:40+00:00",
+    "modified": "2025-08-20T15:35:42+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.4-transformer.md"
+  },
+  "2228": {
+    "id": 2228,
+    "title": "llama.cpp部署大模型",
+    "url": "/2228.html/llama-cpp部署大模型/",
+    "canonical": "https://www.laumy.tech/2228.html/llama-cpp部署大模型/",
+    "description": "安装llama.cpp 从GitHub上下载官方的源码。 git clone https://github.com/ggml-org/llama.cpp.git cd llama.cpp 使用camke进行编译，先创建build环境 cmake -B build 发现有报错curl没有安装。 -- The C compiler identification ",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_e0a172538da0ae8e59626eb4db1c25b5.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-19T09:04:24+00:00",
+    "modified": "2025-12-29T07:37:44+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.8-llama.cpp部署大模型.md"
+  },
+  "2240": {
+    "id": 2240,
+    "title": "端侧vscode AI开发环境搭建",
+    "url": "/2240.html/riscv平台ai开发环境搭建/",
+    "canonical": "https://www.laumy.tech/2240.html/riscv平台ai开发环境搭建/",
+    "description": "PC上安装vscodium 下载安装vscodium， https://vscodium.com/ 安装Open Remote - SSH插件。 可能要等等比较久，跟网络有关系，如果还是安装不了，可以参考一下这个办法使用离线的方式， https://zhuanlan.zhihu.com/p/671718415 连上之后，安装插件 设备端安装 主要是在设备端安",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_ff11ff9dc08bfc27af966d685f60d429.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-20T09:40:56+00:00",
+    "modified": "2025-08-20T15:35:55+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.9-端侧vscode AI开发环境搭建.md"
+  },
+  "2246": {
+    "id": 2246,
+    "title": "ONNX Runtime Python端侧模型部署YOLOv5",
+    "url": "/2246.html/端侧onnx-runtime-python模型推理/",
+    "canonical": "https://www.laumy.tech/2246.html/端侧onnx-runtime-python模型推理/",
+    "description": "ONNX Runtime介绍 ONNX Runtime不依赖于Pytorch、tensorflow等机器学习训练模型框架。他提供了一种简单的方法，可以在CPU、GPU、NPU上运行模型。通常ONNX Runtime用于端侧设备模型的运行推理。要使用ONNX Runtime运行模型，一般的步骤如下： 用你最喜欢的框架（如pytorch、tensorflow、p",
+    "cover": "/wp-content/uploads/2025/06/wp_editor_md_a085673644d5a2a3b34c1e9635b98c0e.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-21T12:23:04+00:00",
+    "modified": "2025-08-20T15:36:00+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.10-ONNX Runtime Python端侧模型部署YOLOv5.md"
+  },
+  "2281": {
+    "id": 2281,
+    "title": "pip install",
+    "url": "/2281.html/pip-install/",
+    "canonical": "https://www.laumy.tech/2281.html/pip-install/",
+    "description": "是什么 pip install 是python包管理器，用于python软件包的下载、安装、卸载等功能。 怎么用 在线安装 pip install 软件包名 pip install 软件包名==版本号 例如pip install requests，或pip install requests==1.1。 也可以从文件列表中获取安装 pip install -r",
+    "cover": "",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-22T02:17:58+00:00",
+    "modified": "2025-08-18T05:05:19+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.11-pip install.md"
+  },
+  "2250": {
+    "id": 2250,
+    "title": "ONNX Runtime C++端侧模型部署YOLOv5",
+    "url": "/2250.html/onnx-runtime-c端侧模型部署yolov5/",
+    "canonical": "https://www.laumy.tech/2250.html/onnx-runtime-c端侧模型部署yolov5/",
+    "description": "加载准备 初始化ONNXRuntime环境 Ort::Env env(ORT_LOGGING_LEVEL_WARNING, \"YOLOv5Inference\"); Ort::Env 是 ONNX Runtime C++ API 中用于初始化运行环境的类，有多个重载的构造函数，下面是一个构造函数原型及参数作用如下。 Ort::Env( OrtLoggingLe",
+    "cover": "",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-07-22T08:07:07+00:00",
+    "modified": "2025-08-20T15:36:06+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.12-ONNX Runtime C++端侧模型部署YOLOv5.md"
+  },
+  "2261": {
+    "id": 2261,
+    "title": "lerobot搭建",
+    "url": "/2261.html/lerobot搭建/",
+    "canonical": "https://www.laumy.tech/2261.html/lerobot搭建/",
+    "description": "设备查询 本文是记录ubuntu系统lerobot试验的快捷命令，方便开始负责执行设备，不会介绍为什么？ python -m lerobot.find_port sudo chmod +666 /dev/ttyACM0 /dev/ttyACM1 python -m lerobot.find_cameras 机器标定 从臂标定 python -m lerobo",
+    "cover": "/wp-content/uploads/2025/07/wp_editor_md_2944f77882efd633b66bbfa1c53a4df5.jpg",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [
+      "lerobot"
+    ],
+    "date": "2025-07-23T05:23:26+00:00",
+    "modified": "2025-08-27T12:50:52+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.1-lerobot搭建.md"
+  },
+  "2290": {
+    "id": 2290,
+    "title": "安装unbuntu双系统",
+    "url": "/2290.html/安装unbuntu双系统/",
+    "canonical": "https://www.laumy.tech/2290.html/安装unbuntu双系统/",
+    "description": "准备 本文只作为个人安装简单记录，不做详细过程，如果是新手，可不必花时间再往下阅读。 准备一个16G以上的U盘，安装过程中跟实际的笔记本硬件会差异比较大。 下载ubuntu镜像 先下载ubuntu镜像： https://cn.ubuntu.com/download/desktop ，我这里使用的是Ubuntu 24.04.2 LTS版本。或者可以从国内的镜像",
+    "cover": "/wp-content/uploads/2025/07/wp_editor_md_2014ae74246369b85301ae6cfe53f502.jpg",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-07-24T01:16:51+00:00",
+    "modified": "2025-07-25T13:49:17+00:00",
+    "source": "12-其他/12.12-安装unbuntu双系统.md"
+  },
+  "2300": {
+    "id": 2300,
+    "title": "模型训练GPU跑飞",
+    "url": "/2300.html/模型训练gpu跑飞/",
+    "canonical": "https://www.laumy.tech/2300.html/模型训练gpu跑飞/",
+    "description": "问题 当前使用的是魔改版的NVIDIA 2080 Ti 22G显卡，发现在模型训练过程中，跑着跑着就报错了，具体如下： raceback (most recent call last): File \"/home/laumy/lerobot/./src/lerobot/scripts/train.py\", line 291, in <module> train",
+    "cover": "/wp-content/uploads/2025/07/wp_editor_md_ce4bd0b2e1d4e571995f70dcbd8b7f39.jpg",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [
+      "lerobot"
+    ],
+    "date": "2025-07-25T06:08:28+00:00",
+    "modified": "2025-09-10T13:11:29+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.2-模型训练GPU跑飞.md"
+  },
+  "2307": {
+    "id": 2307,
+    "title": "lerobot设备标定",
+    "url": "/2307.html/lerobot设备校准/",
+    "canonical": "https://www.laumy.tech/2307.html/lerobot设备校准/",
+    "description": "why calibrate 先来看看标定后的数据 { \"shoulder_pan\": { #肩部旋转关节 \"id\": 1, \"drive_mode\": 0, \"homing_offset\": -1620, \"range_min\": 1142, \"range_max\": 2931 }, \"shoulder_lift\": { #肩部升降关节 \"id\": 2, \"",
+    "cover": "",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [
+      "lerobot"
+    ],
+    "date": "2025-07-25T08:17:22+00:00",
+    "modified": "2025-08-18T04:48:22+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.3-lerobot设备标定.md"
+  },
+  "2312": {
+    "id": 2312,
+    "title": "配置代理",
+    "url": "/2312.html/手机给电脑配置代理/",
+    "canonical": "https://www.laumy.tech/2312.html/手机给电脑配置代理/",
+    "description": "手机给电脑配置 手机设置 打开设置 设置IP地址，启用共享，注意这个ip地址设置跟电脑同一个局域网。 通过上面的步骤，手机的就启动的代理设置了代理服务为：192.168.0.29:1082。 电脑设置 以ubuntu为例，打开设置界面，打开代理。 将代理配置为手动模式，然后将所有的服务都代理到192.168.0.29:1082上。 上面的意思就是HTTP/H",
+    "cover": "/wp-content/uploads/2025/07/wp_editor_md_b3c9255adecc944bbf210d8b0d05c023.jpg",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-07-25T10:34:48+00:00",
+    "modified": "2026-01-22T02:37:30+00:00",
+    "source": "12-其他/12.13-配置代理.md"
+  },
+  "2330": {
+    "id": 2330,
+    "title": "lerobot示教",
+    "url": "/2330.html/lerobot示教/",
+    "canonical": "https://www.laumy.tech/2330.html/lerobot示教/",
+    "description": "启动 示教的功能主要是主臂控制，从臂跟随，在数据采集是非常的一环。下面是模块启动的执行命令： python -m lerobot.teleoperate \\ --robot.type=so101_follower \\ --robot.port=/dev/ttyACM0 \\ --robot.id=R12252801 \\ --teleop.type=so101_",
+    "cover": "",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [
+      "lerobot"
+    ],
+    "date": "2025-07-28T06:41:48+00:00",
+    "modified": "2025-08-18T04:48:33+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.4-lerobot示教.md"
+  },
+  "2334": {
+    "id": 2334,
+    "title": "python补习",
+    "url": "/2334.html/python补习/",
+    "canonical": "https://www.laumy.tech/2334.html/python补习/",
+    "description": "装饰器 函数装饰器 什么是装饰器 装饰器是python的一种高级语法，本质上是函数包装器，可以在不修改函数代码的前提下为函数添加额外功能如日志记录、性能计时、权限校验，也可以修改函数的输入和输出。装饰器通过@装饰器名语法应用与函数，也是一种语法糖，简化包装的代码。 基本语法与原理 装饰器是一个 接收函数 作为参数，并 返回新函数 的函数。当用@decorat",
+    "cover": "",
+    "category": "语言",
+    "category_path": [
+      "语言"
+    ],
+    "root_category": "语言",
+    "raw_categories": [
+      "语言"
+    ],
+    "tags": [],
+    "date": "2025-07-29T02:55:42+00:00",
+    "modified": "2025-11-18T06:12:56+00:00",
+    "source": "10-语言/10.4-python补习.md"
+  },
+  "2332": {
+    "id": 2332,
+    "title": "lerobot录制",
+    "url": "/2332.html/lerobot数据采集与模型测试/",
+    "canonical": "https://www.laumy.tech/2332.html/lerobot数据采集与模型测试/",
+    "description": "简介 lerobot record是关键核心流程，其包括了数据的采集和模型推理两部分。 如果是数据采集模式，命令启动如下 python -m lerobot.record \\ --robot.disable_torque_on_disconnect=true \\ --robot.type=so101_follower \\ --robot.port=/dev/",
+    "cover": "/wp-content/uploads/2025/07/wp_editor_md_643928e8d5da2fdf1d721700de6bbb9e.jpg",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-07-29T08:00:47+00:00",
+    "modified": "2025-08-18T04:43:42+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.5-lerobot录制.md"
+  },
+  "2385": {
+    "id": 2385,
+    "title": "lerobot训练",
+    "url": "/2385.html/lerobot训练/",
+    "canonical": "https://www.laumy.tech/2385.html/lerobot训练/",
+    "description": "初始化 @parser.wrap() def train(cfg: TrainPipelineConfig): cfg.validate() # 验证配置合法性（如路径、超参数范围） init_logging() # 初始化日志系统（本地文件+控制台输出） if cfg.seed is not None: set_seed(cfg.seed) # 固定随机种",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_7077df4feaf6c6704d392f459123e847.jpg",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-07-30T13:43:55+00:00",
+    "modified": "2025-08-18T04:43:26+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.6-lerobot训练.md"
+  },
+  "2433": {
+    "id": 2433,
+    "title": "lerobot策略优化器",
+    "url": "/2433.html/lerobot策略优化器/",
+    "canonical": "https://www.laumy.tech/2433.html/lerobot策略优化器/",
+    "description": "torch.optim简介 在学校lerobot的策略优化器前，我们先再复习一下什么是优化器。 什么优化器 优化器官方解释就是在深度学习中让损失函数通过梯度下降思想逐步调整参数以达到最小损失。 简单理解优化器的就是更新计算参数的，根据损失函数的梯度方向调整模型权重和偏置值，公式为：新参数 = 旧参数 - 学习率 × 梯度。通过迭代逐步逼近最优解。在文章 ht",
+    "cover": "",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-08-02T08:47:16+00:00",
+    "modified": "2025-08-18T04:43:16+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.7-lerobot策略优化器.md"
+  },
+  "2437": {
+    "id": 2437,
+    "title": "lerobot学习率调度器",
+    "url": "/2437.html/lerobot学习率调度器/",
+    "canonical": "https://www.laumy.tech/2437.html/lerobot学习率调度器/",
+    "description": "学习率调度器简介 是什么 学习率调度器（Learning Rate Scheduler）是深度学习训练中动态调整 优化器学习率的工具 （注意是在优化器的基础上动态调整学习率），通过优化收敛过程提升模型性能。 学习率（η）控制梯度更新步长，参数更新量 = -η × 梯度。过大步长导致震荡，过小则陷入局部最优或训练缓慢，固定学习率易导致训练初期震荡或后期收敛缓慢",
+    "cover": "",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-08-02T13:19:15+00:00",
+    "modified": "2025-08-18T04:43:00+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.8-lerobot学习率调度器.md"
+  },
+  "2431": {
+    "id": 2431,
+    "title": "具身智能ACT算法",
+    "url": "/2431.html/具身智能act算法/",
+    "canonical": "https://www.laumy.tech/2431.html/具身智能act算法/",
+    "description": "基本原理 简单总结一下什么是ACT算法。传统的机器算法过程是观测关节位置J1经过模型预测动作A2然后执行，观测到J2预测数A3，观测到J3遇到A4依次类推，这样就有一个问题，假设预测出的A2跟实际相比偏差就比较大那么对应的观测到的J2就偏离比较大。如果要连续预测K步，就要连续采集K步，缺点就是误差会累积同时预测效率也比较低。那么对于ACT算法是怎么进行优化的",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_d952b61aa30ccd3ad3870e5e43ddf3d9.jpg",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-03T14:32:59+00:00",
+    "modified": "2025-08-22T11:16:27+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.5-具身智能ACT算法.md"
+  },
+  "2447": {
+    "id": 2447,
+    "title": "lerobot ACT实现分析",
+    "url": "/2447.html/lerobot-act算法实现/",
+    "canonical": "https://www.laumy.tech/2447.html/lerobot-act算法实现/",
+    "description": "配置类ACTConfig @PreTrainedConfig.register_subclass(\"act\") @dataclass class ACTConfig(PreTrainedConfig): # 输入/输出结构 chunk_size: int = 100 # 动作块长度（每次预测的动作序列长度） n_action_steps: int = 100",
+    "cover": "",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-08-04T01:54:32+00:00",
+    "modified": "2025-08-20T15:54:45+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.9-lerobot ACT实现分析.md"
+  },
+  "3135": {
+    "id": 3135,
+    "title": "建图导航ROS2包输入和输出节点",
+    "url": "/3135.html/机器运动ros2包输入和输出节点/",
+    "canonical": "https://www.laumy.tech/3135.html/机器运动ros2包输入和输出节点/",
+    "description": "SLAM 2D 激光：slam_toolbox （1）安装启动 sudo apt update sudo apt install ros-jazzy-slam-toolbox ros2 launch slam_toolbox online_async_launch.py （2）输入输出 ros2 node info /slam_toolbox /slam_t",
+    "cover": "",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-08-05T08:40:28+00:00",
+    "modified": "2026-01-05T10:51:52+00:00",
+    "source": "05-ROS系统/5.1-建图导航ROS2包输入和输出节点.md"
+  },
+  "2458": {
+    "id": 2458,
+    "title": "Transformer 原理解析：从注意力机制到自回归生成",
+    "url": "/2458.html/transformer-原理解析：从注意力机制到自回归生成/",
+    "canonical": "https://www.laumy.tech/2458.html/transformer-原理解析：从注意力机制到自回归生成/",
+    "description": "概述 框架 以翻译作为例子，从宏观角度理解大模型，可以把大模型视为一个黑匣子，它可以输入一种语言然后输出另外一种翻译语言，如下图所示。 如果将模型稍微展开一下，模型分为encoders和decoders两部分。为什么要分为编码器和解码器了？主要是从以下动机考量。 条件生成需求：在机器翻译、摘要、对话等条件文本生成任务重，需要读懂输入再逐步输出目标序列这两个事",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_520233b55d11c3774c5bfa49cbaf041f.jpg",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-07T03:50:37+00:00",
+    "modified": "2026-02-25T01:26:58+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.6-Transformer 原理解析：从注意力机制到自回归生成.md"
+  },
+  "2483": {
+    "id": 2483,
+    "title": "数据维度",
+    "url": "/2483.html/矩阵/",
+    "canonical": "https://www.laumy.tech/2483.html/矩阵/",
+    "description": "维度是什么 维度=数据 需要“几个”索引 才能定位到一个元素，也叫做轴数(axis)或阶(rank)。 可以看成\"套盒子\"的层数，盒子里面装盒子，再装数字。每多一层外括号/分类，就多一维。 0维=一个数；1维=一排数；2维=表格；3维=一摞表格；更高维=外面再套一层一层分类； 判断有几个维度的方法 ： 获取一个元素需要几个索引才能定位到。 多一层外括号=多一",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_d0c4f96a650d1ae2cbdd23a44a51cdab.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-08-08T09:49:24+00:00",
+    "modified": "2025-08-20T15:38:33+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.13-数据维度.md"
+  },
+  "2491": {
+    "id": 2491,
+    "title": "dataset和DataLoader",
+    "url": "/2491.html/dataset和dataloader/",
+    "canonical": "https://www.laumy.tech/2491.html/dataset和dataloader/",
+    "description": "简介 Dataset和DataLoader在pytorch中主要用于数据的组织。这两个类通常一起搭配处理深度学习中的数据流。 Dataset 用于产出“单个样本”：定义怎么按索引取到一个样本，以及总共有多少个样本。 DataLoader 负责“成批取样”：决定批大小、是否打乱、多进程加载、并用 collate_fn 把一个批里的样本“拼起来”（对齐、padd",
+    "cover": "",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-08-08T14:08:49+00:00",
+    "modified": "2025-08-20T15:54:51+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.14-dataset和DataLoader.md"
+  },
+  "2509": {
+    "id": 2509,
+    "title": "从零实现 Transformer：中英文翻译实例",
+    "url": "/2509.html/从零实现-transformer：中英文翻译实例/",
+    "canonical": "https://www.laumy.tech/2509.html/从零实现-transformer：中英文翻译实例/",
+    "description": "概述 在 http://www.laumy.tech/2458.html#h37 章节中，介绍了transformer的原理，本章用pytorch来实现一个将\"我有一个苹果\"翻译为英文\"I have an apple\"的模型，直观体会transformer原理实现。 接下来先上图看看整体的代码流程。 推理 训练 模型 编解码器 到这里就涵盖了整个transf",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_6d80929099229cfcce1c73395a7b334c.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-08-13T11:47:22+00:00",
+    "modified": "2025-08-22T14:57:15+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.15-从零实现 Transformer：中英文翻译实例.md"
+  },
+  "2627": {
+    "id": 2627,
+    "title": "lerobot之smolvla体验",
+    "url": "/2627.html/lerobot之smolvla体验/",
+    "canonical": "https://www.laumy.tech/2627.html/lerobot之smolvla体验/",
+    "description": "环境安装 pip install -e \".[smolvla]\" 在原来lerobot的环境基础上。 启动训练 本文主要是记录复现lerobot smolvla策略的效果，为了快速看到效果，这里不进行采集数据了，直接用此前ACT采集的数据，将数据打包放到autodl云服务器上进行训练。 python src/lerobot/scripts/train.py ",
+    "cover": "",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-08-18T04:37:59+00:00",
+    "modified": "2025-09-07T12:18:09+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.10-lerobot之smolvla体验.md"
+  },
+  "2640": {
+    "id": 2640,
+    "title": "解读ViT：Transformer 在视觉领域如何落地",
+    "url": "/2640.html/解析-vit：transformer-在视觉领域如何落地/",
+    "canonical": "https://www.laumy.tech/2640.html/解析-vit：transformer-在视觉领域如何落地/",
+    "description": "背景 计算机视觉领域，一直都是卷积天下。传统的卷积神经网络(CNN)依赖于卷积核提取局部特征，效果很好，但是也有一些不足，如需要人工设计卷积结构包括卷积核大小和层数，另外就是难以捕捉全局的依赖关系。 transformer最早更多的是应用在NLP领域的架构，用注意力机制来捕捉长距离的依赖。那把transformer应用在视觉领域了，会有什么效果吗？而在202",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_13bd80ed2e3e2dbf44ee6c79eab0b8cb_1755592221.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-19T10:00:33+00:00",
+    "modified": "2025-08-22T15:03:17+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.7-解读ViT：Transformer 在视觉领域如何落地.md"
+  },
+  "2645": {
+    "id": 2645,
+    "title": "视觉 Token 如何注入语言模型？VLM拆解",
+    "url": "/2645.html/视觉语言大模型vlm/",
+    "canonical": "https://www.laumy.tech/2645.html/视觉语言大模型vlm/",
+    "description": "VLM与LLM 如果说我们有一张图片、一个图表想让大模型来帮忙理解那应该要怎么实现了？ 标准的LLM语言大模型只能处理文本序列，是不能够读取图像的，如果没有办法将视觉的数据转换为LLM能够理解的形式，那么LLM是无法处理的。需要注意的是我们这里说的LLM并不是transformer，LLM指的是大语言模型如DeepSeek，GPT，Qwen，其是使用了tra",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_32f06f0940366f8db273a8cfc9d0dd7e_1755658135.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-20T08:54:08+00:00",
+    "modified": "2025-08-28T01:14:04+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.8-视觉 Token 如何注入语言模型？VLM拆解.md"
+  },
+  "2660": {
+    "id": 2660,
+    "title": "Diffusion：如何从噪声中生成清晰图像",
+    "url": "/2660.html/diffusion：如何从噪声中生成清晰图像/",
+    "canonical": "https://www.laumy.tech/2660.html/diffusion：如何从噪声中生成清晰图像/",
+    "description": "概述 图像生成是当下研究的热点，diffusion是一种人工智能领域图像生成的基础模型，当下Stable diffusion、DALL·E、MidJourney文生图模型的基座都使用了diffusion。 diffusion扩散模型属于生成式模型， 生成图像不是正向从0到1构成图像而是反向的预先生成一个随机的噪声图中然后根据文本提示词逐渐的去噪\"扣\"出图像 ",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_a3dec8d301d71cf3eb6473149ef4f0e1_1755764049.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-21T10:04:29+00:00",
+    "modified": "2025-08-22T15:08:19+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.9-Diffusion：如何从噪声中生成清晰图像.md"
+  },
+  "2680": {
+    "id": 2680,
+    "title": "Flow Matching：让生成模型“流动”起来",
+    "url": "/2680.html/flow-matching：让生成模型流动起来/",
+    "canonical": "https://www.laumy.tech/2680.html/flow-matching：让生成模型流动起来/",
+    "description": "背景 上一篇文章分析了diffusion扩散模型。diffusion扩散模型做法是加噪声、再一步步去噪，训练过程复杂，还需要 carefully 设计噪声调度。 Flow Matching提出了更直接的方式：与其通过一大堆离散的“加噪/去噪”步骤，不如直接学习一个连续的流动 (flow)，让点从噪声“顺滑地流动”到目标数据。 原理 把生成过程看作流体运动，想",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_3fb75ea4a45a7ab5c6d38bfd4d17f2ea_1755833389.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-22T07:02:45+00:00",
+    "modified": "2025-08-22T10:45:11+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.10-Flow Matching：让生成模型“流动”起来.md"
+  },
+  "2699": {
+    "id": 2699,
+    "title": "浅析Pi0 ：VLM 与 Flow Matching 的结合之道",
+    "url": "/2699.html/机器人策略模型pi0/",
+    "canonical": "https://www.laumy.tech/2699.html/机器人策略模型pi0/",
+    "description": "概述 传统机器人策略模型往往局限在单一任务或平台，难以跨场景泛化。与此同时，大规模 视觉-语言模型（VLM） 已展现出卓越的语义理解与任务指令解析能力。如果能将 VLM 的语义理解能力 与 Flow Matching 的连续动作建模能力 结合，有望构建具备泛化与实时性的机器人通用控制器。 Pi0 （π0）正是这样一个探索：基于 PaliGemma（3B 参数",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_af0b023cd12d9ba9f55e19a618e15384_1755859779.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-22T11:10:53+00:00",
+    "modified": "2025-08-23T02:12:09+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.11-浅析Pi0 ：VLM 与 Flow Matching 的结合之道.md"
+  },
+  "2723": {
+    "id": 2723,
+    "title": "轻量SmolVLA：半层VLM、视觉压缩与异步推理赋能具身智能",
+    "url": "/2723.html/smolvla/",
+    "canonical": "https://www.laumy.tech/2723.html/smolvla/",
+    "description": "概述 SmolVLA 是一套轻量级 视觉-语言-行动 （VLA）策略：前端用小型 VLM（视觉 SigLIP + 语言 SmolLM2）做感知与理解；后端用一个“动作专家”专门预测一段连续的低层控制。它与Pi0相比，参数规模少了将近10倍只有约0.45B（450M）。它的目标是在低算力下也能稳定执行多任务机器人控制，并保持接近甚至超过更大模型的效果。 Smo",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_8063fb41f525cf17c2469eaf6acaf17b_1755924424.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-23T08:04:53+00:00",
+    "modified": "2025-08-27T06:38:12+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.12-轻量SmolVLA：半层VLM、视觉压缩与异步推理赋能具身智能.md"
+  },
+  "2740": {
+    "id": 2740,
+    "title": "从数学角度理解flow matching中的线性插值",
+    "url": "/2740.html/从数学角度理解flow-matching中的线性插值/",
+    "canonical": "https://www.laumy.tech/2740.html/从数学角度理解flow-matching中的线性插值/",
+    "description": "什么是插值 插值的核心问题是： 在已知两个点的情况下，如何找到它们之间的中间点 。 举个人走路的例子，起点在家门口(A点)，终点在公司(B点)，总的路程为1000米，假设人是匀速移动，如果走到一半(t=0.5)，那么人就在家和公司的正中间，如果走到四分之一(t=0.25)，那么离家250米，离公司750米。 线性插值（LERP） 是最简单的一种：它假设两个点",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_529d0a37acbc728c6c22f921aeb83078_1756005092.gif",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-08-24T03:41:03+00:00",
+    "modified": "2025-08-24T04:06:14+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.13-从数学角度理解flow matching中的线性插值.md"
+  },
+  "2743": {
+    "id": 2743,
+    "title": "LeRobot SmolVLA：从训练到推理链路剖析",
+    "url": "/2743.html/lerobot-smolvla策略/",
+    "canonical": "https://www.laumy.tech/2743.html/lerobot-smolvla策略/",
+    "description": "框架 本文主要对lerobot SmolVLA策略代码进行分析，下面是策略实现关键部分框图。 SmolVLAPolicay类封装向上提供策略的调用。SmolVLAConfig是对SmolVLA策略的配置，用于配置输出动作序列长度、观测图像输入后到模型的缩放尺寸以及微调策略等等。SmolVLAPolicay类中关键的成员是VLAFlowMatching类，是实",
+    "cover": "/wp-content/uploads/2025/08/wp_editor_md_606a482e93c99ec2564559998534915e_1756272535.png",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-08-25T15:53:49+00:00",
+    "modified": "2025-08-27T09:50:10+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.11-LeRobot SmolVLA：从训练到推理链路剖析.md"
+  },
+  "3047": {
+    "id": 3047,
+    "title": "网站github page同步",
+    "url": "/3047.html/网站github-page同步/",
+    "canonical": "https://www.laumy.tech/3047.html/网站github-page同步/",
+    "description": "准备 下载同步的仓库 mkdir blog git clone git@github.com:laumy0929/wordpress-export-to-markdown.git git clone git@github.com:laumy0929/notes.git git clone git@github.com:laumy0929/note_page.",
+    "cover": "",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2025-08-26T10:17:56+00:00",
+    "modified": "2025-10-26T10:29:32+00:00",
+    "source": "06-前后端/6.11-网站github page同步.md"
+  },
+  "2780": {
+    "id": 2780,
+    "title": "SmolVLA 异步推理：远程 Policy Server 与本地 Client 实操",
+    "url": "/2780.html/smolvla策略server与client分离部署实践/",
+    "canonical": "https://www.laumy.tech/2780.html/smolvla策略server与client分离部署实践/",
+    "description": "概述 本文记录lerobot smolvla异步推理实践，将SmolVLA的策略server部署到AutoDL上，真机client在本地笔记本上运行。 下面是代码的流程图： 环境准备 先登录AutoDL事先搭建好lerobot的环境，这里就不再重复了，参考往期文章。lerobot环境搭建好后，需要先安装smolvla和gRPC。 # 建议先升级打包工具 py",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_bb33ac4dc20efc15f88512cb477053b2_1756952035.png",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-08-28T02:48:33+00:00",
+    "modified": "2025-09-04T02:14:08+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.12-SmolVLA 异步推理：远程 Policy Server 与本地 Client 实操.md"
+  },
+  "2800": {
+    "id": 2800,
+    "title": "Jetson nano平台随记",
+    "url": "/2800.html/jetson-nano随记/",
+    "canonical": "https://www.laumy.tech/2800.html/jetson-nano随记/",
+    "description": "环境准备 烧录镜像 下载NVIDIA jetson nano镜像，其镜像是基于ubuntu18.04修改。使用开源的balenaEtcher烧录器写到SD卡上，然后插卡启动 网络准备 买一个无线网卡然后安装好驱动配置好wifi连接。 远程访问 方法1： 在nano上安装xrdp的方式，window就可以远程桌面访问。 方法2：在nano上安装VNC，远程访问",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_df583b332dc5ae56e1337c22ba82646f_1756951596.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-09-04T07:58:11+00:00",
+    "modified": "2025-09-08T13:37:42+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.16-Jetson nano平台随记.md"
+  },
+  "2807": {
+    "id": 2807,
+    "title": "NVIDIA Jetson平台简介：机器人和边缘AI",
+    "url": "/2807.html/nvidia-jetson：机器人和边缘ai/",
+    "canonical": "https://www.laumy.tech/2807.html/nvidia-jetson：机器人和边缘ai/",
+    "description": "简介 NVIDIA Jetson平台提供用于开发和部署AI赋能机器人、无人机、IVA（Intelligent Video Analytics，智能视频）应用和自主机器的工具。在边缘生成式AI、NVIDIA Metropolis和Isaac平台支持下，Jetson提供可拓展得软件、现代AI堆栈、灵活的微服务和API、生成就绪型ROS软件包以及特定于应用程序的A",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_4293ff8b4de35e4a17550c31648daf56_1756973304.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-09-04T10:02:28+00:00",
+    "modified": "2025-09-08T12:59:43+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.17-NVIDIA Jetson平台简介：机器人和边缘AI.md"
+  },
+  "2823": {
+    "id": 2823,
+    "title": "ubuntu英伟达显卡驱动安装",
+    "url": "/2823.html/英伟达显卡驱动安装/",
+    "canonical": "https://www.laumy.tech/2823.html/英伟达显卡驱动安装/",
+    "description": "环境准备 sudo apt update sudo apt install build-essential dkms linux-headers-$(uname -r) sudo apt autoremove 卸载原驱动 sudo apt-get remove --purge '^nvidia-.*' sudo apt-get autoremove #重新生",
+    "cover": "",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-09-07T08:12:55+00:00",
+    "modified": "2025-09-08T13:34:52+00:00",
+    "source": "12-其他/12.14-ubuntu英伟达显卡驱动安装.md"
+  },
+  "2819": {
+    "id": 2819,
+    "title": "什么是ROS：机器人操作系统快览随记",
+    "url": "/2819.html/ros：机器人操作系统随记/",
+    "canonical": "https://www.laumy.tech/2819.html/ros：机器人操作系统随记/",
+    "description": "ROS的秘诀 梳理出有什么节点，每个节点的输入和输出是什么？ 环境搭建 catkin vscode ROS插件、bracket pair colorizer 2 terminator sudo apt install terminator CRTL+ALT+T启动 CRTL+SHIFT+E左右分屏 CRTL+SHIFT+O上下分屏 CRTL+SHIFT+W关",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_4b69a0b2dc4c1e8cdedc78ab4e943005_1757057738.png",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-09-08T13:36:23+00:00",
+    "modified": "2025-09-28T01:43:31+00:00",
+    "source": "05-ROS系统/5.2-什么是ROS：机器人操作系统快览随记.md"
+  },
+  "2848": {
+    "id": 2848,
+    "title": "解决ubuntu安装搜狗输入闪烁",
+    "url": "/2848.html/ubuntu系统怎么切换使用xorg显示/",
+    "canonical": "https://www.laumy.tech/2848.html/ubuntu系统怎么切换使用xorg显示/",
+    "description": "切换使用Xorg显示 之所以要切换Xorg显示是因为搜狗输入如果使用wayland显示，切到中文会一直闪烁，因此需要使用Xorg显示。 echo $XDG_SESSION_TYPE 先检查当前是那种图像绘画，如果打印是x11则是Xorg，如果是wayland则是wayland。 全局修改为Xorg显示。 sudo vim /etc/gdm3/custom.c",
+    "cover": "",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-09-10T11:57:46+00:00",
+    "modified": "2025-09-10T12:09:33+00:00",
+    "source": "12-其他/12.15-解决ubuntu安装搜狗输入闪烁.md"
+  },
+  "2842": {
+    "id": 2842,
+    "title": "Isaac Sim v5.0.0：探索AI 机器人仿真平台",
+    "url": "/2842.html/isaac-sim-v5-0-0/",
+    "canonical": "https://www.laumy.tech/2842.html/isaac-sim-v5-0-0/",
+    "description": "什么是isaac sim NVIDIA Issac Sim是一款基于NVIDIA omniverse构建的参考应用应用程序，使开发人员能够在基于物理的虚拟环境开发、模拟和测试AI机器人。 设计 Isaac Sim提供了一系列工作流程，用于导入和调整最常见格式（包括Onshape、统一机器人描述格式URDF和MuJoco XML格式MJCF）设计的机械系统。这",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_f1bd52ce13e8d9e95e6a87bd5c68377a_1757493223.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-09-10T15:52:24+00:00",
+    "modified": "2025-09-11T09:27:19+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.18-Isaac Sim v5.0.0：探索AI 机器人仿真平台.md"
+  },
+  "2880": {
+    "id": 2880,
+    "title": "Isaac Sim 快速入门：三种工作流程示例",
+    "url": "/2880.html/isaac-sim快速入门教程/",
+    "canonical": "https://www.laumy.tech/2880.html/isaac-sim快速入门教程/",
+    "description": "简介 如果是NVIDIA Isaac Sim的新用户，可以按照本文的两个示例来体验Isaac Sim。本文主要提供Isaac Sim基础使用教程、机器人基础教程。 在快速入门教程中，所有可通过 GUI 执行的操作同样也能用 Python 实现。您可以在 GUI 操作与 Python 脚本之间自由切换。您在 GUI 中创建的所有内容都能保存为 USD 文件的一",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_06ec1ea5078ef44e185364057d89c458_1757579665.webp",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-09-11T09:14:27+00:00",
+    "modified": "2025-09-11T12:50:07+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.19-Isaac Sim 快速入门：三种工作流程示例.md"
+  },
+  "2886": {
+    "id": 2886,
+    "title": "ubuntu apt 命令",
+    "url": "/2886.html/ubuntu-apt-命令/",
+    "canonical": "https://www.laumy.tech/2886.html/ubuntu-apt-命令/",
+    "description": "介绍 apt是ubuntu/debian的包管理工具，主要用于安装、更新、卸载和管理系统软件，他是对apt-get和apt-cache的简化整合，输出更直观。 常用的apt命令 sudo apt update：从 /etc/apt/sources.list 和 /etc/apt/sources.list.d/ 指定的镜像源获取最新软件包列表。只更新索引信息，",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_5eb37f53d4f69ab3c3452830acc58909_1757648173.png",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-09-12T03:49:41+00:00",
+    "modified": "2025-09-12T06:22:08+00:00",
+    "source": "12-其他/12.16-ubuntu apt 命令.md"
+  },
+  "2891": {
+    "id": 2891,
+    "title": "ROS2安装：ubuntu 24.04.2上实践",
+    "url": "/2891.html/ubuntu-ros2安装/",
+    "canonical": "https://www.laumy.tech/2891.html/ubuntu-ros2安装/",
+    "description": "前言 本文在unbuntu 24.04.2系统上搭建ROS2系统。 No LSB modules are available. Distributor ID: Ubuntu Description: Ubuntu 24.04.2 LTS Release: 24.04 Codename: noble 设置编码格式 locale # check for UTF-",
+    "cover": "",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-09-15T07:03:08+00:00",
+    "modified": "2025-12-11T09:14:02+00:00",
+    "source": "05-ROS系统/5.3-ROS2安装：ubuntu 24.04.2上实践.md"
+  },
+  "2900": {
+    "id": 2900,
+    "title": "ROS2实践：创建一个包和节点",
+    "url": "/2900.html/ros2：创建一个包和节点/",
+    "canonical": "https://www.laumy.tech/2900.html/ros2：创建一个包和节点/",
+    "description": "准备 在ROS2中什么是包，什么是节点？ 包（Package） 是 ROS 2 的基本构建单元，包含了代码、资源、配置和依赖，组织着机器人的各个功能模块。这个packge可以理解为openwrt的package，主要用于怎么构建、编译代码，存放程序的配置等等。 节点（Node） 是 ROS 2 中执行的具体单元，它是一个程序，可以完成传感器读取、控制计算、数",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_44d53a97e000912ce0214079647d9645_1757931470.png",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-09-15T10:18:03+00:00",
+    "modified": "2025-09-16T06:29:08+00:00",
+    "source": "05-ROS系统/5.4-ROS2实践：创建一个包和节点.md"
+  },
+  "2919": {
+    "id": 2919,
+    "title": "ubuntu系统异常：无法进入登录桌面",
+    "url": "/2919.html/ubuntu系统异常：无法进入登录桌面/",
+    "canonical": "https://www.laumy.tech/2919.html/ubuntu系统异常：无法进入登录桌面/",
+    "description": "概述 最近发现ubuntu系统24.04.2的版本用着用着休眠熄屏后，突然登录不了，然后重启也进入不了桌面，显示如下： 按Ctrl + Alt + F3也进入不了tty控制台。 解决办法 重启系统进入Advanced options for Ubuntu(recovery mode)模式，进去后选择进去后选 root shell。然后强制进入命令行启动。 s",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_2d7aa6e896d223ee8953391f9c81cd31_1757995074.jpg",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-09-16T04:01:55+00:00",
+    "modified": "2025-09-18T03:06:44+00:00",
+    "source": "12-其他/12.17-ubuntu系统异常：无法进入登录桌面.md"
+  },
+  "2916": {
+    "id": 2916,
+    "title": "ROS2节点通信：话题、服务、动作三剑客+参数",
+    "url": "/2916.html/ros2节点通信：话题、服务、动作三剑客参数/",
+    "canonical": "https://www.laumy.tech/2916.html/ros2节点通信：话题、服务、动作三剑客参数/",
+    "description": "简介 在ROS系统每个节点可以理解为一个进程，更准确的说法它是一个包含了特定功能的独立执行单元。节点在ROS2中通常是一个可执行文件，负责执行特定的任务，如控制机器人、传感器数据处理等。每个节点可以通过ROS2的通信机制与其他节点进行数据交换。 在具体的工程应用中，需要多个节点进行配合完成一个具体的产品。那么多个节点直接如何进行通信了，ROS系统提供了话题、",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_3c3bec242569835edd283fe7661154bd_1757990015.png",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-09-16T10:33:47+00:00",
+    "modified": "2025-09-16T10:33:47+00:00",
+    "source": "05-ROS系统/5.5-ROS2节点通信：话题、服务、动作三剑客+参数.md"
+  },
+  "2928": {
+    "id": 2928,
+    "title": "ROS2常用开发工具：launch、TF、Gazebo、rosbag、rqt",
+    "url": "/2928.html/ros2常用开发工具：launch、tf、gazebo、rosbag、rqt/",
+    "canonical": "https://www.laumy.tech/2928.html/ros2常用开发工具：launch、tf、gazebo、rosbag、rqt/",
+    "description": "launch 在ROS2中，lauch是一个程序启动器，它的作用是一条命令可以启动多个节点，加载参数文件（YAML），重映射话题/服务/动作名称，条件启动（仿真/真机切换），嵌套调用其他launch文件。 lauch文件支持3种格式 格式 后缀 特点 推荐度 Python .launch.py 功能最强，可写逻辑、条件，官方推荐 ⭐⭐⭐⭐⭐ XML .lau",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_a5e39581a222a753954ea0749bb42147_1758091020.png",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-09-18T05:50:52+00:00",
+    "modified": "2025-09-18T05:52:00+00:00",
+    "source": "05-ROS系统/5.6-ROS2常用开发工具：launch、TF、Gazebo、rosbag、rqt.md"
+  },
+  "2936": {
+    "id": 2936,
+    "title": "ROS2机器人仿真：urdf模型、gaezbo仿真",
+    "url": "/2936.html/ros2机器人仿真：urdf模型、gaezbo仿真/",
+    "canonical": "https://www.laumy.tech/2936.html/ros2机器人仿真：urdf模型、gaezbo仿真/",
+    "description": "机器URDF模型 URDF 的全称是 Unified Robot Description Format（统一机器人描述格式）。它是 ROS / ROS2 系统里专门用来描述机器人结构和属性的一种 XML 格式文件。简单来说，URDF 就是“机器人说明书”，告诉 ROS：这个机器人长什么样、由哪些零件组成、它们之间怎么连接。 URDF核心作用是建模机器人、仿真",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_9d10fb01da7c4cfe30f8d8d50d0ce51b_1758181119.png",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-09-18T08:09:18+00:00",
+    "modified": "2025-09-22T06:38:50+00:00",
+    "source": "05-ROS系统/5.7-ROS2机器人仿真：urdf模型、gaezbo仿真.md"
+  },
+  "2939": {
+    "id": 2939,
+    "title": "ROS2机器感知：相机、雷达、IMU",
+    "url": "/2939.html/ros2机器感知：相机、雷达、imu/",
+    "canonical": "https://www.laumy.tech/2939.html/ros2机器感知：相机、雷达、imu/",
+    "description": "相机 相机安装 sudo apt install ros-jazzy-usb-cam 可视化 run usb_cam usb_cam_node_exe --ros-args -p video_device:=/dev/video2 ros2 run rqt_image_vew rqt_image_view 上面的-p指定具体的摄像头，可以用v4l2-ctl ",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_ed9fe2f6a2d74b365fa23860a20aee1e_1758187117.png",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-09-18T09:54:45+00:00",
+    "modified": "2025-09-19T10:24:33+00:00",
+    "source": "05-ROS系统/5.8-ROS2机器感知：相机、雷达、IMU.md"
+  },
+  "2945": {
+    "id": 2945,
+    "title": "ROS2 建图与导航：Slam_toolbox、Nav2实践",
+    "url": "/2945.html/ros2-建图与导航：slam_toolbox、nav2实践/",
+    "canonical": "https://www.laumy.tech/2945.html/ros2-建图与导航：slam_toolbox、nav2实践/",
+    "description": "地图构建 在 ROS2 中，地图构建常用 SLAM（Simultaneous Localization and Mapping） 技术。其大概流程是: 传感器采集数据：可使用激光雷达（2D/3D LiDAR）或相机（VSLAM） 里程计信息：来自机器人轮式里程计/IMU SLAM算法处理：融合传感器数据+里程计，估计机器人位姿同时构建环境栅格地图。 地图表示",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_8ba0b75d0fa67369cc55fec1717c2ede_1758267336.png",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-09-19T10:18:10+00:00",
+    "modified": "2025-10-10T13:54:39+00:00",
+    "source": "05-ROS系统/5.9-ROS2 建图与导航：Slam_toolbox、Nav2实践.md"
+  },
+  "2956": {
+    "id": 2956,
+    "title": "windows访问Linux搭建的samba服务",
+    "url": "/2956.html/windows访问linux搭建的samba服务/",
+    "canonical": "https://www.laumy.tech/2956.html/windows访问linux搭建的samba服务/",
+    "description": "Linux 服务 安装 Samba 是Linux上实现SMB/CIFS 协议的服务，可以让 Windows、Linux、macOS 之间互相访问文件夹。 安装samba sudo apt update sudo apt install samba -y 配置 （1）配置文件 sudo vim /etc/samba/smb.conf [share] path ",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_5438472a848cc53bdd5430a3d737e1cc_1758613394.png",
+    "category": "其他",
+    "category_path": [
+      "其他"
+    ],
+    "root_category": "其他",
+    "raw_categories": [
+      "其他"
+    ],
+    "tags": [],
+    "date": "2025-09-23T08:50:03+00:00",
+    "modified": "2025-09-23T08:51:06+00:00",
+    "source": "12-其他/12.18-windows访问Linux搭建的samba服务.md"
+  },
+  "2961": {
+    "id": 2961,
+    "title": "语音识别模型：SenseVoice入门实践",
+    "url": "/2961.html/语音识别模型：sensevoice入门实践/",
+    "canonical": "https://www.laumy.tech/2961.html/语音识别模型：sensevoice入门实践/",
+    "description": "是什么 SenseVoice是多语言识别的模型，支持语音转文字（ASR, Automatic Speech Recognition，自动语音识别），语种识别（LID, Language Identification），语音情感识别（SER, Speech Emotion Recognition），音频事件检测 / 声学事件分类（AED／AEC, Audio ",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_bc4b13c97d97e0966eaa5bb44f035f50_1759023608.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-09-26T02:50:24+00:00",
+    "modified": "2025-09-28T01:40:37+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.20-语音识别模型：SenseVoice入门实践.md"
+  },
+  "2967": {
+    "id": 2967,
+    "title": "语音生成模型：CosyVoice入门实践",
+    "url": "/2967.html/语音生成模型：cosyvoice入门实践/",
+    "canonical": "https://www.laumy.tech/2967.html/语音生成模型：cosyvoice入门实践/",
+    "description": "是什么 CosyVoice是阿里开源的一款文字转语音的开源模型，可以支持音色复刻。 怎么用 环境安装 （1）代码下载 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git cd CosyVoice git submodule update --init --recursive 因",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_43560dd8ba2e203ecc04be963fdca3e0_1759023542.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-09-26T07:11:10+00:00",
+    "modified": "2025-10-10T13:54:33+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.21-语音生成模型：CosyVoice入门实践.md"
+  },
+  "2972": {
+    "id": 2972,
+    "title": "机器人控制利器：MPC入门与实践解析",
+    "url": "/2972.html/mpc/",
+    "canonical": "https://www.laumy.tech/2972.html/mpc/",
+    "description": "背景 MPC（Model Predictive Control）模型预测控制，是一种控制方法，广泛应用在机器人、无人驾驶、过程控制、能源系统等领域。它的核心思想用一句话来总结：利用系统模型预测未来，并通过优化选择当前最优的控制输入。 如上图是一个MPC应用框图，先来看看框图中的各个变量。 r(t)：参考输入，系统希望达到的目标（设定值/reference s",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_9f3adb15d823b6851073bc3297a89506_1759047496.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-09-28T10:18:51+00:00",
+    "modified": "2025-10-10T13:54:30+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.14-机器人控制利器：MPC入门与实践解析.md"
+  },
+  "2984": {
+    "id": 2984,
+    "title": "机器人全身控制浅谈：理解 WBC 的原理",
+    "url": "/2984.html/机器人全身控制浅谈：理解-wbc-的原理/",
+    "canonical": "https://www.laumy.tech/2984.html/机器人全身控制浅谈：理解-wbc-的原理/",
+    "description": "概念 WBC（Whole-Body Control，全身控制）是什么？机器人是由“各关节”组成的，其不是“各关节各玩各的”而是一个耦合的整体。在某个时刻可能要做很多事情，比如保持平衡（重心别出圈）、手/脚要动作到目标位置、躯干姿态不能乱、关节不能超限、脚下不能打滑。这些都是一系列任务的组合。 WBC的核心就是把这些任务（目标）和约束（物理/安全）写进一个 小",
+    "cover": "/wp-content/uploads/2025/09/wp_editor_md_9c627c65e696506119c68763ef55a836_1759129986.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-09-29T08:41:28+00:00",
+    "modified": "2025-10-17T09:20:29+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.15-机器人全身控制浅谈：理解 WBC 的原理.md"
+  },
+  "3010": {
+    "id": 3010,
+    "title": "为什么AlphaGo能自学围棋？强化学习基本概念",
+    "url": "/3010.html/为什么alphago能自学围棋？强化学习基本概念/",
+    "canonical": "https://www.laumy.tech/3010.html/为什么alphago能自学围棋？强化学习基本概念/",
+    "description": "强化学习简介 什么是强化学习 以直升机控制飞行的程序来举例。 自动驾驶的直升机配备了机载计算机、GPS、加速度计、陀螺仪和磁罗盘，我们可以实时确定的知道直升机的位置。如何使用强化学习来让直升机飞行了？ 在强化学习中，将直升机的位置、方向和速度等称为 状态s ，因此我们的目标或任务就是从直升机的 状态 映射到 动作a 的函数，意思是将两根控制杆推多远才能保持直",
+    "cover": "/wp-content/uploads/2025/10/wp_editor_md_7384c9d9bb31ffe2cd955638ecdea2ea_1760751287.png",
+    "category": "算法模型",
+    "category_path": [
+      "AI",
+      "算法模型"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "算法模型"
+    ],
+    "tags": [],
+    "date": "2025-10-18T07:38:17+00:00",
+    "modified": "2025-10-18T08:34:04+00:00",
+    "source": "04-AI/4.6-算法模型/4.6.16-为什么AlphaGo能自学围棋？强化学习基本概念.md"
+  },
+  "3025": {
+    "id": 3025,
+    "title": "Jetson Orin Nano环境搭建",
+    "url": "/3025.html/jetson-nano环境搭建/",
+    "canonical": "https://www.laumy.tech/3025.html/jetson-nano环境搭建/",
+    "description": "安装浏览器 sudo apt update sudo apt install chromium-browser -y 安装后发现点击浏览器会没反应。按照下面方法配置。 snap download snapd --revision=24724 sudo snap ack snapd_24724.assert sudo snap install snapd_24",
+    "cover": "",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-10-22T05:32:20+00:00",
+    "modified": "2025-10-25T01:23:34+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.22-Jetson Orin Nano环境搭建.md"
+  },
+  "3030": {
+    "id": 3030,
+    "title": "lekiwi+Orin Nano环境搭建",
+    "url": "/3030.html/lekiwiorin-nano环境搭建/",
+    "canonical": "https://www.laumy.tech/3030.html/lekiwiorin-nano环境搭建/",
+    "description": "环境准备 简要记录在Orin nano平台搭建lekiwi环境，可以远程遥控底盘移动和机械臂示教的过程，需要的硬件如下： - NVIDIA Jetson Orin Nano开发板 - Lekiwi套件（底盘、主从机械臂） - PC，预装好Ubuntu系统 组装硬件 将底盘、主从机械臂、Orin nano组装好，需要注意的是由于官方默认使用的计算平台是树莓派，",
+    "cover": "/wp-content/uploads/2025/10/wp_editor_md_0759fce32403b4f326054572ced3b614_1761372407.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-10-25T04:05:52+00:00",
+    "modified": "2025-10-25T06:06:53+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.23-lekiwi+Orin Nano环境搭建.md"
+  },
+  "3051": {
+    "id": 3051,
+    "title": "Lekiwi驱动链路分析",
+    "url": "/3051.html/lekiwi驱动链路分析/",
+    "canonical": "https://www.laumy.tech/3051.html/lekiwi驱动链路分析/",
+    "description": "系统架构 硬件组成 Lekiwi是一个底盘+机械臂的结构。 机械臂： 6个自由度（shoulder_pan, shoulder_lift, elbow_flex, wrist_flex, wrist_roll, gripper） 移动底盘：3个全向轮，三轮全向移动（left_wheel, back_wheel, right_wheel） github官网 L",
+    "cover": "/wp-content/uploads/2025/10/wp_editor_md_6d5e32a964b9a4284386712b51e6d138_1761640585.png",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-10-28T09:35:28+00:00",
+    "modified": "2025-10-28T10:03:15+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.13-Lekiwi驱动链路分析.md"
+  },
+  "3055": {
+    "id": 3055,
+    "title": "ubuntu系统xiaozhi server本地部署",
+    "url": "/3055.html/ubuntu系统xiaozhi-server本地部署/",
+    "canonical": "https://www.laumy.tech/3055.html/ubuntu系统xiaozhi-server本地部署/",
+    "description": "简介 本文主要是记录在ubuntu系统从零源码的方式本地部署小智Ai服务端的过程，项目的地址为： xiaozhi-server 。在部署之前简单了解一下其项目框架，这里总结可以分为3部分：manager-web、manager-api、xiaozhi-server，这3部分的运行是互相独立的，相互之间通过http rest api的方式进行访问，如下图: m",
+    "cover": "/wp-content/uploads/2025/10/wp_editor_md_57f0fdef91ffe6a8e8599ffa3693cdd7_1761793938.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-10-30T04:00:10+00:00",
+    "modified": "2025-10-30T09:35:47+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.24-ubuntu系统xiaozhi server本地部署.md"
+  },
+  "3068": {
+    "id": 3068,
+    "title": "lekiwi录制训练推理流程实践",
+    "url": "/3068.html/lekiwi录制训练推理流程实践/",
+    "canonical": "https://www.laumy.tech/3068.html/lekiwi录制训练推理流程实践/",
+    "description": "录制 设备端 先确定一下相机编号 cd ~/lerobot/ lerobot-find-cameras 生成路径：outputs/captured_images 然后修改uart的权限 sudo chmod 666 /dev/ttyACM0 启动等待连接 python -m lerobot.robots.lekiwi.lekiwi_host \\ --robo",
+    "cover": "",
+    "category": "lerobot",
+    "category_path": [
+      "AI",
+      "lerobot"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "lerobot"
+    ],
+    "tags": [],
+    "date": "2025-11-04T07:23:46+00:00",
+    "modified": "2025-11-04T07:56:07+00:00",
+    "source": "04-AI/4.2-lerobot/4.2.14-lekiwi录制训练推理流程实践.md"
+  },
+  "3076": {
+    "id": 3076,
+    "title": "MCP 协议：AI 应用连接外部系统的标准化接口",
+    "url": "/3076.html/mcp协议/",
+    "canonical": "https://www.laumy.tech/3076.html/mcp协议/",
+    "description": "简介 什么是MCP MCP是Model Context Protocol模型上下文的一个开源标准，用于连接人工智能应用程序到外部系统。使用MCP，让Claude、ChatGPT这样的AI application可以连接到数据源（例如本地文件、数据库）、工具（例如搜索引擎、计算器）和工作流（例如专业提示），从而能够访问关键信息并执行任务。 可以把MCP类比是A",
+    "cover": "/wp-content/uploads/2025/11/wp_editor_md_bde9ef024f0664fb43f00445688032a9_1762829342.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-11-11T06:08:37+00:00",
+    "modified": "2025-11-15T06:19:48+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.25-MCP 协议：AI 应用连接外部系统的标准化接口.md"
+  },
+  "3093": {
+    "id": 3093,
+    "title": "Pipecat MCP 实战流程分析：从 Client 到 Server",
+    "url": "/3093.html/pipecat-mcp流程分析/",
+    "canonical": "https://www.laumy.tech/3093.html/pipecat-mcp流程分析/",
+    "description": "简介 本文主要基于Pipecat实现一个MCP stdio传输方式调用的示例。基于智谱Web-Search-Pro实现一个MCP Server，然后在Pipecat应用基础上实现MCP Client，实现可以实时查询天气等功能。通过这个示例来理解pipecat的mcp调用流程。 先上一张完整流程图，本文将重点围绕MCP Host、MCP Client端的创建",
+    "cover": "/wp-content/uploads/2025/11/wp_editor_md_877940174884c29799080554122dcf7f_1762947496.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-11-12T13:25:45+00:00",
+    "modified": "2025-11-13T01:05:13+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.26-Pipecat MCP 实战流程分析：从 Client 到 Server.md"
+  },
+  "3105": {
+    "id": 3105,
+    "title": "JSON-RPC 2.0 规范解读",
+    "url": "/3105.html/json-rpc-2-0-规范/",
+    "canonical": "https://www.laumy.tech/3105.html/json-rpc-2-0-规范/",
+    "description": "概述 JSON-RPC是一种无状态、轻量的远程调用（RPC）协议，其有一套规范，定义了若干数据结构及其处理规则。它对传输层是无关的，可以在同一进程中传递使用，也可以跨进程、跨环境如socket、http等传递环境使用。 官方对JSON-RPC 2.0的规范定义其实也非常简单，主要请求对象、响应对象。 请求对象 一个RPC调用是通过向服务器发送一个Reques",
+    "cover": "",
+    "category": "前后端",
+    "category_path": [
+      "前后端"
+    ],
+    "root_category": "前后端",
+    "raw_categories": [
+      "前后端"
+    ],
+    "tags": [],
+    "date": "2025-11-15T05:55:05+00:00",
+    "modified": "2025-11-15T05:58:30+00:00",
+    "source": "06-前后端/6.12-JSON-RPC 2.0 规范解读.md"
+  },
+  "3122": {
+    "id": 3122,
+    "title": "基于ubuntu系统安装使用Fast DDS",
+    "url": "/3122.html/基于ubuntu系统安装使用fast-dds/",
+    "canonical": "https://www.laumy.tech/3122.html/基于ubuntu系统安装使用fast-dds/",
+    "description": "什么是Fast DDS Fast DDS是一个高性能的\"分布式通信中间库\"，用来在不同进程、不同设备之间传输数据的。Fast DDS是用C++写的一个DDS实现，在同一台机器的多个进程、或者多态机器之间进行通信。可以类似于ROS2的发布和订阅主题，可以自动发现对端（不用手写IP列表），支持可靠/不可靠、实时性、历史缓存、持久化等各种Qos。 FastDDS与",
+    "cover": "",
+    "category": "ROS系统",
+    "category_path": [
+      "ROS系统"
+    ],
+    "root_category": "ROS系统",
+    "raw_categories": [
+      "ROS系统"
+    ],
+    "tags": [],
+    "date": "2025-12-06T04:26:07+00:00",
+    "modified": "2025-12-06T04:26:07+00:00",
+    "source": "05-ROS系统/5.10-基于ubuntu系统安装使用Fast DDS.md"
+  },
+  "3127": {
+    "id": 3127,
+    "title": "ISP（Image Signal Processor）关键技术指标",
+    "url": "/3127.html/isp（image-signal-processor）关键技术指标/",
+    "canonical": "https://www.laumy.tech/3127.html/isp（image-signal-processor）关键技术指标/",
+    "description": "什么是ISP 一句话定义ISP：ISP就是把传感器吐出来的RAW电信号处理成可用于人眼、算法的图像数据的一整套“信号处理流水线”。 上面这张图是传统ISP流水线到AI ISP的演变。 （1）传统的ISP 传统的ISP，把传感器的RAW变成“人眼看起来好看”的sRGB图像，设计目标是给显示、编码、存储。核心指标是好看、稳定、符合显示标准。 名字 是什么（一句话",
+    "cover": "/wp-content/uploads/2025/12/wp_editor_md_f48196e0170447559eee753a81ffabea_1765870423.png",
+    "category": "外设",
+    "category_path": [
+      "外设"
+    ],
+    "root_category": "外设",
+    "raw_categories": [
+      "外设"
+    ],
+    "tags": [],
+    "date": "2025-12-16T12:52:01+00:00",
+    "modified": "2025-12-16T12:52:06+00:00",
+    "source": "07-外设/7.5-ISP（Image Signal Processor）关键技术指标.md"
+  },
+  "3129": {
+    "id": 3129,
+    "title": "pipecat关键调用流程",
+    "url": "/3129.html/pipecat关键调用流程/",
+    "canonical": "https://www.laumy.tech/3129.html/pipecat关键调用流程/",
+    "description": "业务流 启动阶段 帧处理",
+    "cover": "/wp-content/uploads/2025/12/wp_editor_md_0a155dcba10d11f72d299af72fca09f1_1765972673.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2025-12-17T11:58:03+00:00",
+    "modified": "2025-12-17T12:18:53+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.27-pipecat关键调用流程.md"
+  },
+  "3147": {
+    "id": 3147,
+    "title": "GGML 入门：搞懂张量、内存池与计算图",
+    "url": "/3147.html/ggml-入门：搞懂张量、内存池与计算图/",
+    "canonical": "https://www.laumy.tech/3147.html/ggml-入门：搞懂张量、内存池与计算图/",
+    "description": "ggml是什么 ggml是用于transformer架构推理的机器学习库，类似于pytorch、TensorFlow等机器学习库。ggml不需要第三方库的依赖，目前兼容X86、ARM、Apple Silicon、CUDA等。 小demo开始 int main(void) { #define rows_A 4 #define cols_A 2 float ma",
+    "cover": "/wp-content/uploads/2026/01/wp_editor_md_27f9a99f6873f9f71174e3fe4e9ed760_1768622474.png",
+    "category": "推理框架",
+    "category_path": [
+      "AI",
+      "推理框架"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "推理框架"
+    ],
+    "tags": [],
+    "date": "2026-01-17T09:31:39+00:00",
+    "modified": "2026-01-19T13:02:57+00:00",
+    "source": "04-AI/4.4-推理框架/4.4.1-GGML 入门：搞懂张量、内存池与计算图.md"
+  },
+  "3160": {
+    "id": 3160,
+    "title": "GGML多线程计算：OpenMP简介",
+    "url": "/3160.html/ggml多线程计算：openmp简介/",
+    "canonical": "https://www.laumy.tech/3160.html/ggml多线程计算：openmp简介/",
+    "description": "OpenMP是什么 OpenMP是一套用于共享内存并行系统的多线程程序设计标准。通俗的将，它允许通过简单的编译器指令（#pragma）将原本串行执行的C/C++ for循环瞬间变成多线程并发执行，而不需要手动的调用pthread_create的创建、销毁和同步。 核心模型：Fork-Join模型是理解OpenMP的关键。 Fork：主线程运行到并行区，For",
+    "cover": "",
+    "category": "推理框架",
+    "category_path": [
+      "AI",
+      "推理框架"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "推理框架"
+    ],
+    "tags": [],
+    "date": "2026-01-19T12:18:41+00:00",
+    "modified": "2026-01-19T12:25:19+00:00",
+    "source": "04-AI/4.4-推理框架/4.4.2-GGML多线程计算：OpenMP简介.md"
+  },
+  "3167": {
+    "id": 3167,
+    "title": "GGML计算基础：矩阵的基本运算",
+    "url": "/3167.html/ggml计算基础：矩阵的基本运算/",
+    "canonical": "https://www.laumy.tech/3167.html/ggml计算基础：矩阵的基本运算/",
+    "description": "矩阵相乘 是神经网络中 算力消耗最大 的部分，通常占据 LLM 推理计算量的 95% 以上。 矩阵乘法 (Matrix Multiplication / GEMM) 这是最通用的矩阵运算形式，也是 AI 芯片中 Tensor Core 或 MAC 阵列的主要工作内容。 定义 ： 设矩阵 $A$ 的形状为 $(M \\times K)$，矩阵 $B$ 的形状为 ",
+    "cover": "",
+    "category": "推理框架",
+    "category_path": [
+      "AI",
+      "推理框架"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "推理框架"
+    ],
+    "tags": [],
+    "date": "2026-01-20T02:01:27+00:00",
+    "modified": "2026-01-20T05:18:00+00:00",
+    "source": "04-AI/4.4-推理框架/4.4.3-GGML计算基础：矩阵的基本运算.md"
+  },
+  "3171": {
+    "id": 3171,
+    "title": "linux 实时性能测试",
+    "url": "/3171.html/linux-实时性能测试/",
+    "canonical": "https://www.laumy.tech/3171.html/linux-实时性能测试/",
+    "description": "使能方法 在linux 6.12版本之后原生SDK就支持了PREEMPT_RT，使能方式如下： make kernel_menuconfig General setup ---> <*> Fully Preemptible Kernel (Real-Time) 或者直接搜索CONFIG_PREEMPT_RT=y 确认是否已经打开 zcat /proc/con",
+    "cover": "",
+    "category": "性能工具",
+    "category_path": [
+      "Linux",
+      "性能工具"
+    ],
+    "root_category": "Linux",
+    "raw_categories": [
+      "性能工具"
+    ],
+    "tags": [],
+    "date": "2026-01-20T03:44:28+00:00",
+    "modified": "2026-01-20T03:44:28+00:00",
+    "source": "01-Linux/1.3-性能工具/1.3.7-linux 实时性能测试.md"
+  },
+  "3176": {
+    "id": 3176,
+    "title": "GGML的CPU算子解读：矩阵乘法",
+    "url": "/3176.html/ggml的cpu算子解读：矩阵乘法/",
+    "canonical": "https://www.laumy.tech/3176.html/ggml的cpu算子解读：矩阵乘法/",
+    "description": "算子实现 调用流程 主要是ggml_compute_forward_mul_mat函数，该函数把任务拆分，最终计算执行调用ggml_compute_forward_mul_mat_one_chunk实现。 任务拆分 void ggml_compute_forward_mul_mat( const struct ggml_compute_params * pa",
+    "cover": "/wp-content/uploads/2026/01/wp_editor_md_fd2e6d246cb274c815b38348f93327a3_1768891455.png",
+    "category": "推理框架",
+    "category_path": [
+      "AI",
+      "推理框架"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "推理框架"
+    ],
+    "tags": [],
+    "date": "2026-01-20T08:00:36+00:00",
+    "modified": "2026-01-20T08:00:36+00:00",
+    "source": "04-AI/4.4-推理框架/4.4.4-GGML的CPU算子解读：矩阵乘法.md"
+  },
+  "3190": {
+    "id": 3190,
+    "title": "jetson orin nano使用llamap.cpp跑大模型",
+    "url": "/3190.html/jetson-orin-nano使用llamap-cpp跑大模型/",
+    "canonical": "https://www.laumy.tech/3190.html/jetson-orin-nano使用llamap-cpp跑大模型/",
+    "description": "安装 确认一下是否有/usr/local/cuda/bin/nvcc，有就配置一下环境。 # 临时在当前终端生效 export PATH=/usr/local/cuda/bin:$PATH export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH # 验证 nvcc 是否能找到 nvcc --",
+    "cover": "/wp-content/uploads/2026/01/wp_editor_md_04b205d454113c2375687bce7eb65b2c_1769058571.png",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2026-01-22T12:26:17+00:00",
+    "modified": "2026-01-24T06:00:00+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.28-jetson orin nano使用llamap.cpp跑大模型.md"
+  },
+  "3198": {
+    "id": 3198,
+    "title": "jetson orin nano使用TensorRT-LLM跑大模型",
+    "url": "/3198.html/jetson-orin-nano使用tensorrt-llm跑大模型/",
+    "canonical": "https://www.laumy.tech/3198.html/jetson-orin-nano使用tensorrt-llm跑大模型/",
+    "description": "准备 硬件信息 硬件信息如下： sudo cat /proc/device-tree/model NVIDIA Jetson Orin NX Enginejetson_releasee Developer Kit(base) nano@nano-desktop:~$ jetson_release Software part of jetson-stats 4",
+    "cover": "/wp-content/uploads/2026/01/wp_editor_md_6d75d7fc090335238669ce09a42cb8c1_1769139792.jpg",
+    "category": "Ai应用",
+    "category_path": [
+      "AI",
+      "Ai应用"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "Ai应用"
+    ],
+    "tags": [],
+    "date": "2026-01-24T04:28:39+00:00",
+    "modified": "2026-01-24T04:51:32+00:00",
+    "source": "04-AI/4.1-Ai应用/4.1.29-jetson orin nano使用TensorRT-LLM跑大模型.md"
+  },
+  "3212": {
+    "id": 3212,
+    "title": "llama.cpp初探：simple示例代码简要分析",
+    "url": "/3212.html/llama-cpp初探：simple示例代码简要分析/",
+    "canonical": "https://www.laumy.tech/3212.html/llama-cpp初探：simple示例代码简要分析/",
+    "description": "加载后端 void ggml_backend_load_all() { ggml_backend_load_all_from_path(nullptr); } void ggml_backend_load_all_from_path(const char * dir_path) { #ifdef NDEBUG bool silent = true; #els",
+    "cover": "/wp-content/uploads/2026/01/wp_editor_md_66a8b50d6a650d249d9a83dc865a046c_1769665324.png",
+    "category": "推理框架",
+    "category_path": [
+      "AI",
+      "推理框架"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "推理框架"
+    ],
+    "tags": [],
+    "date": "2026-01-28T11:47:53+00:00",
+    "modified": "2026-02-12T06:33:14+00:00",
+    "source": "04-AI/4.4-推理框架/4.4.5-llama.cpp初探：simple示例代码简要分析.md"
+  },
+  "3217": {
+    "id": 3217,
+    "title": "ggml后端架构简要分析",
+    "url": "/3217.html/ggml后端架构概要分析/",
+    "canonical": "https://www.laumy.tech/3217.html/ggml后端架构概要分析/",
+    "description": "后端系统概述 GGML后端系统主要提供如下功能： 统一接口： 不同硬件平台使用相关的API。 自动选择：根据硬件自动选择最优后端。 灵活切换：可以在运行时切换后端。 扩展性：易于添加的新后端。 后端主要涉及如下概念： Backend：执行计算的抽象层（CPU，CUDA， Metal等） Buffer：后端管理的内存缓冲区。 Buffer Type：缓冲区的类",
+    "cover": "",
+    "category": "推理框架",
+    "category_path": [
+      "AI",
+      "推理框架"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "推理框架"
+    ],
+    "tags": [],
+    "date": "2026-01-29T03:47:05+00:00",
+    "modified": "2026-01-29T04:33:57+00:00",
+    "source": "04-AI/4.4-推理框架/4.4.6-ggml后端架构简要分析.md"
+  },
+  "3228": {
+    "id": 3228,
+    "title": "llama.cpp 模型加载机制深度解析",
+    "url": "/3228.html/llama-cpp-模型加载过程/",
+    "canonical": "https://www.laumy.tech/3228.html/llama-cpp-模型加载过程/",
+    "description": "概述 llama.cpp 的模型加载系统是一个高度优化的、支持多后端、多设备的模型权重加载框架。它通过精心设计的数据结构和加载流程，实现了： 零拷贝加载 ：通过内存映射（mmap）实现模型文件的零拷贝加载 多设备支持 ：自动发现和分配GPU、CPU等设备，支持模型分层加载到不同设备 架构无关 ：通过统一的抽象支持Llama、Qwen、DeepSeek、Mam",
+    "cover": "",
+    "category": "推理框架",
+    "category_path": [
+      "AI",
+      "推理框架"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "推理框架"
+    ],
+    "tags": [],
+    "date": "2026-02-12T03:49:22+00:00",
+    "modified": "2026-02-12T06:33:04+00:00",
+    "source": "04-AI/4.4-推理框架/4.4.7-llama.cpp 模型加载机制深度解析.md"
+  },
+  "3254": {
+    "id": 3254,
+    "title": "解构LLM： 以llama.cpp分析模型推理过程",
+    "url": "/3254.html/解构llm：-以llama-cpp分析模型推理过程/",
+    "canonical": "https://www.laumy.tech/3254.html/解构llm：-以llama-cpp分析模型推理过程/",
+    "description": "大模型推理的\"第一性原理\" 从Deepseek V3到Kimi K2 无论模型如何变化，当前主流大模型的核心架构都是基于transformer。其本质是一个由多层相同结构堆叠而成的序列到序列的模型，每一层中有一个最核心的模块：Self-Attention（自注意力），让模型理解“哪些词和那些词相关”。 核心：Self-Attention直观理解 Self-A",
+    "cover": "/wp-content/uploads/2026/03/wp_editor_md_b1cb1fad928d98bb82cb582d15ff9f7d_1774319880.png",
+    "category": "推理框架",
+    "category_path": [
+      "AI",
+      "推理框架"
+    ],
+    "root_category": "AI",
+    "raw_categories": [
+      "推理框架"
+    ],
+    "tags": [],
+    "date": "2026-03-15T02:36:39+00:00",
+    "modified": "2026-03-24T03:06:28+00:00",
+    "source": "04-AI/4.4-推理框架/4.4.8-解构LLM： 以llama.cpp分析模型推理过程.md"
+  }
+}
