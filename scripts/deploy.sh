@@ -6,7 +6,6 @@ CONTENT_DIR=${CONTENT_DIR:-/srv/laumy-notes-content}
 WWW_DIR=${WWW_DIR:-/var/www/laumy-static}
 SHARED_DIR=${SHARED_DIR:-$WWW_DIR/shared}
 POST_ASSETS_DIR=${POST_ASSETS_DIR:-$SHARED_DIR/assets/posts}
-WP_CONTENT_DIR=${WP_CONTENT_DIR:-$SHARED_DIR/wp-content}
 KEEP_RELEASES=${KEEP_RELEASES:-3}
 STAMP=$(date +%Y%m%d-%H%M%S)
 RELEASE="$WWW_DIR/releases/$STAMP"
@@ -23,12 +22,6 @@ if [[ -d "$SITE_DIR/static/assets/posts" ]]; then
     rsync -a --ignore-existing "$SITE_DIR/static/assets/posts/" "$POST_ASSETS_DIR/"
     rm -rf "$SITE_DIR/static/assets/posts"
   fi
-fi
-
-if [[ -d "$SITE_DIR/static/wp-content" ]]; then
-  mkdir -p "$WP_CONTENT_DIR"
-  rsync -a --delete "$SITE_DIR/static/wp-content/" "$WP_CONTENT_DIR/"
-  rm -rf "$SITE_DIR/static/wp-content"
 fi
 
 python3 scripts/build_content.py "$CONTENT_DIR" --site "$SITE_DIR" --assets-output "$POST_ASSETS_DIR"

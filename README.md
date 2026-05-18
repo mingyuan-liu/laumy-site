@@ -5,7 +5,7 @@
 公开仓库注意事项：
 
 - 不提交服务器 IP、SSH 用户、真实绝对路径、数据库密码、JWT、webhook secret、SSH 私钥。
-- 不提交生成目录、发布目录、文章图片共享目录和 WordPress 数据库导出。
+- 不提交生成目录、发布目录、文章图片共享目录和数据库导出。
 - 示例命令里的 `<server>`、`<site-dir>`、`<content-dir>`、`<public-dir>` 都是占位符，需要按自己的服务器环境替换。
 
 ## Architecture
@@ -25,7 +25,7 @@ server        -> 拉取两个仓库，构建 Hugo，Nginx 对外服务
 <site-dir>                    # 本仓库 clone
 <public-dir>/current          # 当前线上 release 软链接
 <public-dir>/releases         # 发布历史
-<public-dir>/shared           # 共享静态资源，存文章图片和旧 WordPress 上传文件
+<public-dir>/shared           # 共享静态资源，存文章图片
 ```
 
 当前部署脚本默认使用：
@@ -56,7 +56,6 @@ server        -> 拉取两个仓库，构建 Hugo，Nginx 对外服务
 │   ├── deploy.sh                # 构建并发布 release
 │   ├── update_from_git.sh       # 拉取 GitHub 变更并触发部署
 │   ├── deploy_webhook.py        # GitHub webhook 服务
-│   ├── import_wordpress_sql.py  # WordPress SQL 导入工具
 │   └── seed_waline_views.py     # 初始化 Waline 热度
 └── deploy/
     ├── systemd/                 # systemd 单元模板
@@ -71,7 +70,6 @@ content/posts/
 public/
 resources/
 static/assets/
-static/wp-content/
 ```
 
 这些目录要么是生成物，要么应放在服务器共享静态目录中。
@@ -118,7 +116,7 @@ static/wp-content/
 
 ## Frontmatter
 
-迁移自 WordPress 的文章建议保留：
+历史文章建议保留：
 
 ```yaml
 ---
@@ -131,7 +129,6 @@ modified: "2026-03-24T03:06:28+00:00"
 category: "推理框架"
 author: "laumy"
 canonical: "https://www.example.com/3254.html/解构llm：-以llama-cpp分析模型推理过程/"
-cover: "/wp-content/uploads/2026/03/example.png"
 views: 1013
 status: publish
 ---
@@ -139,12 +136,13 @@ status: publish
 
 字段说明：
 
-- `id`：WordPress 旧文章 ID，评论、热度、迁移数据会用到。
+- `id`：历史文章 ID，评论、热度、迁移数据会用到。
 - `url`：保留旧文章 URL，避免搜索引擎权重丢失。
 - `canonical`：规范化 URL。
-- `cover`：封面图，可以是 `/wp-content/uploads/...` 或 `./assets/...`。
 - `views`：历史热度初始值，不再作为实时热度来源。
 - `status`：`publish` 才发布，`draft` 不发布。
+
+封面不需要手动维护。构建时会使用文章正文里的第一张图片作为封面；如果文章没有图片，就使用默认封面 `/images/default-thumb.jpg`。
 
 新文章最小示例：
 
@@ -155,7 +153,6 @@ date: "2026-05-18T10:00:00+08:00"
 modified: "2026-05-18T10:00:00+08:00"
 author: "laumy"
 status: publish
-cover: "./assets/cover.png"
 ---
 ```
 
@@ -199,10 +196,9 @@ hugo --source "$SITE_DIR" --destination "$SITE_DIR/public" --minify
 2. 生成 Hugo `content/posts/`。
 3. 生成分类树数据。
 4. 将文章图片同步到 `<public-dir>/shared/assets/posts/`。
-5. 将旧 WordPress 上传文件同步到 `<public-dir>/shared/wp-content/`。
-6. 构建 Hugo 到 `<public-dir>/releases/<timestamp>`。
-7. 切换 `<public-dir>/current` 软链接。
-8. 默认保留最近 3 个 release。
+5. 构建 Hugo 到 `<public-dir>/releases/<timestamp>`。
+6. 切换 `<public-dir>/current` 软链接。
+7. 默认保留最近 3 个 release。
 
 手动部署：
 
@@ -323,7 +319,6 @@ Nginx 需要提供：
 
 - `/`：静态站点 release。
 - `/assets/posts/`：共享文章图片。
-- `/wp-content/`：旧 WordPress 上传文件。
 - `/waline/`：Waline 服务代理。
 - `/deploy-hook`：webhook 代理。
 
@@ -384,23 +379,19 @@ git clone -b main git@github-content:<owner>/<content-repo>.git <content-dir>
 
 ## Images
 
-图片有两类：
-
-1. 新文章图片：内容仓库 `assets/` 中的图片。
-2. WordPress 老图片：旧路径 `/wp-content/uploads/...`。
-
-部署后都不进入 release，而是放在共享目录：
+文章图片统一放在内容仓库的 `assets/` 目录中。部署后图片不进入 release，而是生成到共享目录：
 
 ```text
 <public-dir>/shared/assets/posts/
-<public-dir>/shared/wp-content/
 ```
 
-Nginx 直接服务这些路径，所以每次 Hugo 发布只处理 HTML、CSS、JS 和少量固定静态资源。这样可以避免每次复制大量图片。
+Nginx 直接服务 `/assets/posts/`，所以每次 Hugo 发布只处理 HTML、CSS、JS 和少量固定静态资源。这样可以避免每次复制大量图片。
+
+文章封面由构建脚本自动生成：优先使用正文第一张图片；如果没有图片，就使用默认封面。
 
 ## Comments And Views
 
-评论和热度使用 Waline 自托管。推荐使用 MySQL 或其他长期可维护数据库，不建议依赖即将停止服务的第三方存储。
+评论和热度使用 Waline 自托管。推荐使用独立 MySQL 数据库或其他长期可维护数据库，不建议依赖即将停止服务的第三方存储，也不建议和其他历史归档库共用同一个 database。
 
 站点侧：
 
@@ -421,6 +412,13 @@ Waline 环境配置应放在服务器本地，例如：
 
 ```text
 /etc/waline.env
+```
+
+推荐数据库配置形态：
+
+```env
+MYSQL_DB=waline_db
+MYSQL_PREFIX=wl_
 ```
 
 不要提交数据库连接、JWT 或管理员凭据。
@@ -445,27 +443,40 @@ $$ block $$
 
 迁移文章里常见的 `x\_{k}` 这类转义会在前端渲染前做兼容处理。
 
-## WordPress Import
-
-从 WordPress SQL 重新导入：
-
-```bash
-python3 scripts/import_wordpress_sql.py \
-  --sql /path/to/wordpress.sql \
-  --uploads /path/to/wp-content/uploads \
-  --content /path/to/content-repo \
-  --site /path/to/laumy-site
-```
-
-导入前先备份内容仓库。WordPress 数据库导出、上传目录和临时转换文件不要提交到公开仓库。
-
 ## Backup
 
-建议备份三类数据：
+备份目标不是保存所有生成物，而是保存不可重建的数据源。当前站点的数据可以分成三类：
 
-- 内容仓库和站点代码仓库：推送到 GitHub。
-- Waline 数据库：定期 `mysqldump`。
-- 共享静态资源：`<public-dir>/shared/`。
+```text
+必须备份：
+1. 内容仓库：Markdown 和文章 assets。
+2. 站点仓库：Hugo 模板、脚本、部署模板。
+3. Waline 独立数据库：评论、热度、后台用户。
+
+可重建：
+1. <public-dir>/shared/assets/posts/：由内容仓库文章 assets 生成。
+2. <public-dir>/releases/：由 Hugo 重新构建。
+3. <site-dir>/content/posts/：由 build_content.py 重新生成。
+4. <site-dir>/public/ 和 <site-dir>/resources/。
+```
+
+### Git Repositories
+
+内容仓库和站点仓库应推送到 GitHub 或其他 Git 服务：
+
+```bash
+cd /path/to/content-repo
+git status
+git push
+
+cd /path/to/laumy-site
+git status
+git push
+```
+
+内容仓库里的 `assets/` 是文章图片源文件。只要它们已经进 Git，`<public-dir>/shared/assets/posts/` 就可以在部署时重新生成。
+
+### Waline Database
 
 Waline 备份示例：
 
@@ -480,17 +491,72 @@ mysqldump --single-transaction \
   | gzip > waline_$(date +%Y%m%d-%H%M%S).sql.gz
 ```
 
-共享静态资源备份：
+恢复 Waline：
+
+```bash
+set -a
+. /etc/waline.env
+set +a
+
+gunzip -c waline_YYYYmmdd-HHMMSS.sql.gz \
+  | mysql -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" "$MYSQL_DB"
+
+sudo systemctl restart waline
+```
+
+### Shared Static Files
+
+共享静态目录只保存构建后的文章图片：
+
+```text
+<public-dir>/shared/assets/posts/   # 可重建，来自内容仓库 assets
+```
+
+它可以由内容仓库重新生成，通常不需要单独备份。如果希望完整保留线上静态资源，也可以备份整个 shared：
 
 ```bash
 rsync -a --delete <public-dir>/shared/ /path/to/backup/shared/
 ```
 
-不需要备份：
+### Server Config
+
+服务器配置不要提交 Git，但需要做离线备份：
+
+```bash
+sudo mkdir -p /path/to/backup/config
+sudo cp /etc/waline.env /path/to/backup/config/
+sudo cp /etc/laumy-deploy.env /path/to/backup/config/
+sudo cp /etc/laumy-webhook.env /path/to/backup/config/
+sudo cp /etc/nginx/conf.d/laumy*.conf /path/to/backup/config/ 2>/dev/null || true
+sudo cp /etc/systemd/system/laumy*.service /path/to/backup/config/ 2>/dev/null || true
+sudo cp /etc/systemd/system/waline.service /path/to/backup/config/ 2>/dev/null || true
+```
+
+这些文件可能包含数据库密码、webhook secret 或服务路径，只能放在私有备份位置。
+
+### Restore Order
+
+迁移到新服务器时按这个顺序恢复：
+
+1. 安装基础组件：Nginx、Hugo、Python、MySQL、Node/Waline。
+2. clone 内容仓库到 `<content-dir>`。
+3. clone 站点仓库到 `<site-dir>`。
+4. 恢复 `/etc/waline.env`、`/etc/laumy-deploy.env`、`/etc/laumy-webhook.env`。
+5. 创建 Waline 数据库和用户，并导入 Waline SQL。
+6. 运行 `<site-dir>/scripts/deploy.sh`，重新生成 release 和 `shared/assets/posts/`。
+7. 启动 Waline、webhook、Nginx。
+8. 验证首页、历史文章 URL、文章图片、评论和热度。
+
+### Cleanup Policy
+
+不需要长期备份：
 
 - `<public-dir>/releases/`，可由源码重新构建。
 - `<site-dir>/content/posts/`，可由内容仓库重新生成。
 - `<site-dir>/public/` 和 `<site-dir>/resources/`。
+- `<public-dir>/shared/assets/posts/`，在确认内容仓库 assets 完整后可清理重建。
+
+确认 Waline 已稳定使用独立数据库后，可以清理旧库里遗留的 `wl_*` 表；删除前先保留一份 `waline_*.sql.gz`。
 
 ## Security Checklist
 
@@ -511,7 +577,6 @@ git status --short
 *.sql.gz
 /etc/*.env
 static/assets/
-static/wp-content/
 public/
 resources/
 content/posts/
@@ -542,7 +607,6 @@ curl -fsS http://127.0.0.1:8789/deploy-hook/healthz
 
 ```bash
 curl -I https://www.example.com/assets/posts/<hash>/<image>
-curl -I https://www.example.com/wp-content/uploads/<year>/<month>/<image>
 ```
 
 检查 Waline：

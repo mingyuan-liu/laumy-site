@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import argparse
+import html
 import hashlib
 import json
 import re
 import shutil
 from pathlib import Path
-from urllib.parse import quote
+
+DEFAULT_COVER = "/images/default-thumb.jpg"
 
 
 def strip_number(name):
@@ -114,7 +116,41 @@ def rewrite_assets(body, src_file, assets_output, assets_url_prefix):
     for asset in assets_dir.iterdir():
         if asset.is_file():
             copy_asset(asset, dst_dir / asset.name)
-    return re.sub(r"\]\(\./assets/([^)]+)\)", rf"]({assets_url_prefix}/{digest}/\1)", body)
+    body = re.sub(r"\]\(\./assets/([^)]+)\)", rf"]({assets_url_prefix}/{digest}/\1)", body)
+    body = re.sub(r"""(\b(?:src|href)=["'])\./assets/([^"']+)""", rf"\1{assets_url_prefix}/{digest}/\2", body)
+    return body
+
+
+def clean_image_url(value):
+    value = html.unescape(value or "").strip()
+    value = value.strip("<>\"'")
+    value = value.replace("\\%22", "").replace("%22", "")
+    value = value.replace('\\"', "").replace("\\'", "")
+    value = value.strip("<>\"' )")
+    return value
+
+
+def is_image_url(value):
+    path = value.split("?", 1)[0].split("#", 1)[0].lower()
+    return path.startswith(("/assets/posts/", "/images/")) or re.search(r"\.(?:png|jpe?g|gif|webp|svg)$", path)
+
+
+def first_article_image(body):
+    matches = []
+    markdown_image = re.compile(r"!\[[^\]]*\]\(\s*(<[^>]+>|[^)\s]+)(?:\s+['\"][^'\"]*['\"])?\s*\)")
+    html_image = re.compile(r"""<img\b[^>]*\bsrc\s*=\s*(?:"([^"]+)"|'([^']+)'|([^\s>]+))""", re.I)
+
+    for match in markdown_image.finditer(body):
+        matches.append((match.start(), match.group(1)))
+    for match in html_image.finditer(body):
+        matches.append((match.start(), next(group for group in match.groups() if group)))
+
+    for _, raw_url in sorted(matches):
+        url = clean_image_url(raw_url)
+        if not url or "wp-content/uploads" in url or not is_image_url(url):
+            continue
+        return url
+    return ""
 
 
 def add_tree_count(node, parts):
@@ -191,6 +227,7 @@ def main():
 
         body = drop_leading_title(body, title)
         body = rewrite_assets(body, src, assets_output, assets_url_prefix)
+        cover = first_article_image(body) or DEFAULT_COVER
         views = stats.get("posts", {}).get(post_id, {}).get("views", 0)
         final = {
             "title": title,
@@ -202,7 +239,7 @@ def main():
             "category": category,
             "category_path": cats,
             "category_url": f"/posts/{'/'.join(slugify(p) for p in cats)}/",
-            "cover": item_meta.get("cover") or fm.get("cover") or "",
+            "cover": cover,
             "description": item_meta.get("description") or fm.get("description") or "",
             "views": views,
         }
