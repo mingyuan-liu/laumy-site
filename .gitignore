@@ -5,6 +5,7 @@ resources/
 .cache/
 data/category-tree.json
 data/recent-posts.json
+deploy/generated/
 static/assets/
 static/wp-content/
 

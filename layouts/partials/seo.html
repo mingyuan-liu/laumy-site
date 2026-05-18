@@ -1,9 +1,17 @@
 {{- $title := cond .IsHome .Site.Title (printf "%s - %s" .Title .Site.Title) -}}
-{{- $desc := .Params.description | default .Summary | default .Site.Params.description | plainify | htmlUnescape | truncate 160 -}}
+{{- $descSource := .Params.description | default .Summary | default .Site.Params.description -}}
+{{- if .Params.protected -}}
+  {{- $descSource = .Site.Params.description -}}
+{{- end -}}
+{{- $desc := $descSource | plainify | htmlUnescape | truncate 160 -}}
 {{- $canonical := .Params.canonical | default .Permalink -}}
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc }}">
+{{ if .Params.protected }}
+<meta name="robots" content="noindex, nofollow, noarchive">
+{{ else }}
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{{ end }}
 <link rel="canonical" href="{{ $canonical }}">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
@@ -12,7 +20,7 @@
 <meta property="og:url" content="{{ $canonical }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 {{ with .Params.cover }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
-{{ if .IsPage }}
+{{ if and .IsPage (not .Params.protected) }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

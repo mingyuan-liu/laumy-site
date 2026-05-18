@@ -4,7 +4,7 @@
     <title>{{ .Site.Title }}</title>
     <link>{{ .Site.BaseURL }}</link>
     <description>{{ .Site.Params.description }}</description>
-    {{ range first 30 (where .Site.RegularPages "Section" "posts") }}
+    {{ range first 30 (where (where .Site.RegularPages "Section" "posts") "Params.protected" "ne" true) }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>

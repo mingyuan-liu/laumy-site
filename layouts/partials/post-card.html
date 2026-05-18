@@ -1,9 +1,10 @@
 <article class="post-card">
   {{ $walinePath := .Params.url | default .RelPermalink }}
+  {{ $isProtected := .Params.protected | default false }}
   <a class="thumb" href="{{ .RelPermalink }}"><img src="{{ .Params.cover | default "/images/default-thumb.jpg" }}" alt=""></a>
   <div class="post-card-body">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    <p>{{ .Summary | plainify | htmlUnescape | truncate 180 }}</p>
+    <p>{{ if $isProtected }}此文章需要密码访问。{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 180 }}{{ end }}</p>
     <div class="meta">
       <span>◷ {{ .Date.Format "2006-01-02" }}</span>
       {{ with .Params.category }}<a href="{{ $.Params.category_url }}">📁 {{ . }}</a>{{ end }}
