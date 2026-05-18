@@ -8,7 +8,7 @@
 - 不提交生成目录、发布目录、文章图片共享目录和数据库导出。
 - 示例命令里的 `<server>`、`<site-dir>`、`<content-dir>`、`<public-dir>` 都是占位符，需要按自己的服务器环境替换。
 
-## Architecture
+## 1. Architecture
 
 仓库职责分离：
 
@@ -38,7 +38,7 @@ server        -> 拉取两个仓库，构建 Hugo，Nginx 对外服务
 
 这些默认值可以通过 `/etc/laumy-deploy.env` 覆盖。
 
-## Repository Layout
+## 2. Repository Layout
 
 ```text
 .
@@ -74,7 +74,7 @@ static/assets/
 
 这些目录要么是生成物，要么应放在服务器共享静态目录中。
 
-## Content Repo
+## 3. Content Repo
 
 内容仓库面向写作，推荐目录：
 
@@ -114,7 +114,7 @@ static/assets/
 /assets/posts/<hash>/figure.png
 ```
 
-## Frontmatter
+## 4. Frontmatter
 
 历史文章建议保留：
 
@@ -156,7 +156,7 @@ status: publish
 ---
 ```
 
-## Local Build
+## 5. Local Build
 
 安装依赖：
 
@@ -182,7 +182,7 @@ python3 scripts/build_content.py "$CONTENT_DIR" --site "$SITE_DIR"
 hugo --source "$SITE_DIR" --destination "$SITE_DIR/public" --minify
 ```
 
-## Deployment
+## 6. Deployment
 
 部署脚本：
 
@@ -219,7 +219,7 @@ ssh <server> 'ls -1 <public-dir>/releases'
 ssh <server> 'ln -sfn <public-dir>/releases/<release-name> <public-dir>/current'
 ```
 
-## GitHub Webhook
+## 7. GitHub Webhook
 
 推荐发布链路：
 
@@ -237,7 +237,7 @@ deploy/systemd/laumy-deploy-webhook.service
 deploy/nginx/laumy-static-preview.conf
 ```
 
-### Deploy Env
+### 7.1 Deploy Env
 
 复制并修改：
 
@@ -258,7 +258,7 @@ DEPLOY_CMD=/srv/laumy-site/scripts/deploy.sh
 LOG_DIR=/var/log/laumy-deploy
 ```
 
-### Webhook Env
+### 7.2 Webhook Env
 
 复制并修改：
 
@@ -290,7 +290,7 @@ openssl rand -hex 32
 
 不要把 `/etc/laumy-webhook.env` 提交到 GitHub。
 
-### systemd
+### 7.3 systemd
 
 ```bash
 sudo cp deploy/systemd/laumy-git-deploy.service /etc/systemd/system/
@@ -313,7 +313,7 @@ sudo journalctl -u laumy-git-deploy.service -n 100 --no-pager
 tail -100 /var/log/laumy-deploy/deploy.log
 ```
 
-### Nginx
+### 7.4 Nginx
 
 Nginx 需要提供：
 
@@ -343,7 +343,7 @@ Secret: WEBHOOK_SECRET
 Events: Just the push event
 ```
 
-## Private Content Repo
+## 8. Private Content Repo
 
 如果内容仓库是私有仓库，服务器需要只读 deploy key：
 
@@ -377,7 +377,7 @@ git clone -b main git@github-content:<owner>/<content-repo>.git <content-dir>
 
 不要把私钥提交到任何仓库。
 
-## Images
+## 9. Images
 
 文章图片统一放在内容仓库的 `assets/` 目录中。部署后图片不进入 release，而是生成到共享目录：
 
@@ -389,7 +389,7 @@ Nginx 直接服务 `/assets/posts/`，所以每次 Hugo 发布只处理 HTML、C
 
 文章封面由构建脚本自动生成：优先使用正文第一张图片；如果没有图片，就使用默认封面。
 
-## Comments And Views
+## 10. Comments And Views
 
 评论和热度使用 Waline 自托管。推荐使用独立 MySQL 数据库或其他长期可维护数据库，不建议依赖即将停止服务的第三方存储，也不建议和其他历史归档库共用同一个 database。
 
@@ -423,7 +423,7 @@ MYSQL_PREFIX=wl_
 
 不要提交数据库连接、JWT 或管理员凭据。
 
-## Math
+## 11. Math
 
 站点使用自托管 KaTeX：
 
@@ -443,7 +443,7 @@ $$ block $$
 
 迁移文章里常见的 `x\_{k}` 这类转义会在前端渲染前做兼容处理。
 
-## Backup
+## 12. Backup
 
 备份目标不是保存所有生成物，而是保存不可重建的数据源。当前站点的数据可以分成三类：
 
@@ -460,7 +460,7 @@ $$ block $$
 4. <site-dir>/public/ 和 <site-dir>/resources/。
 ```
 
-### Git Repositories
+### 12.1 Git Repositories
 
 内容仓库和站点仓库应推送到 GitHub 或其他 Git 服务：
 
@@ -476,7 +476,7 @@ git push
 
 内容仓库里的 `assets/` 是文章图片源文件。只要它们已经进 Git，`<public-dir>/shared/assets/posts/` 就可以在部署时重新生成。
 
-### Waline Database
+### 12.2 Waline Database
 
 Waline 备份示例：
 
@@ -504,7 +504,7 @@ gunzip -c waline_YYYYmmdd-HHMMSS.sql.gz \
 sudo systemctl restart waline
 ```
 
-### Shared Static Files
+### 12.3 Shared Static Files
 
 共享静态目录只保存构建后的文章图片：
 
@@ -518,7 +518,7 @@ sudo systemctl restart waline
 rsync -a --delete <public-dir>/shared/ /path/to/backup/shared/
 ```
 
-### Server Config
+### 12.4 Server Config
 
 服务器配置不要提交 Git，但需要做离线备份：
 
@@ -534,7 +534,7 @@ sudo cp /etc/systemd/system/waline.service /path/to/backup/config/ 2>/dev/null |
 
 这些文件可能包含数据库密码、webhook secret 或服务路径，只能放在私有备份位置。
 
-### Restore Order
+### 12.5 Restore Order
 
 迁移到新服务器时按这个顺序恢复：
 
@@ -547,7 +547,7 @@ sudo cp /etc/systemd/system/waline.service /path/to/backup/config/ 2>/dev/null |
 7. 启动 Waline、webhook、Nginx。
 8. 验证首页、历史文章 URL、文章图片、评论和热度。
 
-### Cleanup Policy
+### 12.6 Cleanup Policy
 
 不需要长期备份：
 
@@ -558,7 +558,7 @@ sudo cp /etc/systemd/system/waline.service /path/to/backup/config/ 2>/dev/null |
 
 确认 Waline 已稳定使用独立数据库后，可以清理旧库里遗留的 `wl_*` 表；删除前先保留一份 `waline_*.sql.gz`。
 
-## Security Checklist
+## 13. Security Checklist
 
 公开仓库提交前检查：
 
@@ -582,7 +582,7 @@ resources/
 content/posts/
 ```
 
-## Troubleshooting
+## 14. Troubleshooting
 
 检查 Hugo 构建：
 
