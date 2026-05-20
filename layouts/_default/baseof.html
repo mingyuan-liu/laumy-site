@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ partial "seo.html" . }}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ "index.xml" | absURL }}">
   <link rel="stylesheet" href="/css/main.css?v={{ now.Unix }}">
   {{ if site.Params.waline.enabled }}
   <meta name="waline-server" content="{{ site.Params.waline.serverURL }}">

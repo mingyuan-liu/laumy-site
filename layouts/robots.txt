@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /waline/
+Disallow: /deploy-hook
+Disallow: /deploy-hook/
+Disallow: /search/
+
+Sitemap: {{ "sitemap.xml" | absURL }}
