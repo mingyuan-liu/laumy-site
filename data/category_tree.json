@@ -192,5 +192,13 @@
     "count": 18,
     "level": 1,
     "children": []
+  },
+  {
+    "title": "行业动态",
+    "slug": "行业动态",
+    "url": "/posts/行业动态/",
+    "count": 1,
+    "level": 1,
+    "children": []
   }
 ]
