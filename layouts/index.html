@@ -1,6 +1,16 @@
 {{ define "main" }}
   <section class="post-list">
-    {{ $paginator := .Paginate ((where site.RegularPages "Section" "posts").ByDate.Reverse) 10 }}
+    {{ $posts := where site.RegularPages "Section" "posts" }}
+    {{ $industryPosts := (where $posts "Params.category" "eq" "行业动态").ByDate.Reverse }}
+    {{ $articlePosts := (where $posts "Params.category" "ne" "行业动态").ByDate.Reverse }}
+    {{ if gt (len $industryPosts) 0 }}
+      <h1 class="home-section-title">行业动态</h1>
+      {{ range first 1 $industryPosts }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    {{ end }}
+    <h1 class="home-section-title">文章列表</h1>
+    {{ $paginator := .Paginate $articlePosts 10 }}
     {{ range $paginator.Pages }}
       {{ partial "post-card.html" . }}
     {{ end }}

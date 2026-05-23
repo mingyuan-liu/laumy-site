@@ -14,7 +14,8 @@
   </section>
   <section class="recent-card panel-card">
     <h3>{{ if .IsHome }}最近更新{{ else }}最新文章{{ end }}</h3>
-    {{ range first 10 ((where site.RegularPages "Section" "posts").ByLastmod.Reverse) }}
+    {{ $recentPosts := where (where site.RegularPages "Section" "posts") "Params.category" "ne" "行业动态" }}
+    {{ range first 10 ($recentPosts.ByLastmod.Reverse) }}
     <a class="mini-post" href="{{ .RelPermalink }}">
       <img src="{{ .Params.cover | default "/images/default-thumb.jpg" }}" alt="">
       <span>{{ .Title }}</span>

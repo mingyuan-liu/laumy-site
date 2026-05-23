@@ -1,18 +1,20 @@
 {{ $page := .page }}
 {{ range .nodes }}
-  {{ $active := in ($page.Params.category_path | default slice) .title }}
-  {{ if .children }}
-    <details class="cat-node has-children" {{ if or $active (eq .level 1) }}open{{ end }}>
-      <summary>
+  {{ if ne .title "行业动态" }}
+    {{ $active := in ($page.Params.category_path | default slice) .title }}
+    {{ if .children }}
+      <details class="cat-node has-children" {{ if or $active (eq .level 1) }}open{{ end }}>
+        <summary>
+          <a href="{{ .url }}">{{ .title }}</a>
+          <span>{{ .count }}篇</span>
+        </summary>
+        <div class="cat-children">{{ partial "category-node.html" (dict "nodes" .children "page" $page) }}</div>
+      </details>
+    {{ else }}
+      <div class="cat-node cat-leaf">
         <a href="{{ .url }}">{{ .title }}</a>
         <span>{{ .count }}篇</span>
-      </summary>
-      <div class="cat-children">{{ partial "category-node.html" (dict "nodes" .children "page" $page) }}</div>
-    </details>
-  {{ else }}
-    <div class="cat-node cat-leaf">
-      <a href="{{ .url }}">{{ .title }}</a>
-      <span>{{ .count }}篇</span>
-    </div>
+      </div>
+    {{ end }}
   {{ end }}
 {{ end }}
