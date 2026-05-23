@@ -110,6 +110,11 @@ def category_parts(root, path):
     return parts
 
 
+def should_skip_source(root, path):
+    rel = path.relative_to(root)
+    return any(part == "auto" for part in rel.parts)
+
+
 def ensure_index(dir_path, title):
     index = dir_path / "_index.md"
     if not index.exists():
@@ -295,6 +300,8 @@ def main():
     generated = 0
     protected_routes = []
     for src in sorted(source.rglob("*.md")):
+        if should_skip_source(source, src):
+            continue
         if "assets" in src.parts or src.name == "index.md" or src.name.startswith("_"):
             continue
         fm, body = split_frontmatter(src.read_text(encoding="utf-8"))

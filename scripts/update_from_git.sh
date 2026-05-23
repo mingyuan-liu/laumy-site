@@ -28,6 +28,11 @@ log() {
   printf '[%s] %s\n' "$(date '+%F %T')" "$*"
 }
 
+fail() {
+  log "$*"
+  exit 1
+}
+
 require_git_repo() {
   local dir=$1
   local name=$2
@@ -48,13 +53,23 @@ update_repo() {
 
   require_git_repo "$dir" "$name"
 
-  before=$(git -C "$dir" rev-parse HEAD)
-  git -C "$dir" fetch --prune origin "$branch"
-  after=$(git -C "$dir" rev-parse "origin/$branch")
+  if ! before=$(git -C "$dir" rev-parse HEAD 2>/dev/null); then
+    fail "$name update failed: cannot resolve current HEAD in $dir"
+  fi
+
+  if ! git -C "$dir" fetch --prune origin "$branch"; then
+    fail "$name update failed: git fetch origin $branch failed in $dir"
+  fi
+
+  if ! after=$(git -C "$dir" rev-parse "origin/$branch" 2>/dev/null); then
+    fail "$name update failed: cannot resolve origin/$branch in $dir"
+  fi
 
   if [[ "$before" != "$after" ]]; then
     log "$name changed: $before -> $after"
-    git -C "$dir" reset --hard "origin/$branch"
+    if ! git -C "$dir" reset --hard "origin/$branch"; then
+      fail "$name update failed: git reset --hard origin/$branch failed in $dir"
+    fi
     return 0
   fi
 
@@ -65,10 +80,14 @@ update_repo() {
 main() {
   local changed=0
 
-  update_repo "$CONTENT_DIR" "$CONTENT_BRANCH" "content" && changed=1 || true
+  if update_repo "$CONTENT_DIR" "$CONTENT_BRANCH" "content"; then
+    changed=1
+  fi
 
   if [[ -d "$SITE_DIR/.git" ]]; then
-    update_repo "$SITE_DIR" "$SITE_BRANCH" "site" && changed=1 || true
+    if update_repo "$SITE_DIR" "$SITE_BRANCH" "site"; then
+      changed=1
+    fi
   else
     log "site is not managed by git, skip site pull: $SITE_DIR"
   fi
