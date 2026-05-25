@@ -76,6 +76,11 @@ def default_post_url(cats, src_file, fm):
     return "/" + "/".join(["notes", *parts, post_slug]) + "/"
 
 
+def fallback_post_url(cats, dst):
+    parts = ["notes", "posts", *[slugify(part) for part in cats], dst.stem]
+    return "/" + "/".join(parts) + "/"
+
+
 def first_heading(body):
     match = re.search(r"^#\s+(.+)$", body, re.M)
     return match.group(1).strip() if match else ""
@@ -299,6 +304,7 @@ def main():
 
     generated = 0
     protected_routes = []
+    pageview_paths = []
     for src in sorted(source.rglob("*.md")):
         if should_skip_source(source, src):
             continue
@@ -358,6 +364,10 @@ def main():
         if protected:
             protected_routes.append({"url": final.get("url", ""), "assets": asset_prefix})
 
+        pageview_path = normalize_url_path(final.get("url") or fallback_post_url(cats, dst))
+        if pageview_path:
+            pageview_paths.append(pageview_path)
+
         lines = ["---"]
         for key, value in final.items():
             if value == "" or value == []:
@@ -373,6 +383,10 @@ def main():
     stats_src = site / "data" / "post-stats.json"
     if stats_src.exists():
         (site / "data" / "post_stats.json").write_text(stats_src.read_text(encoding="utf-8"), encoding="utf-8")
+    (site / "static" / "pageview-paths.json").write_text(
+        json.dumps({"paths": sorted(set(pageview_paths))}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     (site / "static" / "llms.txt").write_text(
         "# laumy的学习笔记\n\n"
         "这是一个中文技术博客，主要内容包括 Linux、嵌入式、AI 大模型、网络协议、机器人系统等。\n\n"

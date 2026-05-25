@@ -5,11 +5,13 @@ if (serverURL) {
   const normalizedServerURL = normalizeServerURL(serverURL);
   const apiURL = `${normalizedServerURL.replace(/\/?$/, '/')}api/`;
   const pageviewSelector = '.waline-pageview-count';
+  const totalPageviewSelector = '[data-waline-total-pageviews]';
   const commentSelector = '.waline-comment-count';
   const updateCurrent = document.body.dataset.walineCurrent === 'true';
   const currentPath =
     document.querySelector(`${pageviewSelector}[data-path]`)?.dataset.path ||
     decodeURIComponent(window.location.pathname);
+  const pageviewPathsURL = '/pageview-paths.json';
 
   function normalizeServerURL(value) {
     const trimmed = value.replace(/\/+$/, '');
@@ -59,6 +61,28 @@ if (serverURL) {
     return counts;
   }
 
+  async function fetchPageviewPaths() {
+    const response = await fetch(pageviewPathsURL, { cache: 'no-store' });
+    if (!response.ok) return [];
+    const payload = await response.json();
+    return Array.isArray(payload?.paths) ? payload.paths : [];
+  }
+
+  async function fetchTotalPageviews(paths) {
+    const uniquePaths = [...new Set(paths.filter(Boolean))];
+    const batchSize = 25;
+    let total = 0;
+
+    for (let index = 0; index < uniquePaths.length; index += batchSize) {
+      const counts = await fetchPageviews(uniquePaths.slice(index, index + batchSize));
+      counts.forEach((time) => {
+        if (typeof time === 'number') total += time;
+      });
+    }
+
+    return total;
+  }
+
   async function incrementPageview(path) {
     const response = await fetch(`${apiURL}article?lang=${encodeURIComponent(navigator.language || 'zh-CN')}`, {
       method: 'POST',
@@ -74,6 +98,13 @@ if (serverURL) {
     counters.forEach((counter) => {
       const time = counts.get(counterPath(counter));
       if (typeof time === 'number') counter.textContent = String(time);
+    });
+  }
+
+  function renderTotalPageviews(total) {
+    if (typeof total !== 'number') return;
+    document.querySelectorAll(totalPageviewSelector).forEach((counter) => {
+      counter.textContent = String(total);
     });
   }
 
@@ -103,8 +134,19 @@ if (serverURL) {
     }
   }
 
-  if (document.querySelector(pageviewSelector)) {
-    updatePageviews();
+  async function updateTotalPageviews() {
+    if (!document.querySelector(totalPageviewSelector)) return;
+
+    try {
+      const paths = await fetchPageviewPaths();
+      renderTotalPageviews(await fetchTotalPageviews(paths));
+    } catch {}
+  }
+
+  const pageviewUpdate = document.querySelector(pageviewSelector) ? updatePageviews() : Promise.resolve();
+
+  if (document.querySelector(totalPageviewSelector)) {
+    pageviewUpdate.finally(updateTotalPageviews);
   }
 
   if (document.querySelector(commentSelector)) {
