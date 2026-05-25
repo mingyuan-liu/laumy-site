@@ -6,6 +6,7 @@ import json
 import re
 import shutil
 from pathlib import Path
+from urllib.parse import quote
 
 DEFAULT_COVER = "/images/default-thumb.jpg"
 SITE_BASE_URL = "https://www.laumy.tech"
@@ -78,7 +79,7 @@ def default_post_url(cats, src_file, fm):
 
 def fallback_post_url(cats, dst):
     parts = ["notes", "posts", *[slugify(part) for part in cats], dst.stem]
-    return "/" + "/".join(parts) + "/"
+    return quote("/" + "/".join(parts) + "/", safe="/")
 
 
 def first_heading(body):
