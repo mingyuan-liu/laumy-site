@@ -12,6 +12,7 @@ if (serverURL) {
     document.querySelector(`${pageviewSelector}[data-path]`)?.dataset.path ||
     decodeURIComponent(window.location.pathname);
   const pageviewPathsURL = '/pageview-paths.json';
+  const totalPageviewStorageKey = 'laumy:pageview:total:v1';
 
   function normalizeServerURL(value) {
     const trimmed = value.replace(/\/+$/, '');
@@ -68,18 +69,64 @@ if (serverURL) {
     return Array.isArray(payload?.paths) ? payload.paths : [];
   }
 
+  function delay(ms) {
+    return new Promise((resolve) => {
+      window.setTimeout(resolve, ms);
+    });
+  }
+
+  async function fetchPageviewsWithRetry(paths, retries = 1) {
+    let lastError;
+
+    for (let attempt = 0; attempt <= retries; attempt += 1) {
+      try {
+        return await fetchPageviews(paths);
+      } catch (error) {
+        lastError = error;
+        if (attempt < retries) await delay(250 * (attempt + 1));
+      }
+    }
+
+    throw lastError;
+  }
+
+  async function mapWithConcurrency(items, limit, mapper) {
+    const results = new Array(items.length);
+    let nextIndex = 0;
+
+    async function worker() {
+      while (nextIndex < items.length) {
+        const index = nextIndex;
+        nextIndex += 1;
+        results[index] = await mapper(items[index], index);
+      }
+    }
+
+    await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+    return results;
+  }
+
   async function fetchTotalPageviews(paths) {
     const uniquePaths = [...new Set(paths.filter(Boolean))];
     const batchSize = 25;
-    let total = 0;
+    const concurrency = 4;
+    const chunks = [];
 
     for (let index = 0; index < uniquePaths.length; index += batchSize) {
-      const counts = await fetchPageviews(uniquePaths.slice(index, index + batchSize));
+      chunks.push(uniquePaths.slice(index, index + batchSize));
+    }
+
+    const countMaps = await mapWithConcurrency(
+      chunks,
+      concurrency,
+      (chunk) => fetchPageviewsWithRetry(chunk)
+    );
+    let total = 0;
+    countMaps.forEach((counts) => {
       counts.forEach((time) => {
         if (typeof time === 'number') total += time;
       });
-    }
-
+    });
     return total;
   }
 
@@ -101,11 +148,31 @@ if (serverURL) {
     });
   }
 
-  function renderTotalPageviews(total) {
+  function cacheTotalPageviews(total) {
+    try {
+      localStorage.setItem(totalPageviewStorageKey, String(total));
+    } catch {}
+  }
+
+  function readCachedTotalPageviews() {
+    try {
+      const cached = localStorage.getItem(totalPageviewStorageKey);
+      return /^\d+$/.test(cached || '') ? Number(cached) : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function renderTotalPageviews(total, options = {}) {
     if (typeof total !== 'number') return;
     document.querySelectorAll(totalPageviewSelector).forEach((counter) => {
       counter.textContent = String(total);
     });
+    if (options.cache !== false) cacheTotalPageviews(total);
+  }
+
+  function renderCachedTotalPageviews() {
+    renderTotalPageviews(readCachedTotalPageviews(), { cache: false });
   }
 
   async function updatePageviews() {
@@ -146,6 +213,7 @@ if (serverURL) {
   const pageviewUpdate = document.querySelector(pageviewSelector) ? updatePageviews() : Promise.resolve();
 
   if (document.querySelector(totalPageviewSelector)) {
+    renderCachedTotalPageviews();
     pageviewUpdate.finally(updateTotalPageviews);
   }
 

@@ -15,7 +15,7 @@
   <script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
   <script defer src="/js/math.js"></script>
   {{ if site.Params.waline.enabled }}
-  <script type="module" src="/js/waline.js"></script>
+  <script type="module" src="/js/waline.js?v={{ now.Unix }}"></script>
   {{ end }}
 </head>
 <body data-waline-current="{{ if .IsPage }}true{{ else }}false{{ end }}" data-page-path="{{ .RelPermalink }}">
