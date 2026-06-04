@@ -345,7 +345,7 @@ def main():
             "category_path": cats,
             "category_url": f"/posts/{'/'.join(slugify(p) for p in cats)}/",
             "cover": cover,
-            "description": item_meta.get("description") or fm.get("description") or "",
+            "description": fm.get("description") or item_meta.get("description") or "",
             "views": views,
         }
         if protected:
