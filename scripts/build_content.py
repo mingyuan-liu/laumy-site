@@ -155,8 +155,9 @@ def rewrite_assets(body, src_file, assets_output, assets_url_prefix):
         if asset.is_file():
             copy_asset(asset, dst_dir / asset.name)
     asset_url_base = f"{assets_url_prefix}/{digest}"
-    body = re.sub(r"\]\(\./assets/([^)]+)\)", rf"]({asset_url_base}/\1)", body)
-    body = re.sub(r"""(\b(?:src|href)=["'])\./assets/([^"']+)""", rf"\1{asset_url_base}/\2", body)
+    body = re.sub(r"\]\((?:\./)?assets/([^)]+)\)", rf"]({asset_url_base}/\1)", body)
+    body = re.sub(r"""(\b(?:src|href)=["'])(?:\./)?assets/([^"']+)""", rf"\1{asset_url_base}/\2", body)
+    body = re.sub(r"""(\b(?:src|href)=)(?:\./)?assets/([^\s>]+)""", rf"\1{asset_url_base}/\2", body)
     return body, f"{asset_url_base}/"
 
 
