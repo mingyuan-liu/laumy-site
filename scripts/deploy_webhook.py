@@ -38,8 +38,22 @@ def csv_set(name: str) -> set[str]:
     return {item.strip() for item in raw.split(",") if item.strip()}
 
 
+def csv_map(name: str) -> dict[str, str]:
+    raw = os.environ.get(name, "")
+    result: dict[str, str] = {}
+    for item in raw.split(","):
+        entry = item.strip()
+        if not entry:
+            continue
+        key, sep, value = entry.partition("=")
+        if sep and key.strip() and value.strip():
+            result[key.strip()] = value.strip()
+    return result
+
+
 ALLOWED_REPOSITORIES = csv_set("ALLOWED_REPOSITORIES")
 ALLOWED_REFS = csv_set("ALLOWED_REFS")
+DEPLOY_SERVICE_MAP = csv_map("DEPLOY_SERVICE_MAP")
 
 
 logging.basicConfig(
@@ -92,9 +106,13 @@ def is_allowed(value: str, allowed: set[str]) -> bool:
     return not allowed or value in allowed
 
 
-def trigger_deploy() -> None:
+def get_deploy_service(repo: str) -> str:
+    return DEPLOY_SERVICE_MAP.get(repo, DEPLOY_SERVICE)
+
+
+def trigger_deploy(service: str) -> None:
     subprocess.run(
-        ["systemctl", "start", "--no-block", DEPLOY_SERVICE],
+        ["systemctl", "start", "--no-block", service],
         check=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -111,7 +129,7 @@ class DeployWebhookHandler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
         path = urlparse(self.path).path
         if path == HEALTH_PATH:
-            json_response(self, 200, {"ok": True, "service": DEPLOY_SERVICE})
+            json_response(self, 200, {"ok": True, "service": DEPLOY_SERVICE, "service_map": DEPLOY_SERVICE_MAP})
             return
         json_response(self, 404, {"ok": False, "error": "not found"})
 
@@ -167,15 +185,17 @@ class DeployWebhookHandler(BaseHTTPRequestHandler):
             json_response(self, 202, {"ok": True, "triggered": False, "reason": "ref ignored"})
             return
 
+        deploy_service = get_deploy_service(repo)
+
         try:
-            trigger_deploy()
+            trigger_deploy(deploy_service)
         except subprocess.CalledProcessError as exc:
-            logging.error("Failed to trigger %s: %s", DEPLOY_SERVICE, exc.stderr.strip())
+            logging.error("Failed to trigger %s: %s", deploy_service, exc.stderr.strip())
             json_response(self, 500, {"ok": False, "error": "failed to trigger deploy"})
             return
 
-        logging.info("Triggered %s from event=%s repo=%s ref=%s", DEPLOY_SERVICE, event or "-", repo or "-", ref or "-")
-        json_response(self, 202, {"ok": True, "triggered": True})
+        logging.info("Triggered %s from event=%s repo=%s ref=%s", deploy_service, event or "-", repo or "-", ref or "-")
+        json_response(self, 202, {"ok": True, "triggered": True, "service": deploy_service})
 
 
 def main() -> None:
