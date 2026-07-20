@@ -5,7 +5,7 @@
       "title" .Title
       "url" .RelPermalink
       "summary" (.Summary | plainify | htmlUnescape)
-      "content" (.Plain | htmlUnescape)
+      "content" (.Plain | htmlUnescape | truncate 1200)
       "category" (.Params.category | default "")
       "date" (.Date.Format "2006-01-02")
     ) -}}
