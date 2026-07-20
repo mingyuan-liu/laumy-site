@@ -1,0 +1,8 @@
+{{ define "main" }}
+<section class="search-page">
+  <h1>站内搜索</h1>
+  <p class="search-status" data-search-status>正在加载搜索结果…</p>
+  <div class="search-results" data-search-results></div>
+</section>
+<script defer src="/js/search.js?v={{ now.Unix }}"></script>
+{{ end }}

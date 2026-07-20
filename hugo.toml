@@ -5,11 +5,19 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 summaryLength = 90
 
+[outputFormats]
+  [outputFormats.Search]
+    mediaType = "text/html"
+    baseName = "index"
+    path = "search"
+    isHTML = true
+    notAlternative = true
+
 [permalinks]
   posts = "/notes/:sections/:slug/"
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON", "Search"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
